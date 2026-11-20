@@ -1295,6 +1295,10 @@ fi
 CURRENT_STEP="DEEP PURCHASE HISTORY RESEARCH"
 info "DEEP PURCHASE HISTORY RESEARCH"
 
+if reports_complete "$ROOT/api/deep_purchase_research/01_pin_interactor_sendpin.txt" "$ROOT/api/deep_purchase_research/02_loymax_url_provider.txt" "$ROOT/api/deep_purchase_research/03_receipt_items_and_details.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_and_auth_server.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_and_receipt_details.txt" "$ROOT/api/deep_purchase_research/01_pin_interactor_references.txt" "$ROOT/api/deep_purchase_research/02_loymax_registration_references.txt" "$ROOT/api/deep_purchase_research/03_receipt_item_references.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_references.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80_references.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_references.txt"; then
+    echo "[SKIP] DEEP PURCHASE HISTORY RESEARCH: все отчёты уже существуют и непустые."
+else
+
 DEEP_DIR="$ROOT/api/deep_purchase_research"
 mkdir -p "$DEEP_DIR"
 
@@ -1458,6 +1462,8 @@ captures, account responses or personal purchase receipts.
 EOF
 
 echo "[INFO] Detailed purchase research reports: $DEEP_DIR"
+
+fi
 
 # ------------------------------------------------------------
 # Count C# files
