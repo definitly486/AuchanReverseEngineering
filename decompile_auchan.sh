@@ -127,11 +127,23 @@ fail() {
 CURRENT_STEP="CHECK APK"
 info "CHECK APK"
 
+# Fingerprint the APK to reuse decompilation output only for the same input.
+file_sha256() {
+    if command -v sha256 >/dev/null 2>&1; then
+        sha256 -q "$1"
+    else
+        sha256sum "$1" | awk '{print $1}'
+    fi
+}
+APK_SHA256=""
+
 if [[ ! -f "$APK" ]]; then
     fail "APK not found: $APK"
 fi
 
 APK="$(cd "$(dirname "$APK")" && pwd)/$(basename "$APK")"
+APK_SHA256="$(file_sha256 "$APK")"
+echo "APK SHA256: $APK_SHA256"
 
 echo "APK: $APK"
 echo "Output: $ROOT"
@@ -244,15 +256,29 @@ info "APK METADATA"
 CURRENT_STEP="APKTOOL DECOMPILATION"
 info "APKTOOL DECOMPILATION"
 
-rm -rf "$APKTOOL_DIR"
-
-if "$APKTOOL" d -f "$APK" -o "$APKTOOL_DIR"; then
-    echo "[OK] Apktool completed"
+APKTOOL_MARKER="$APKTOOL_DIR/.decompile_complete"
+if [[ -f "$APKTOOL_MARKER" &&
+      "$(cat "$APKTOOL_MARKER" 2>/dev/null)" == "$APK_SHA256" &&
+      -s "$APKTOOL_DIR/AndroidManifest.xml" ]]; then
+    echo "[SKIP] Apktool уже декомпилировал этот APK; результат используется повторно."
 else
-    rc=$?
-    echo "[ERROR] Apktool завершился с кодом $rc (см. журнал выше)"
-    echo "$rc" > "$ROOT/apk_analysis/apktool_exit_code.txt"
-    warn "Apktool failed; скрипт продолжает работу"
+    echo "[RUN] Apktool: результат отсутствует, неполный или относится к другому APK."
+    rm -rf "$APKTOOL_DIR"
+    if "$APKTOOL" d -f "$APK" -o "$APKTOOL_DIR"; then
+        if [[ -s "$APKTOOL_DIR/AndroidManifest.xml" ]]; then
+            printf '%s\\n' "$APK_SHA256" > "$APKTOOL_MARKER"
+            rm -f "$ROOT/apk_analysis/apktool_exit_code.txt"
+            echo "[OK] Apktool completed; marker saved"
+        else
+            echo "[ERROR] Apktool завершился без AndroidManifest.xml; результат не будет считаться готовым."
+            echo "incomplete" > "$ROOT/apk_analysis/apktool_exit_code.txt"
+        fi
+    else
+        rc=$?
+        echo "[ERROR] Apktool завершился с кодом $rc (см. журнал выше)"
+        echo "$rc" > "$ROOT/apk_analysis/apktool_exit_code.txt"
+        warn "Apktool failed; скрипт продолжает работу"
+    fi
 fi
 
 if [[ -f "$APKTOOL_DIR/AndroidManifest.xml" ]]; then
@@ -269,24 +295,39 @@ info "JADX DECOMPILATION"
 
 if [[ "$JADX_AVAILABLE" -eq 1 ]]; then
 
-    rm -rf "$JADX_DIR"
+    JADX_MARKER="$JADX_DIR/.decompile_complete"
+    JADX_SOURCE_COUNT=0
+    if [[ -d "$JADX_DIR" ]]; then
+        JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \\( -name '*.java' -o -name '*.kt' \\) | wc -l | tr -d ' ')"
+    fi
 
-    JADX_LOG="$ROOT/logs/jadx.log"
-    if "$JADX" \
-        -d "$JADX_DIR" \
-        --show-bad-code \
-        "$APK" > >(tee "$JADX_LOG") 2>&1; then
-        echo "[OK] JADX completed"
+    if [[ -f "$JADX_MARKER" &&
+          "$(cat "$JADX_MARKER" 2>/dev/null)" == "$APK_SHA256" &&
+          "$JADX_SOURCE_COUNT" -gt 0 ]]; then
+        echo "[SKIP] JADX уже декомпилировал этот APK; найдено исходников: $JADX_SOURCE_COUNT"
     else
-        rc=$?
-        echo "[ERROR] JADX завершился с кодом $rc"
-        echo "$rc" > "$ROOT/apk_analysis/jadx_exit_code.txt"
-        # Keep detailed JADX diagnostics separately for quick review.
-        grep -Ein 'ERROR|WARN|Exception|Caused by|failed|cannot|not supported' "$JADX_LOG" \
-            > "$ROOT/apk_analysis/jadx_errors.txt" || true
-        echo "[INFO] Полный журнал JADX: $JADX_LOG"
-        echo "[INFO] Выжимка ошибок JADX: $ROOT/apk_analysis/jadx_errors.txt"
-        warn "JADX reported errors; скрипт продолжает работу"
+        echo "[RUN] JADX: результат отсутствует, неполный или относится к другому APK."
+        rm -rf "$JADX_DIR"
+        JADX_LOG="$ROOT/logs/jadx.log"
+        if "$JADX" -d "$JADX_DIR" --show-bad-code "$APK" > >(tee "$JADX_LOG") 2>&1; then
+            JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \\( -name '*.java' -o -name '*.kt' \\) | wc -l | tr -d ' ')"
+            if [[ "$JADX_SOURCE_COUNT" -gt 0 ]]; then
+                printf '%s\\n' "$APK_SHA256" > "$JADX_MARKER"
+                rm -f "$ROOT/apk_analysis/jadx_exit_code.txt" "$ROOT/apk_analysis/jadx_errors.txt"
+                echo "[OK] JADX completed; исходников: $JADX_SOURCE_COUNT"
+            else
+                echo "[ERROR] JADX завершился без Java/Kotlin исходников; результат не будет считаться готовым."
+                echo "incomplete" > "$ROOT/apk_analysis/jadx_exit_code.txt"
+            fi
+        else
+            rc=$?
+            echo "[ERROR] JADX завершился с кодом $rc"
+            echo "$rc" > "$ROOT/apk_analysis/jadx_exit_code.txt"
+            grep -Ein 'ERROR|WARN|Exception|Caused by|failed|cannot|not supported' "$JADX_LOG" > "$ROOT/apk_analysis/jadx_errors.txt" || true
+            echo "[INFO] Полный журнал JADX: $JADX_LOG"
+            echo "[INFO] Выжимка ошибок JADX: $ROOT/apk_analysis/jadx_errors.txt"
+            warn "JADX reported errors; скрипт продолжает работу"
+        fi
     fi
 
 else
@@ -900,23 +941,48 @@ while IFS= read -r dll; do
     [[ -f "$dll" ]] || continue
 
     name="$(basename "$dll" .dll)"
-
-    echo
-    echo "Decompiling: $name"
-
     DEST="$CS_DIR/$name"
+    DLL_MARKER="$DEST/.decompile_complete"
+    DLL_SHA256="$(file_sha256 "$dll")"
+    EXISTING_CS=0
+    if [[ -d "$DEST" ]]; then
+        EXISTING_CS="$(find "$DEST" -type f -name '*.cs' | wc -l | tr -d ' ')"
+    fi
+
+    # Reuse legacy C# output too; new results receive per-DLL hash markers.
+    if [[ "$EXISTING_CS" -gt 0 ]]; then
+        if [[ -f "$DLL_MARKER" ]]; then
+            if [[ "$(cat "$DLL_MARKER" 2>/dev/null)" == "$DLL_SHA256" ]]; then
+                echo "[SKIP] ILSpy: $name уже декомпилирован (C# файлов: $EXISTING_CS)"
+                continue
+            fi
+            echo "[RUN] ILSpy: DLL $name изменилась — повторная декомпиляция."
+        else
+            printf '%s\\n' "$DLL_SHA256" > "$DLL_MARKER"
+            echo "[SKIP] ILSpy: $name уже имеет C# исходники (старый результат без маркера); принят как готовый."
+            continue
+        fi
+    else
+        echo "[RUN] ILSpy: декомпиляция $name"
+    fi
 
     mkdir -p "$DEST"
-
-    "$ILSPYCMD" \
-        -p \
-        -o "$DEST" \
-        "$dll" || {
-            rc=$?
-            echo "[ERROR] ILSpy failed for $name (exit code $rc)"
-            printf '%s\t%s\n' "$name" "$rc" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
-            warn "ILSpy failed: $name; скрипт продолжает работу"
-        }
+    rm -f "$DLL_MARKER"
+    if "$ILSPYCMD" -p -o "$DEST" "$dll"; then
+        NEW_CS="$(find "$DEST" -type f -name '*.cs' | wc -l | tr -d ' ')"
+        if [[ "$NEW_CS" -gt 0 ]]; then
+            printf '%s\\n' "$DLL_SHA256" > "$DLL_MARKER"
+            echo "[OK] ILSpy: $name; C# файлов: $NEW_CS"
+        else
+            echo "[ERROR] ILSpy: $name завершился без C# исходников."
+            printf '%s\\t%s\\n' "$name" "no-source-files" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
+        fi
+    else
+        rc=$?
+        echo "[ERROR] ILSpy failed for $name (exit code $rc)"
+        printf '%s\\t%s\\n' "$name" "$rc" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
+        warn "ILSpy failed: $name; скрипт продолжает работу"
+    fi
 
 done < "$ROOT/dotnet/metadata/dll_list.txt"
 
