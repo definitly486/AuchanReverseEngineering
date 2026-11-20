@@ -225,7 +225,6 @@ mkdir -p \
     "$ROOT/api" \
     "$ROOT/docs" \
     "$ROOT/logs"
-    "$ROOT/logs"
 
 # ------------------------------------------------------------
 # Extract APK
