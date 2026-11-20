@@ -1,37 +1,18 @@
 # Purchase history API
 
-Known endpoint:
+Source-level findings:
 
-POST /ecom/lk/loyalty/history
+- The decompiled interface declares a relative route for `LoyaltyHistory`.
+- The request sends the `X-Token-CMD` header using the Token80 value obtained
+  through the application's token service.
+- The history service maps `LoymaxHistoryResponseDto` into purchase models.
+- Filter id `2` is identified as purchases; filter id `6` as stamp operations
+  in the reverse-engineering notes. Verify against the request-building code.
 
-Known header:
+The final URL must be determined from the dependency registration for
+`ILoymaxLoyaltyApi`. Do not assume `/ecom` belongs in the route or base URL
+until the exact provider used by that client has been identified.
 
-X-Token-CMD: Token80
-
-Known request:
-
-{
-  "channel": "M",
-  "pagination": {
-    "offset": 0,
-    "limit": 10
-  },
-  "filter": {
-    "id": 2
-  }
-}
-
-Known pagination:
-
-ItemsPerPage = 10
-
-Offsets:
-
-0, 10, 20, 30 ...
-
-Filter id 2: Purchases
-
-Filter id 6: Stamp operations
-
-Response pagination and all server fields must be verified
-against complete responses.
+The request body, pagination and receipt-detail request must be verified
+against `LoyaltyProgramPurchasesHistoryService.cs` and the related DTOs.
+A history record is not necessarily an itemized receipt.

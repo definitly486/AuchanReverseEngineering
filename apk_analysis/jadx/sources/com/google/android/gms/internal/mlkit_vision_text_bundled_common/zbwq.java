@@ -19,16 +19,12 @@ final class zbwq extends zbwr {
         return Float.intBitsToFloat(this.zba.getInt(obj, j));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbws.zbi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbws.zbj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Failed to replace arg (r3v0 'z' boolean A[IMMUTABLE_TYPE, METHOD_ARGUMENT]) for method inline: com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbws.zbi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 boolean)' in method call: com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbws.zbj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.mlkit_vision_text_bundled_common.zbwr
     public final void zbc(Object obj, long j, boolean z) {
         if (zbws.zbb) {
-            zbws.zbi(obj, j, z);
+            zbws.zbD(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
-            zbws.zbj(obj, j, z);
+            zbws.zbE(obj, j, z ? (byte) 1 : (byte) 0);
         }
     }
 

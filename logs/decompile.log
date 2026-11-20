@@ -77077,3 +77077,2300 @@ Next steps:
 
 Do not upload the original APK, private traffic captures,
 tokens, cookies or personal purchase data.
+[INFO] Старт: пятница, 20 ноября 2026 г. 19:51:16 (MSK)
+[INFO] Bash: 5.3.20(0)-release
+[INFO] FreeBSD: FreeBSD  15.1-RELEASE FreeBSD 15.1-RELEASE releng/15.1-n283562-96841ea08dcf GENERIC amd64
+[INFO] Лог: /home/definitly/AuchanReverseEngineering/logs/decompile.log
+
+============================================================
+CHECK APK
+============================================================
+APK: /home/definitly/auchan.apk
+Output: /home/definitly/AuchanReverseEngineering
+
+============================================================
+CHECK TOOLS
+============================================================
+[OK] unzip: /usr/bin/unzip
+[OK] git: /usr/local/bin/git
+[OK] java: /usr/local/bin/java
+[OK] python3: /usr/local/bin/python3
+[OK] apktool: /usr/local/bin/apktool
+[OK] jadx: /usr/local/bin/jadx
+
+============================================================
+CREATE DIRECTORIES
+============================================================
+
+============================================================
+EXTRACT APK
+============================================================
+
+============================================================
+APK METADATA
+============================================================
+
+============================================================
+APKTOOL DECOMPILATION
+============================================================
+I: Using Apktool 3.0.3 on auchan.apk with 6 threads
+I: Baksmaling classes.dex...
+I: Baksmaling classes2.dex...
+I: Baksmaling classes3.dex...
+I: Loading resource table...
+I: Baksmaling classes4.dex...
+I: Decoding value resources...
+I: Loading resource table from file: /home/definitly/.local/share/apktool/framework/1.apk
+I: Decoding file resources...
+I: Generating values XMLs...
+I: Decoding AndroidManifest.xml with resources...
+I: Copying original files...
+I: Copying assets...
+I: Copying lib...
+I: Copying unknown files...
+[OK] Apktool completed
+
+============================================================
+JADX DECOMPILATION
+============================================================
+INFO  - loading ...
+INFO  - processing ...
+INFO  - progress: 0 of 13728 (0%)INFO  - progress: 840 of 13728 (6%)INFO  - progress: 1097 of 13728 (7%)INFO  - progress: 2029 of 13728 (14%)INFO  - progress: 3159 of 13728 (23%)INFO  - progress: 3176 of 13728 (23%)INFO  - progress: 3309 of 13728 (24%)INFO  - progress: 3644 of 13728 (26%)INFO  - progress: 4190 of 13728 (30%)INFO  - progress: 4718 of 13728 (34%)INFO  - progress: 5158 of 13728 (37%)INFO  - progress: 5349 of 13728 (38%)INFO  - progress: 5664 of 13728 (41%)INFO  - progress: 5887 of 13728 (42%)INFO  - progress: 6180 of 13728 (45%)INFO  - progress: 6545 of 13728 (47%)INFO  - progress: 6884 of 13728 (50%)INFO  - progress: 7165 of 13728 (52%)INFO  - progress: 7455 of 13728 (54%)INFO  - progress: 7667 of 13728 (55%)INFO  - progress: 7893 of 13728 (57%)INFO  - progress: 8200 of 13728 (59%)INFO  - progress: 8384 of 13728 (61%)INFO  - progress: 8384 of 13728 (61%)INFO  - progress: 8405 of 13728 (61%)INFO  - progress: 9164 of 13728 (66%)INFO  - progress: 9336 of 13728 (68%)INFO  - progress: 9472 of 13728 (68%)INFO  - progress: 9613 of 13728 (70%)INFO  - progress: 9761 of 13728 (71%)INFO  - progress: 9915 of 13728 (72%)INFO  - progress: 10148 of 13728 (73%)INFO  - progress: 10393 of 13728 (75%)INFO  - progress: 10538 of 13728 (76%)INFO  - progress: 10696 of 13728 (77%)INFO  - progress: 10842 of 13728 (78%)INFO  - progress: 10877 of 13728 (79%)INFO  - progress: 10908 of 13728 (79%)INFO  - progress: 10985 of 13728 (80%)INFO  - progress: 10985 of 13728 (80%)INFO  - progress: 10996 of 13728 (80%)INFO  - progress: 11020 of 13728 (80%)INFO  - progress: 11020 of 13728 (80%)INFO  - progress: 11023 of 13728 (80%)INFO  - progress: 11023 of 13728 (80%)INFO  - progress: 11023 of 13728 (80%)INFO  - progress: 11023 of 13728 (80%)INFO  - progress: 11024 of 13728 (80%)INFO  - progress: 11024 of 13728 (80%)INFO  - progress: 11072 of 13728 (80%)INFO  - progress: 11280 of 13728 (82%)INFO  - progress: 11497 of 13728 (83%)INFO  - progress: 11911 of 13728 (86%)INFO  - progress: 12187 of 13728 (88%)INFO  - progress: 12428 of 13728 (90%)INFO  - progress: 12605 of 13728 (91%)INFO  - progress: 12731 of 13728 (92%)INFO  - progress: 12968 of 13728 (94%)INFO  - progress: 13086 of 13728 (95%)INFO  - progress: 13148 of 13728 (95%)INFO  - progress: 13249 of 13728 (96%)INFO  - progress: 13292 of 13728 (96%)Принудительно прекращен
+[ERROR] JADX завершился с кодом 137
+[INFO] Полный журнал JADX: /home/definitly/AuchanReverseEngineering/logs/jadx.log
+[INFO] Выжимка ошибок JADX: /home/definitly/AuchanReverseEngineering/apk_analysis/jadx_errors.txt
+[WARNING] JADX reported errors; скрипт продолжает работу
+
+============================================================
+DEX FILES
+============================================================
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes2.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes3.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes4.dex
+
+============================================================
+EXTRACT DOTNET DLL
+============================================================
+
+============================================================
+CHECK PREVIOUS DLL EXTRACTION
+============================================================
+DLL count: 302
+
+============================================================
+NATIVE LIBRARIES
+============================================================
+
+============================================================
+ASSEMBLY STORE EXTRACTION
+============================================================
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/arm64-v8a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27136 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 265728 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4712960 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2565632 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/armeabi-v7a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27648 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 266240 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4631552 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2281984 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+Assembly Store candidates: 2
+Assembly Store extracted: 2
+[INFO] DLL count after Assembly Store extraction: 302
+
+============================================================
+NATIVE ELF INFORMATION
+============================================================
+
+============================================================
+MONO AOT NATIVE-IMAGE ANALYSIS
+============================================================
+Mono AOT native-image libraries: 302
+Mono AOT string report: /home/definitly/AuchanReverseEngineering/native/aot_analysis
+[INFO] Raw string dumps are local-only and will be excluded from Git.
+
+============================================================
+DLL METADATA
+============================================================
+
+============================================================
+ILSPY C# DECOMPILATION
+============================================================
+
+Decompiling: System.Collections.Immutable
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Transactions.Local_0057
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Scanflow.BarcodeCapture.Maui.Android_0091
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.MemoryMappedFiles
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: CsvHelper_0073
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Resources_0094
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Fragment
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: DryIoc
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Android.Play.Review_0140
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.CSharp_0000
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Console_0010
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Http_0028
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Http.Json
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.RangeSlider.Droid
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ConstraintLayout.Core_0118
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NLog.Targets.ConcurrentFile_0085
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ViewPager2
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: CsvHelper
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.CSharp
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.View_0115
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Console
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Polly
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.RecyclerView_0131
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Threading.Channels
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebSockets.Client
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.IsolatedStorage_0021
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Xml.Linq
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Serialization.Primitives_0048
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Requests
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.RegularExpressions_0054
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Common.Jvm_0125
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Linq.Expressions_0024
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Reflection.Metadata
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.Specialized
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Drawing.Primitives_0015
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CardView_0116
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Memory_0026
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Java.Interop
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Reactive
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NLog
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.LiveData.Core_0126
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Bindings.Input-Mask-Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.GridLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Activity
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Runtime.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ViewPager2_0135
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Packaging
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.RangeSlider.Droid_0145
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Android.Material
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Scanflow.DataCapture.Core.Maui_0092
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Polly.Core_0088
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Websocket.Client
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.NonGeneric_0003
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: AsyncAwaitBestPractices
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.Annotations_0006
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.Json_0053
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Views.Android_0097
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Memory
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache.Core_0068
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Reactive_0104
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Activity_0109
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Yandex.MapKit.Lite_0147
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Refit
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Quic
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.AI.Edge.LiteRT.Support.API
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Fragment_0123
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Plugin.StoreReview
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Newtonsoft.Json.Bson
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android.Export_0063
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.AI.Edge.LiteRT.API
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Appmetrica.Android_0070
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CoordinatorLayout_0119
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: _Microsoft.Android.Resource.Designer
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: AsyncAwaitBestPractices_0071
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.FileSystem.Watcher
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Sockets
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Compression_0019
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Security.Claims
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.DiagnosticSource_0012
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.IsolatedStorage
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Auchan.Android.Net
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Sockets_0035
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Biometric_0111
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Linq
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Java.Interop_0062
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android.Runtime_0064
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Auchan.Common.Net
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Plugin.StoreReview_0086
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Newtonsoft.Json.Bson_0083
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Auchan.Common.Net_0148
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Websocket.Client_0105
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Numerics_0046
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Maui.Graphics
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Kotlin.StdLib_0143
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Android.Material_0139
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.provider.e_sqlite3
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Biometric
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.NetworkInformation_0030
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime_0049
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Process_0127
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Splat_0098
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Formats.Asn1
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Web.HttpUtility
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Polly_0087
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Refit.Newtonsoft.Json_0090
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.RecyclerView
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: ZeroBranch.SwipeLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.SceneGraph_0095
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.Video_0114
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.InteropServices
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.ViewModel.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.Primitives
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.KotlinX.Coroutines.Core.Jvm_0144
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.SwipeRefreshLayout_0133
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Resources.Writer_0044
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.AI.Edge.LiteRT.API_0137
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache_0067
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Auchan.Android.Net_0150
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Security.Claims_0050
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.TraceSource
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Resources
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Android.Glide.Transformations_0107
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Common.Jvm
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.Process
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache.Sqlite3
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.Encodings.Web
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Compression.Brotli_0018
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Web.HttpUtility_0058
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Linq_0025
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Compression
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android.Runtime
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebSockets_0038
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ConstraintLayout.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.core_0101
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.DrawerLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.NonGeneric
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: DryIoc_0074
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.IO.RecyclableMemoryStream
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Serialization.Primitives
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Refit_0089
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.FileSystem.Watcher_0020
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Views.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.Concurrent
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.Specialized_0004
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Http.Json_0027
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.batteries_v2
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Akavache.Sqlite3_0069
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: PhotoView
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Refit.Newtonsoft.Json
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Android.Glide_0106
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Numerics
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NLog_0084
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Drawing
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Xml_0042
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.Concurrent_0001
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Splat
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Uri_0040
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Skottie_0096
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.GooglePlayServices.Tasks
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Data.Common_0011
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Compression.Brotli
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.DiagnosticSource
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebSockets
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Android.Glide
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.Primitives_0007
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.Core_0113
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp_0093
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.provider.e_sqlite3_0102
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Maui.Graphics_0080
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NanoXLSX_0081
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Quic_0032
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.GridLayout_0124
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CardView
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.NetworkInformation
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Packaging_0103
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Drawing.Primitives
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Scanflow.DataCapture.Core.Maui
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Uri
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Process
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Appmetrica.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Loader
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections_0005
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.NameResolution_0029
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Ongakuer.CircleIndicator
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Xml.Linq
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Yandex.MapKit.Lite
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System_0060
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Primitives
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CoordinatorLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Guava.ListenableFuture_0141
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Newtonsoft.Json_0082
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Newtonsoft.Json
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Security
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.CoreLib_0061
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Threading_0056
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.Encodings.Web_0052
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.KotlinX.Coroutines.Core.Jvm
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Threading.Channels_0055
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Xml.Linq_0059
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Reflection.Metadata_0043
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.SwipeRefreshLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Bindings.Input-Mask-Android_0136
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.SavedState.SavedState.Android_0132
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Polly.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Http
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.TraceSource_0014
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Security.Cryptography
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebSockets.Client_0037
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.Annotations
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: XamarinShortcutBadger
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Pipelines_0023
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebHeaderCollection_0036
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Xml
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel_0009
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Kotlin.StdLib
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ConstraintLayout_0117
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Transactions.Local
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Diagnostics.Process_0013
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.LiveData.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android.Export
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.CoreLib
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.SavedState.SavedState.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.Core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLite-net
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Drawing_0016
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLite-net_0099
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.NameResolution
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.Video
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NLog.Targets.ConcurrentFile
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.MemoryMappedFiles_0022
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Camera.View
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.Skottie
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Google.FlexboxLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ViewPager_0134
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.DrawerLayout_0122
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.TypeConverter
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Serialization.Formatters_0047
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Loader_0130
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.Runtime.Android_0128
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Private.Xml.Linq_0041
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Browser
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Scanflow.BarcodeCapture.Maui.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android_0065
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Linq.Expressions
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CursorAdapter
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.batteries_v2_0100
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ObjectModel_0039
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Data.Common
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.CursorAdapter_0121
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Android.Glide.Transformations
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Resources.Writer
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: ZeroBranch.SwipeLayout_0149
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Mono.Android
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: CSharpFunctionalExtensions
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.RegularExpressions
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ViewPager
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.AppCompat
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.AppCompat_0110
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: _Microsoft.Android.Resource.Designer_0066
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Requests_0033
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ObjectModel
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Maui.Essentials_0079
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: CSharpFunctionalExtensions_0072
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: PhotoView_0108
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Text.Json
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Core_0120
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.Serialization.Formatters
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Threading
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SQLitePCLRaw.core
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.IO.RecyclableMemoryStream_0078
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: XamarinShortcutBadger_0146
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Extensions.Logging.Abstractions
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Collections.Immutable_0002
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.ConstraintLayout
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Security_0034
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.ComponentModel.TypeConverter_0008
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.GooglePlayServices.Tasks_0142
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Runtime.InteropServices_0045
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Security.Cryptography_0051
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Browser_0112
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Formats.Asn1_0017
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: NanoXLSX
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Extensions.Logging.Abstractions_0077
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Microsoft.Maui.Essentials
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Ongakuer.CircleIndicator_0076
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Android.Play.Review
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.Guava.ListenableFuture
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.WebHeaderCollection
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Google.FlexboxLayout_0075
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: SkiaSharp.SceneGraph
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.Net.Primitives_0031
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: Xamarin.Google.AI.Edge.LiteRT.Support.API_0138
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+Decompiling: System.IO.Pipelines
+You are not using the latest version of the tool, please update.
+Latest version is '11.2.0.10050' (yours is '9.1.0.7988')
+
+============================================================
+SEARCH API ENDPOINTS
+============================================================
+
+============================================================
+SEARCH AUTHENTICATION
+============================================================
+
+============================================================
+SEARCH PURCHASE HISTORY
+============================================================
+
+============================================================
+SEARCH DTO
+============================================================
+
+============================================================
+SEARCH LOYMAX CONFIGURATION
+============================================================
+
+============================================================
+COUNT SOURCE FILES
+============================================================
+C# files: 26093
+DLL files: 302
+
+============================================================
+GENERATE DOCUMENTATION
+============================================================
+
+============================================================
+CREATE GITIGNORE
+============================================================
+
+============================================================
+GIT INITIALIZATION
+============================================================
+
+Git status:
+M  .gitignore
+A  api/auchan_purchase_research.md
+A  api/base_url_search.txt
+A  api/loymax_registration_search.txt
+M  api/purchase_history.md
+A  api/receipt_details_search.txt
+A  api/token_flow_search.txt
+M  apk_analysis/dex_files.txt
+D  apk_analysis/jadx/sources/androidx/appcompat/app/AppCompatActivity.java
+D  apk_analysis/jadx/sources/androidx/appcompat/app/AppCompatDelegate.java
+D  apk_analysis/jadx/sources/androidx/appcompat/app/AppCompatDelegateImpl.java
+D  apk_analysis/jadx/sources/androidx/appcompat/app/AppCompatViewInflater.java
+D  apk_analysis/jadx/sources/androidx/appcompat/app/ToolbarActionBar.java
+D  apk_analysis/jadx/sources/androidx/appcompat/app/WindowDecorActionBar.java
+D  apk_analysis/jadx/sources/androidx/appcompat/widget/ActionBarOverlayLayout.java
+D  apk_analysis/jadx/sources/androidx/appcompat/widget/ToolbarWidgetWrapper.java
+D  apk_analysis/jadx/sources/androidx/biometric/BiometricFragment.java
+D  apk_analysis/jadx/sources/androidx/biometric/FingerprintDialogFragment.java
+D  apk_analysis/jadx/sources/androidx/camera/video/VideoCapture.java
+D  apk_analysis/jadx/sources/androidx/camera/view/PreviewStreamStateObserver.java
+D  apk_analysis/jadx/sources/androidx/camera/view/SurfaceViewImplementation.java
+D  apk_analysis/jadx/sources/androidx/camera/view/TextureViewImplementation.java
+D  apk_analysis/jadx/sources/androidx/constraintlayout/core/widgets/analyzer/DependencyGraph.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/BackStackRecord.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/DefaultSpecialEffectsController$AnimationEffect$onCommit$1.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentContainerView.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentController.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentHostCallback.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentLayoutInflaterFactory.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentLifecycleCallbacksDispatcher.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentManagerViewModel.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentPagerAdapter.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentStateManager.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentStatePagerAdapter.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentStore.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentTabHost.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentTransaction.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/FragmentViewLifecycleOwner.java
+D  apk_analysis/jadx/sources/androidx/fragment/app/strictmode/FragmentStrictMode.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/BlockRunner.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/CoroutineLiveDataKt.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/FlowLiveDataConversions.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/SavedStateViewModelFactory.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/ViewModelProviders.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/ViewModelStores.java
+D  apk_analysis/jadx/sources/androidx/lifecycle/WithLifecycleStateKt.java
+D  apk_analysis/jadx/sources/androidx/recyclerview/widget/RecyclerViewAccessibilityDelegate.java
+D  apk_analysis/jadx/sources/androidx/room/BaseRoomConnectionManager.java
+D  apk_analysis/jadx/sources/androidx/room/CoroutinesRoom$Companion$execute$1.java
+D  apk_analysis/jadx/sources/androidx/room/CoroutinesRoom$Companion$execute$3.java
+D  apk_analysis/jadx/sources/androidx/room/CoroutinesRoom.java
+D  apk_analysis/jadx/sources/androidx/room/Room.java
+D  apk_analysis/jadx/sources/androidx/room/RoomConnectionManager.java
+D  apk_analysis/jadx/sources/androidx/room/RoomDatabaseKt.java
+D  apk_analysis/jadx/sources/androidx/room/RoomDatabaseKt__RoomDatabaseKt.java
+D  apk_analysis/jadx/sources/androidx/room/RoomDatabaseKt__RoomDatabase_androidKt.java
+D  apk_analysis/jadx/sources/androidx/room/RoomOpenHelper.java
+D  apk_analysis/jadx/sources/androidx/room/coroutines/FlowUtil.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtilKt.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt$performBlocking$1$invokeSuspend$$inlined$internalPerform$1.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt$performInTransactionSuspending$2$invokeSuspend$$inlined$internalPerform$1.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt$performInTransactionSuspending$3$invokeSuspend$$inlined$internalPerform$1.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt$performSuspending$$inlined$compatCoroutineExecute$DBUtil__DBUtil_androidKt$1.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt$performSuspending$lambda$1$$inlined$internalPerform$1.java
+D  apk_analysis/jadx/sources/androidx/room/util/DBUtil__DBUtil_androidKt.java
+D  apk_analysis/jadx/sources/androidx/security/crypto/EncryptedSharedPreferences.java
+D  apk_analysis/jadx/sources/androidx/transition/TransitionInflater.java
+D  apk_analysis/jadx/sources/androidx/work/CoroutineWorker.java
+D  apk_analysis/jadx/sources/androidx/work/impl/Schedulers.java
+D  apk_analysis/jadx/sources/androidx/work/impl/UnfinishedWorkListenerKt.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkContinuationImpl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkDatabase_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkManagerImplExtKt$WorkManagerImpl$1.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkManagerImplExtKt.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkerUpdater.java
+D  apk_analysis/jadx/sources/androidx/work/impl/WorkerWrapper$runWorker$result$1.java
+D  apk_analysis/jadx/sources/androidx/work/impl/background/greedy/GreedyScheduler.java
+D  apk_analysis/jadx/sources/androidx/work/impl/background/systemalarm/ConstraintsCommandHandler.java
+D  apk_analysis/jadx/sources/androidx/work/impl/background/systemalarm/DelayMetCommandHandler.java
+D  apk_analysis/jadx/sources/androidx/work/impl/background/systemjob/JobSchedulerExtKt.java
+D  apk_analysis/jadx/sources/androidx/work/impl/background/systemjob/SystemJobScheduler.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/DependencyDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/PreferenceDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/RawWorkInfoDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/SystemIdInfoDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/WorkNameDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/WorkProgressDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/WorkSpecDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/model/WorkTagDao_Impl.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/CancelWorkRunnable.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/EnqueueRunnable.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/EnqueueUtilsKt.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/ForceStopRunnable.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/StatusRunnable.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/WorkForegroundKt.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/WorkForegroundUpdater.java
+D  apk_analysis/jadx/sources/androidx/work/impl/utils/WorkProgressUpdater.java
+D  apk_analysis/jadx/sources/androidx/work/impl/workers/ConstraintTrackingWorker.java
+D  apk_analysis/jadx/sources/androidx/work/multiprocess/RemoteWorkManager.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/GlideContext.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/RegistryFactory.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/RequestBuilder.java
+M  apk_analysis/jadx/sources/com/bumptech/glide/disklrucache/DiskLruCache.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/load/engine/DecodeJob.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/load/engine/Engine.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/load/resource/gif/ByteBufferGifDecoder.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/load/resource/gif/GifFrameLoader.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/manager/LifecycleRequestManagerRetriever.java
+D  apk_analysis/jadx/sources/com/bumptech/glide/request/SingleRequest.java
+D  apk_analysis/jadx/sources/com/google/android/datatransport/runtime/DaggerTransportRuntimeComponent.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/SupportErrorDialogFragment.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zaab.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zaai.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zaav.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zaaw.java
+M  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zabk.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zabm.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zabn.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zaby.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/api/internal/zzd.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/internal/GmsClient.java
+D  apk_analysis/jadx/sources/com/google/android/gms/common/moduleinstall/internal/zam.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzaj.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzak.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzal.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzam.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzan.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzao.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzap.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzaq.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzar.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzat.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzau.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbo.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbp.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbr.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbs.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbt.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbu.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzbz.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzcb.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzce.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzn.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/location/zzt.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_common/zzkr.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode/zzox.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode/zzws.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode_bundled/zzcv.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode_bundled/zzfe.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode_bundled/zzfp.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode_bundled/zzfq.java
+M  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_barcode_bundled/zzgx.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_common/zzhe.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_common/zzmk.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zblu.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbsr.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbvd.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbvp.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbvq.java
+M  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbwp.java
+M  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_bundled_common/zbwq.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_common/zzmq.java
+D  apk_analysis/jadx/sources/com/google/android/gms/internal/mlkit_vision_text_common/zzuf.java
+D  apk_analysis/jadx/sources/com/google/android/gms/location/LocationServices.java
+D  apk_analysis/jadx/sources/com/google/android/gms/signin/internal/SignInClientImpl.java
+D  apk_analysis/jadx/sources/com/google/android/libraries/vision/visionkit/pipeline/zbbz.java
+D  apk_analysis/jadx/sources/com/google/android/libraries/vision/visionkit/pipeline/zbdo.java
+D  apk_analysis/jadx/sources/com/google/android/material/appbar/CollapsingToolbarLayout.java
+D  apk_analysis/jadx/sources/com/google/android/material/appbar/MaterialToolbar.java
+D  apk_analysis/jadx/sources/com/google/android/material/bottomappbar/BottomAppBar.java
+D  apk_analysis/jadx/sources/com/google/android/material/bottomnavigation/BottomNavigationView.java
+D  apk_analysis/jadx/sources/com/google/android/material/bottomsheet/BottomSheetDragHandleView.java
+D  apk_analysis/jadx/sources/com/google/android/material/button/MaterialButtonToggleGroup.java
+D  apk_analysis/jadx/sources/com/google/android/material/chip/Chip.java
+D  apk_analysis/jadx/sources/com/google/android/material/chip/ChipGroup.java
+D  apk_analysis/jadx/sources/com/google/android/material/color/MaterialColorUtilitiesHelper.java
+M  apk_analysis/jadx/sources/com/google/android/material/color/utilities/Cam16.java
+D  apk_analysis/jadx/sources/com/google/android/material/datepicker/MonthsPagerAdapter.java
+D  apk_analysis/jadx/sources/com/google/android/material/internal/NavigationMenuItemView.java
+D  apk_analysis/jadx/sources/com/google/android/material/internal/NavigationMenuPresenter.java
+D  apk_analysis/jadx/sources/com/google/android/material/navigation/NavigationView.java
+D  apk_analysis/jadx/sources/com/google/android/material/navigationrail/NavigationRailView.java
+D  apk_analysis/jadx/sources/com/google/android/material/search/SearchBarAnimationHelper.java
+D  apk_analysis/jadx/sources/com/google/android/material/search/SearchView.java
+D  apk_analysis/jadx/sources/com/google/android/material/search/SearchViewAnimationHelper.java
+M  apk_analysis/jadx/sources/com/google/android/material/shadow/ShadowDrawableWrapper.java
+D  apk_analysis/jadx/sources/com/google/android/material/textfield/DropdownMenuEndIconDelegate.java
+D  apk_analysis/jadx/sources/com/google/android/material/textfield/IndicatorViewController.java
+D  apk_analysis/jadx/sources/com/google/android/material/textfield/MaterialAutoCompleteTextView.java
+D  apk_analysis/jadx/sources/com/google/android/material/textfield/StartCompoundLayout.java
+D  apk_analysis/jadx/sources/com/google/android/material/theme/MaterialComponentsViewInflater.java
+D  apk_analysis/jadx/sources/com/google/android/material/timepicker/ClockFaceView.java
+D  apk_analysis/jadx/sources/com/google/android/material/timepicker/MaterialTimePicker.java
+D  apk_analysis/jadx/sources/com/google/android/material/timepicker/TimePickerTextInputPresenter.java
+D  apk_analysis/jadx/sources/com/google/common/cache/CacheBuilder.java
+D  apk_analysis/jadx/sources/com/google/common/cache/CacheBuilderSpec.java
+D  apk_analysis/jadx/sources/com/google/common/collect/AbstractTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ArrayTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/CollectCollectors.java
+D  apk_analysis/jadx/sources/com/google/common/collect/Collections2.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ConcurrentHashMultiset.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ContiguousSet.java
+D  apk_analysis/jadx/sources/com/google/common/collect/DenseImmutableTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/DescendingImmutableSortedMultiset.java
+D  apk_analysis/jadx/sources/com/google/common/collect/EmptyContiguousSet.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ExplicitOrdering.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ImmutableEnumMap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ImmutableRangeMap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ImmutableRangeSet.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ImmutableSortedMap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/ImmutableSortedMultiset.java
+D  apk_analysis/jadx/sources/com/google/common/collect/LinkedHashMultimap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/LinkedListMultimap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/MultimapBuilder.java
+D  apk_analysis/jadx/sources/com/google/common/collect/Multimaps.java
+D  apk_analysis/jadx/sources/com/google/common/collect/RegularContiguousSet.java
+D  apk_analysis/jadx/sources/com/google/common/collect/RegularImmutableSortedMultiset.java
+D  apk_analysis/jadx/sources/com/google/common/collect/RegularImmutableTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/SparseImmutableTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/TreeBasedTable.java
+D  apk_analysis/jadx/sources/com/google/common/collect/TreeMultiset.java
+D  apk_analysis/jadx/sources/com/google/common/collect/TreeRangeMap.java
+D  apk_analysis/jadx/sources/com/google/common/collect/TreeRangeSet.java
+D  apk_analysis/jadx/sources/com/google/common/eventbus/SubscriberRegistry.java
+D  apk_analysis/jadx/sources/com/google/common/graph/ImmutableNetwork.java
+D  apk_analysis/jadx/sources/com/google/common/graph/StandardMutableNetwork.java
+D  apk_analysis/jadx/sources/com/google/common/io/Files.java
+D  apk_analysis/jadx/sources/com/google/common/io/MoreFiles.java
+D  apk_analysis/jadx/sources/com/google/common/net/MediaType.java
+D  apk_analysis/jadx/sources/com/google/common/reflect/ClassPath.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/AbstractCatchingFuture.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/AbstractTransformFuture.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/ClosingFuture.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/CycleDetectingLockFactory.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/ExecutionSequencer.java
+D  apk_analysis/jadx/sources/com/google/common/util/concurrent/ServiceManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/ConfigurationFips140v2.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/ConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/KeysetManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AeadConfig.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AeadConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AeadKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AesCtrHmacAeadKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AesEaxKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AesGcmKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/AesGcmSivKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/ChaCha20Poly1305KeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/KmsAeadKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/KmsEnvelopeAead.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/KmsEnvelopeAeadKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/LegacyKmsAeadProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/LegacyKmsEnvelopeAeadProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/XChaCha20Poly1305KeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/AesCtrHmacAeadProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/AesEaxProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/AesGcmProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/AesGcmSivProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/ChaCha20Poly1305ProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/LegacyFullAead.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/aead/internal/XChaCha20Poly1305ProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/daead/internal/AesSivProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/daead/internal/LegacyFullDeterministicAead.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/EciesAeadHkdfPrivateKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/HpkeProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/HybridConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/HybridKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/internal/EciesProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/internal/HpkePrivateKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/internal/LegacyFullHybridDecrypt.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/hybrid/internal/LegacyFullHybridEncrypt.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/internal/LegacyKeyManagerImpl.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwkSetConverter.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtEcdsaProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtEcdsaSignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtHmacProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtRsaSsaPkcs1ProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtRsaSsaPkcs1SignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtRsaSsaPssProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtRsaSsaPssSignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/jwt/JwtSignatureConfig.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/keyderivation/internal/PrfBasedKeyDerivationKeyProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/HmacKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/MacConfig.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/MacConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/MacKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/internal/AesCmacProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/internal/HmacProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/mac/internal/LegacyFullMac.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/AesCmacPrfKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/HmacPrfKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/PrfConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/PrfKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/internal/AesCmacPrfProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/internal/HkdfPrfProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/prf/internal/HmacPrfProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/Api.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/ArrayDecoders.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/Enum.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/ManifestSchemaFactory.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/MessageSchema.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/MessageSetSchema.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/SchemaUtil.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/shaded/protobuf/Type.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/EcdsaSignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/Ed25519PrivateKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/RsaSsaPkcs1SignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/RsaSsaPssSignKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/SignatureConfigurationV0.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/SignatureKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/SignaturePemKeysetReader.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/EcdsaProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/Ed25519ProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/LegacyFullSign.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/LegacyFullVerify.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/RsaSsaPkcs1ProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/signature/internal/RsaSsaPssProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/streamingaead/AesCtrHmacStreamingKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/streamingaead/AesGcmHkdfStreamingKeyManager.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/streamingaead/StreamingAeadKeyTemplates.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/streamingaead/internal/AesCtrHmacStreamingProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/crypto/tink/streamingaead/internal/AesGcmHkdfStreamingProtoSerialization.java
+D  apk_analysis/jadx/sources/com/google/gson/GsonBuilder.java
+D  apk_analysis/jadx/sources/com/google/gson/internal/bind/MapTypeAdapterFactory.java
+D  apk_analysis/jadx/sources/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/calculator/proto/StableDiffusionIterateCalculatorOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/TensorsToSegmentationCalculatorOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/audio/audioclassifier/proto/AudioClassifierGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/components/containers/proto/LandmarksDetectionResultProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/text/textclassifier/proto/TextClassifierGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/text/textembedder/proto/TextEmbedderGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/facegeometry/calculators/proto/FaceGeometryPipelineCalculatorOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/facegeometry/proto/FaceGeometryGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/facelandmarker/proto/FaceBlendshapesGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/facelandmarker/proto/FaceLandmarkerGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/gesturerecognizer/proto/GestureClassifierGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/gesturerecognizer/proto/GestureEmbedderGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/gesturerecognizer/proto/GestureRecognizerGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/gesturerecognizer/proto/HandGestureRecognizerGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/holisticlandmarker/proto/HolisticLandmarkerGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imageclassifier/proto/ImageClassifierGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imageembedder/proto/ImageEmbedderGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imagegenerator/proto/ConditionedImageGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imagegenerator/proto/ControlPluginGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imagegenerator/proto/ImageGeneratorGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/imagesegmenter/proto/ImageSegmenterGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/objectdetector/proto/ObjectDetectorOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/tasks/vision/poselandmarker/proto/PoseLandmarkerGraphOptionsProto.java
+D  apk_analysis/jadx/sources/com/google/mediapipe/util/proto/RenderDataProto.java
+D  apk_analysis/jadx/sources/com/google/mlkit/common/internal/CommonComponentRegistrar.java
+D  apk_analysis/jadx/sources/com/google/mlkit/common/internal/model/zzg.java
+D  apk_analysis/jadx/sources/com/google/mlkit/common/sdkinternal/model/CustomModelLoader.java
+D  apk_analysis/jadx/sources/com/google/mlkit/common/sdkinternal/model/RemoteModelDownloadManager.java
+D  apk_analysis/jadx/sources/com/google/mlkit/common/sdkinternal/model/RemoteModelFileManager.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/barcode/internal/zzh.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/barcode/internal/zzl.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/barcode/internal/zzq.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/text/internal/TextRecognizerTaskWithResource.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/text/internal/zzd.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/text/internal/zze.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/text/internal/zzn.java
+D  apk_analysis/jadx/sources/com/google/mlkit/vision/text/pipeline/zbi.java
+D  apk_analysis/jadx/sources/com/google/photos/vision/barhopper/zzc.java
+D  apk_analysis/jadx/sources/com/google/protobuf/Api.java
+D  apk_analysis/jadx/sources/com/google/protobuf/ArrayDecoders.java
+D  apk_analysis/jadx/sources/com/google/protobuf/Enum.java
+D  apk_analysis/jadx/sources/com/google/protobuf/MessageSetSchema.java
+D  apk_analysis/jadx/sources/com/google/protobuf/SchemaUtil.java
+D  apk_analysis/jadx/sources/com/google/protobuf/Type.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barcode/SFBarcodeCaptureSession.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barcode/a.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barcode/b.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/A.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/F.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/G.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/H.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/I.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/J.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/K.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/M.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/AutoValue_Camera2CameraImpl_UseCaseInfo.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/Camera2CameraImpl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/Camera2CapturePipeline.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/FocusMeteringControl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/MeteringRepeatingSession.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/ProcessingCaptureSession.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/camera2/internal/StreamUseCaseUtil.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/core/imagecapture/ImagePipeline.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/core/imagecapture/ProcessingInput2Packet.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/core/streamsharing/VirtualCamera.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/core/streamsharing/VirtualCameraAdapter.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/core/streamsharing/VirtualCameraControl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/lifecycle/ProcessCameraProvider.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/camera/video/internal/encoder/EncoderImpl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/room/support/QueryInterceptorDatabase.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/room/support/QueryInterceptorStatement.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/SavedStateCodecUtils_androidKt.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/SavedStateConfig_androidKt.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/SavedStateDecoder_androidKt.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/SavedStateEncoder_androidKt.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/serializers/ParcelableArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/serializers/ParcelableListSerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/androidx/savedstate/serialization/serializers/SparseParcelableArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/b/a.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/abst/fiducial/QrCodePreciseDetector.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/alg/fiducial/qrcode/QrCodeBinaryGridToPixel.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/alg/fiducial/qrcode/QrCodeDecoderImage.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/alg/fiducial/qrcode/QrCodePositionPatternDetector.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/alg/filter/convolve/ConvolveImageMean.java
+M  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/alg/interpolate/ImageLineIntegral.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/core/image/ConvertImage.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/factory/fiducial/FactoryFiducial.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/boofcv/factory/filter/binary/FactoryThresholdBinary.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/coroutines/DispatchedTask.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/coroutines/DispatchedTaskKt.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/coroutines/ExecutorCoroutineDispatcherImpl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/coroutines/sync/MutexImpl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/coroutines/sync/SemaphoreAndMutexImpl.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/serialization/PolymorphicSerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/serialization/internal/UByteArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/serialization/internal/UIntArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/serialization/internal/ULongArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/kotlinx/serialization/internal/UShortArraySerializer.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/barinternal/okio/internal/ResourceFileSystem.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/core/SFBaseCameraCaptureScanSession.java
+D  apk_analysis/jadx/sources/com/scanflow/datacapture/core/camera/BaseCameraCaptureScan.java
+D  apk_analysis/jadx/sources/com/yandex/runtime/sensors/internal/FusedLocationSubscription.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/AppMetricaLibraryAdapter.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/billing/impl/m.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/billing/internal/BillingServiceModuleEntryPoint.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/A3.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/AbstractC0268g.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/B6.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Bf.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Bh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0137an.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0144b4.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0163bn.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0189cn.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0190co.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0215dn.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0225e8.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0240en.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0258ff.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0282gd.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0307hc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0341il.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0366jk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0392kk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0405l7.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0418lk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0431m7.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0441mh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0445ml.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0463nd.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0464ne.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0467nh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0469nj.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0472nm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0498om.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0543qe.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0559r5.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0563r9.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0576rm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0578ro.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0585s5.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0602sm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0610t4.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0626tk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0675vh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0676vi.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0680vm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0702wi.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0732xm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0743y7.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0758ym.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/C0779zh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/D0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/E0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Ea.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Ek.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/F0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/F5.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/F9.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Fk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Gh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/H0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/H3.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Jd.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Jk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Kb.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Kc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Lb.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Ld.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Li.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/M2.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Mc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Nc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Oc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Ok.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/P4.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Pk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Pm.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Qh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Qk.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/R0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Rh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0115a1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0141b1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0167c1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0193d1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0296h1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0322i1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0337ih.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0347j1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0373k1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0477o1.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/RunnableC0753yh.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/S0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/So.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/T0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Tc.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/U0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/V0.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/V2.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Ya.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Z6.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/impl/Zl.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/c.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/networkokhttp/impl/e.java
+D  apk_analysis/jadx/sources/io/appmetrica/analytics/profile/Attribute.java
+D  apk_analysis/jadx/sources/kotlinx/serialization/ContextualSerializer.java
+D  apk_analysis/jadx/sources/kotlinx/serialization/SerializersCacheKt.java
+D  apk_analysis/jadx/sources/kotlinx/serialization/SerializersKt__SerializersJvmKt.java
+D  apk_analysis/jadx/sources/kotlinx/serialization/SerializersKt__SerializersKt.java
+D  apk_analysis/jadx/sources/okhttp3/Cache.java
+D  apk_analysis/jadx/sources/okhttp3/MultipartReader.java
+D  apk_analysis/jadx/sources/okhttp3/internal/Internal.java
+D  apk_analysis/jadx/sources/okhttp3/internal/cache/CacheInterceptor.java
+D  apk_analysis/jadx/sources/okhttp3/internal/cache/CacheStrategy.java
+D  apk_analysis/jadx/sources/okhttp3/internal/cache/DiskLruCache.java
+D  apk_analysis/jadx/sources/okhttp3/internal/connection/ExchangeFinder.java
+D  apk_analysis/jadx/sources/okhttp3/internal/connection/RouteSelector.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http/BridgeInterceptor.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http/CallServerInterceptor.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http/HttpHeaders.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http/RetryAndFollowUpInterceptor.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http1/Http1ExchangeCodec.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Hpack.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Http2Connection.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Http2ExchangeCodec.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Http2Reader.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Http2Stream.java
+D  apk_analysis/jadx/sources/okhttp3/internal/http2/Http2Writer.java
+D  apk_analysis/jadx/sources/okhttp3/internal/publicsuffix/PublicSuffixDatabase.java
+D  apk_analysis/jadx/sources/okhttp3/internal/ws/RealWebSocket.java
+D  apk_analysis/jadx/sources/org/tensorflow/lite/schema/BuiltinOptionsUnion.java
+D  apk_analysis/jadx/sources/org/tensorflow/lite/schema/Operator.java
+D  apk_analysis/jadx/sources/org/tensorflow/lite/schema/SubGraph.java
+D  apk_analysis/jadx/sources/retrofit2/KotlinExtensions.java
+D  apk_analysis/jadx/sources/retrofit2/OkHttpCall.java
+D  apk_analysis/jadx/sources/retrofit2/http/Part.java
+D  apk_analysis/jadx/sources/retrofit2/http/PartMap.java
+D  apk_analysis/jadx/sources/retrofit2/http/Path.java
+D  apk_analysis/jadx/sources/retrofit2/http/Query.java
+D  apk_analysis/jadx/sources/retrofit2/http/QueryMap.java
+D  apk_analysis/jadx/sources/retrofit2/http/QueryName.java
+D  apk_analysis/jadx/sources/retrofit2/http/Streaming.java
+D  apk_analysis/jadx/sources/retrofit2/http/Tag.java
+D  apk_analysis/jadx/sources/retrofit2/http/Url.java
+D  apk_analysis/jadx/sources/retrofit2/internal/EverythingIsNonNull.java
+D  apk_analysis/jadx/sources/ru/myauchan/droid/R.java
+M  apk_analysis/jadx_errors.txt
+M  apk_analysis/jadx_exit_code.txt
+M  apk_analysis/metadata.txt
+M  docs/reverse_engineering_log.md
+M  dotnet/decompiled/Google.FlexboxLayout/Google.FlexboxLayout.csproj
+M  dotnet/decompiled/Google.FlexboxLayout_0075/Google.FlexboxLayout_0075.csproj
+M  dotnet/decompiled/Ongakuer.CircleIndicator/Ongakuer.CircleIndicator.csproj
+M  dotnet/decompiled/Ongakuer.CircleIndicator_0076/Ongakuer.CircleIndicator_0076.csproj
+M  dotnet/decompiled/PhotoView/PhotoView.csproj
+M  dotnet/decompiled/PhotoView_0108/PhotoView_0108.csproj
+M  dotnet/decompiled/Xamarin.Bindings.Input-Mask-Android/Xamarin.Bindings.Input-Mask-Android.csproj
+M  dotnet/decompiled/Xamarin.Bindings.Input-Mask-Android_0136/Xamarin.Bindings.Input-Mask-Android_0136.csproj
+M  dotnet/decompiled/ZeroBranch.SwipeLayout/ZeroBranch.SwipeLayout.csproj
+M  dotnet/decompiled/ZeroBranch.SwipeLayout_0149/ZeroBranch.SwipeLayout_0149.csproj
+M  dotnet/metadata/dll_report.txt
+ M logs/decompile.log
+ M logs/jadx.log
+M  native/elf_report.txt
+?? decompile_auchan.sh
+?? git.sh
+
+============================================================
+FINISHED
+============================================================
+Project: /home/definitly/AuchanReverseEngineering
+
+APK files:
+    3165
+DLL files:
+302
+C# files:
+26093
+Assembly Store candidates:
+2
+Mono AOT native-image libraries:
+302
+
+Ошибки инструментов:
+[ERROR] /home/definitly/AuchanReverseEngineering/apk_analysis/jadx_exit_code.txt
+137
+Категорий ошибок: 1
+
+API search:
+/home/definitly/AuchanReverseEngineering/api
+
+Documentation:
+/home/definitly/AuchanReverseEngineering/docs
+
+Log:
+/home/definitly/AuchanReverseEngineering/logs/decompile.log
+
+Next steps:
+1. Inspect git status
+2. Check source redistribution permissions
+3. Commit the research files
+4. Configure GitHub remote
+5. Push to your PUBLIC GitHub repository (after reviewing for secrets and personal data)
+
+Do not upload the original APK, private traffic captures,
+tokens, cookies or personal purchase data.
