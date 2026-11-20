@@ -111,6 +111,16 @@ info() {
     echo "============================================================"
 }
 
+# Return success only when every report for a research stage already exists
+# and is non-empty. Repeated runs then skip completed investigations.
+reports_complete() {
+    local report
+    for report in "$@"; do
+        [[ -s "$report" ]] || return 1
+    done
+    return 0
+}
+
 warn() {
     echo "[WARNING] $1"
 }
@@ -1003,11 +1013,17 @@ done < "$ROOT/dotnet/metadata/dll_list.txt"
 CURRENT_STEP="SEARCH API ENDPOINTS"
 info "SEARCH API ENDPOINTS"
 
+if reports_complete "$ROOT/api/endpoints_search.txt"; then
+    echo "[SKIP] SEARCH API ENDPOINTS: отчёты уже существуют и непустые."
+else
+
 grep -RniE \
     'clientauth/token|checkphone|loyalty/history|loyalty/operations' \
     "$CS_DIR" \
     --include='*.cs' \
     > "$ROOT/api/endpoints_search.txt" || true
+
+fi
 
 # ------------------------------------------------------------
 # Search authentication
@@ -1016,11 +1032,17 @@ grep -RniE \
 CURRENT_STEP="SEARCH AUTHENTICATION"
 info "SEARCH AUTHENTICATION"
 
+if reports_complete "$ROOT/api/authentication_search.txt"; then
+    echo "[SKIP] SEARCH AUTHENTICATION: отчёты уже существуют и непустые."
+else
+
 grep -RniE \
     'SavedToken80|Token80|SendSms|ConfirmSms|VerifyCode|GetToken|Authentication|CheckPhone|PhoneNumber|SmsCode|VerificationCode|Otp|SecureStorage' \
     "$CS_DIR" \
     --include='*.cs' \
     > "$ROOT/api/authentication_search.txt" || true
+
+fi
 
 # ------------------------------------------------------------
 # SMS authentication research: endpoint, request, response and call-flow search
@@ -1028,6 +1050,10 @@ grep -RniE \
 
 CURRENT_STEP="SEARCH SMS AUTHENTICATION"
 info "SEARCH SMS AUTHENTICATION"
+
+if reports_complete "$ROOT/api/sms_auth/sms_vocabulary_search.txt" "$ROOT/api/sms_auth/auth_endpoint_search.txt" "$ROOT/api/sms_auth/http_request_search.txt" "$ROOT/api/sms_auth/serialization_and_routes_search.txt" "$ROOT/api/sms_auth/auth_classes_and_storage_search.txt" "$ROOT/api/sms_auth/android_layer_search.txt"; then
+    echo "[SKIP] SEARCH SMS AUTHENTICATION: отчёты уже существуют и непустые."
+else
 
 SMS_DIR="$ROOT/api/sms_auth"
 mkdir -p "$SMS_DIR"
@@ -1140,6 +1166,8 @@ interactive SMS login flow.
   or real account responses.
 EOF
 
+fi
+
 # ------------------------------------------------------------
 # Search purchase history
 # ------------------------------------------------------------
@@ -1147,11 +1175,17 @@ EOF
 CURRENT_STEP="SEARCH PURCHASE HISTORY"
 info "SEARCH PURCHASE HISTORY"
 
+if reports_complete "$ROOT/api/purchase_history_search.txt"; then
+    echo "[SKIP] SEARCH PURCHASE HISTORY: отчёты уже существуют и непустые."
+else
+
 grep -RniE \
     'GetHistoryAsync|GetTransactionDetailsAsync|LoyaltyHistory|PagedDataLoader' \
     "$CS_DIR" \
     --include='*.cs' \
     > "$ROOT/api/purchase_history_search.txt" || true
+
+fi
 
 # ------------------------------------------------------------
 # Search DTO
@@ -1160,11 +1194,17 @@ grep -RniE \
 CURRENT_STEP="SEARCH DTO"
 info "SEARCH DTO"
 
+if reports_complete "$ROOT/api/dto_search.txt"; then
+    echo "[SKIP] SEARCH DTO: отчёты уже существуют и непустые."
+else
+
 grep -RniE \
     'TransactionDetailsDto|ProductDto|OrderDetailsDto|HistoryFilter|LoymaxHistoryResponseDto' \
     "$CS_DIR" \
     --include='*.cs' \
     > "$ROOT/api/dto_search.txt" || true
+
+fi
 
 # ------------------------------------------------------------
 # Search Loymax client registration, base URL and token flow
@@ -1172,6 +1212,10 @@ grep -RniE \
 
 CURRENT_STEP="SEARCH LOYMAX CONFIGURATION"
 info "SEARCH LOYMAX CONFIGURATION"
+
+if reports_complete "$ROOT/api/loymax_registration_search.txt" "$ROOT/api/base_url_search.txt" "$ROOT/api/token_flow_search.txt" "$ROOT/api/receipt_details_search.txt"; then
+    echo "[SKIP] SEARCH LOYMAX CONFIGURATION: отчёты уже существуют и непустые."
+else
 
 # These reports intentionally collect source locations and code references;
 # they do not assume that a similarly named provider belongs to Loymax.
@@ -1242,6 +1286,8 @@ formed by combining it with the base URL of the exact registered HTTP client.
 Do not add or remove `/ecom` until that registration has been verified.
 EOF
 
+fi
+
 # ------------------------------------------------------------
 # Deep purchase-history investigation: SMS order, Loymax URL, receipt items
 # ------------------------------------------------------------
@@ -1256,6 +1302,10 @@ write_context_report() {
     local label="$1"
     local pattern="$2"
     local output="$3"
+    if [[ -s "$output" ]]; then
+        echo "[SKIP] $label: готовый отчёт уже существует: $output"
+        return 0
+    fi
     local source_dirs=()
     local dir
 
@@ -1268,7 +1318,7 @@ write_context_report() {
         echo "# Generated: $(date)"
         echo "# Search expression: $pattern"
         echo
-        if ((${#source_dirs[@]})); then
+        if [[ "${#source_dirs[@]}" -gt 0 ]]; then
             grep -RniE -B 10 -A 24 "$pattern" "${source_dirs[@]}" \
                 --include='*.cs' --include='*.java' --include='*.kt' \
                 --include='*.smali' --include='*.xml' --include='*.txt' \
@@ -1319,6 +1369,39 @@ grep -RniE \
     'GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|ReceiptItem|PurchaseItem|ChequeNumber|ReceiptNumber|ProductName|ProductDto|ProductItem|ItemName|Nomenclature|Sku|Barcode' \
     "$CS_DIR" --include='*.cs' \
     > "$DEEP_DIR/03_receipt_item_references.txt" || true
+
+# 4. Personal cabinet API and authentication server.
+write_context_report \
+    "IPersonalCabinetApi and authentication server" \
+    'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*Api|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL|HttpClient|Refit|/lk/' \
+    "$DEEP_DIR/04_personal_cabinet_api_and_auth_server.txt"
+
+grep -RniE \
+    'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/04_personal_cabinet_api_references.txt" || true
+
+# 5. deviceid, needHash and Token80 generation/acquisition/storage.
+write_context_report \
+    "deviceid, needHash and Token80" \
+    'device.?id|deviceid|needHash|NeedHash|Token80|SavedToken80|ITokenService|clientauth/token|checkphone|Hash|SecureStorage|Preferences' \
+    "$DEEP_DIR/05_deviceid_needhash_token80.txt"
+
+grep -RniE \
+    'device.?id|deviceid|needHash|NeedHash|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/05_deviceid_needhash_token80_references.txt" || true
+
+# 6. /lk/loyalty/history response DTO and itemized receipt detail chain.
+write_context_report \
+    "/lk/loyalty/history response and receipt details" \
+    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|PurchaseHistory|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber|ProductName|Quantity|UnitPrice|TotalPrice|Discount' \
+    "$DEEP_DIR/06_loyalty_history_response_and_receipt_details.txt"
+
+grep -RniE \
+    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/06_loyalty_history_response_references.txt" || true
 
 cat > "$DEEP_DIR/README.md" <<'EOF'
 # Deep purchase-history investigation
