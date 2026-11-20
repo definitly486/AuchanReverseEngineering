@@ -1204,11 +1204,11 @@ write_context_report() {
 # 1. SMS flow: locate the exact PinInteractor implementation and all callers.
 write_context_report \
     "PinInteractor.SendPin call chain" \
-    'PinInteractor|SendPin[[:space:]]*\\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
+    'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
     "$DEEP_DIR/01_pin_interactor_sendpin.txt"
 
 grep -RniE \
-    'PinInteractor|SendPin[[:space:]]*\\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
+    'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
     "$CS_DIR" --include='*.cs' \
     > "$DEEP_DIR/01_pin_interactor_references.txt" || true
 
