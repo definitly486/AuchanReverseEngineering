@@ -1,0 +1,121 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.protobuf.nano.CodedInputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.CodedOutputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.InternalNano;
+import io.appmetrica.analytics.protobuf.nano.MessageNano;
+import io.appmetrica.analytics.protobuf.nano.WireFormatNano;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class Wb extends MessageNano {
+    public static volatile Wb[] f;
+    public String a;
+    public String b;
+    public boolean c;
+    public String d;
+    public String e;
+
+    public Wb() {
+        a();
+    }
+
+    public static Wb[] b() {
+        if (f == null) {
+            synchronized (InternalNano.LAZY_INIT_LOCK) {
+                try {
+                    if (f == null) {
+                        f = new Wb[0];
+                    }
+                } catch (Throwable th) {
+                    throw th;
+                }
+            }
+        }
+        return f;
+    }
+
+    public final Wb a() {
+        this.a = "";
+        this.b = "";
+        this.c = false;
+        this.d = "";
+        this.e = "";
+        this.cachedSize = -1;
+        return this;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int iComputeSerializedSize = super.computeSerializedSize();
+        if (!this.a.equals("")) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeStringSize(1, this.a);
+        }
+        if (!this.b.equals("")) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeStringSize(19, this.b);
+        }
+        boolean z = this.c;
+        if (z) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeBoolSize(22, z);
+        }
+        if (!this.d.equals("")) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeStringSize(25, this.d);
+        }
+        return !this.e.equals("") ? CodedOutputByteBufferNano.computeStringSize(26, this.e) + iComputeSerializedSize : iComputeSerializedSize;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final void writeTo(CodedOutputByteBufferNano codedOutputByteBufferNano) throws CodedOutputByteBufferNano.OutOfSpaceException {
+        if (!this.a.equals("")) {
+            codedOutputByteBufferNano.writeString(1, this.a);
+        }
+        if (!this.b.equals("")) {
+            codedOutputByteBufferNano.writeString(19, this.b);
+        }
+        boolean z = this.c;
+        if (z) {
+            codedOutputByteBufferNano.writeBool(22, z);
+        }
+        if (!this.d.equals("")) {
+            codedOutputByteBufferNano.writeString(25, this.d);
+        }
+        if (!this.e.equals("")) {
+            codedOutputByteBufferNano.writeString(26, this.e);
+        }
+        super.writeTo(codedOutputByteBufferNano);
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final Wb mergeFrom(CodedInputByteBufferNano codedInputByteBufferNano) {
+        while (true) {
+            int tag = codedInputByteBufferNano.readTag();
+            if (tag == 0) {
+                break;
+            }
+            if (tag == 10) {
+                this.a = codedInputByteBufferNano.readString();
+            } else if (tag == 154) {
+                this.b = codedInputByteBufferNano.readString();
+            } else if (tag == 176) {
+                this.c = codedInputByteBufferNano.readBool();
+            } else if (tag == 202) {
+                this.d = codedInputByteBufferNano.readString();
+            } else if (tag != 210) {
+                if (!WireFormatNano.parseUnknownField(codedInputByteBufferNano, tag)) {
+                    break;
+                }
+            } else {
+                this.e = codedInputByteBufferNano.readString();
+            }
+        }
+        return this;
+    }
+
+    public static Wb b(CodedInputByteBufferNano codedInputByteBufferNano) {
+        return new Wb().mergeFrom(codedInputByteBufferNano);
+    }
+
+    public static Wb a(byte[] bArr) {
+        return (Wb) MessageNano.mergeFrom(new Wb(), bArr);
+    }
+}

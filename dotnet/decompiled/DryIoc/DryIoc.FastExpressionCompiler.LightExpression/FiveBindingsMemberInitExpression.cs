@@ -1,0 +1,42 @@
+using System.Collections.Generic;
+
+namespace DryIoc.FastExpressionCompiler.LightExpression;
+
+public sealed class FiveBindingsMemberInitExpression : MemberInitExpression
+{
+	public readonly MemberBinding Binding0;
+
+	public readonly MemberBinding Binding1;
+
+	public readonly MemberBinding Binding2;
+
+	public readonly MemberBinding Binding3;
+
+	public readonly MemberBinding Binding4;
+
+	public override IReadOnlyList<MemberBinding> Bindings => new MemberBinding[5] { Binding0, Binding1, Binding2, Binding3, Binding4 };
+
+	public override int ArgumentCount => 5;
+
+	public override MemberBinding GetArgument(int i)
+	{
+		return i switch
+		{
+			3 => Binding3, 
+			2 => Binding2, 
+			1 => Binding1, 
+			0 => Binding0, 
+			_ => Binding4, 
+		};
+	}
+
+	internal FiveBindingsMemberInitExpression(Expression expression, MemberBinding b0, MemberBinding b1, MemberBinding b2, MemberBinding b3, MemberBinding b4)
+		: base(expression)
+	{
+		Binding0 = b0;
+		Binding1 = b1;
+		Binding2 = b2;
+		Binding3 = b3;
+		Binding4 = b4;
+	}
+}

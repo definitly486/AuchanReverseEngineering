@@ -1,0 +1,25 @@
+package com.scanflow.datacapture.barinternal.androidx.camera.video.internal.compat;
+
+import android.media.AudioManager;
+import android.media.AudioRecord;
+import android.media.AudioRecordingConfiguration;
+import java.util.concurrent.Executor;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class Api29Impl {
+    public static AudioRecordingConfiguration getActiveRecordingConfiguration(AudioRecord audioRecord) {
+        return audioRecord.getActiveRecordingConfiguration();
+    }
+
+    public static void registerAudioRecordingCallback(AudioRecord audioRecord, Executor executor, AudioManager.AudioRecordingCallback audioRecordingCallback) {
+        audioRecord.registerAudioRecordingCallback(executor, audioRecordingCallback);
+    }
+
+    public static void unregisterAudioRecordingCallback(AudioRecord audioRecord, AudioManager.AudioRecordingCallback audioRecordingCallback) {
+        audioRecord.unregisterAudioRecordingCallback(audioRecordingCallback);
+    }
+
+    public static boolean isClientSilenced(AudioRecordingConfiguration audioRecordingConfiguration) {
+        return audioRecordingConfiguration.isClientSilenced();
+    }
+}

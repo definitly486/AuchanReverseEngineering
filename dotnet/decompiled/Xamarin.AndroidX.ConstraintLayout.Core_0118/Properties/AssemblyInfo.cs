@@ -1,0 +1,35 @@
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using Android.Runtime;
+
+[assembly: AssemblyMetadata("BUILD_COMMIT", "{BUILD_COMMIT}")]
+[assembly: AssemblyMetadata("BUILD_NUMBER", "{BUILD_NUMBER}")]
+[assembly: AssemblyMetadata("BUILD_TIMESTAMP", "{BUILD_TIMESTAMP}")]
+[assembly: AssemblyMetadata("IsTrimmable", "True")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core", Managed = "AndroidX.ConstraintLayout.Core")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.dsl", Managed = "AndroidX.ConstraintLayout.Core.Dsl")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.motion", Managed = "AndroidX.ConstraintLayout.Core.Motion")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.motion.key", Managed = "AndroidX.ConstraintLayout.Core.Motion.Key")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.motion.parse", Managed = "AndroidX.ConstraintLayout.Core.Motion.Parse")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.motion.utils", Managed = "AndroidX.ConstraintLayout.Core.Motion.Utils")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.parser", Managed = "AndroidX.ConstraintLayout.Core.Parser")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.state", Managed = "AndroidX.ConstraintLayout.Core.State")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.state.helpers", Managed = "AndroidX.ConstraintLayout.Core.State.Helpers")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.utils", Managed = "AndroidX.ConstraintLayout.Core.Utils")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.widgets", Managed = "AndroidX.ConstraintLayout.Core.Widgets")]
+[assembly: NamespaceMapping(Java = "androidx.constraintlayout.core.widgets.analyzer", Managed = "AndroidX.ConstraintLayout.Core.Widgets.Analyzer")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCopyright("© Microsoft Corporation. All rights reserved.")]
+[assembly: AssemblyDescription("\r\n      .NET for Android and MAUI bindings for the Android Java library 'androidx.constraintlayout:constraintlayout-core'.\r\n\r\nLibrary description: This library contains engines and algorithms for constraint based layout and complex animations (it is used by the ConstraintLayout library)\r\n    ")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0+2b2e983911517bb02c07fe4dd0ba440910e0a45a")]
+[assembly: AssemblyProduct("Xamarin.AndroidX.ConstraintLayout.Core")]
+[assembly: AssemblyTitle("Xamarin.AndroidX.ConstraintLayout.Core")]
+[assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/xamarin/AndroidX.git")]
+[assembly: TargetPlatform("Android36.0")]
+[assembly: SupportedOSPlatform("Android21.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[module: RefSafetyRules(11)]

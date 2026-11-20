@@ -1,0 +1,14 @@
+package com.scanflow.datacapture.barinternal.kotlinx.serialization.internal;
+
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: Caching.kt */
+/* JADX INFO: loaded from: classes3.dex */
+final class ClassValueReferences extends ClassValue {
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // java.lang.ClassValue
+    public MutableSoftReference computeValue(Class type) {
+        Intrinsics.checkNotNullParameter(type, "type");
+        return new MutableSoftReference();
+    }
+}

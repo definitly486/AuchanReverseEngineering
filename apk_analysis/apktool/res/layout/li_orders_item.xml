@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/basics600" android:id="@id/orderItemDateHeader" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_marginBottom="8.0dp" android:layout_marginStart="8.0dp" />
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="15.0dp" app:cardCornerRadius="12.0dp" app:cardElevation="8.0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/orderListCellControls" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_order_item_card" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="12.0dp">
+                <include android:id="@id/addToOrderControls" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" layout="@layout/layout_add_to_order_button_small" />
+                <com.google.android.material.button.MaterialButton android:id="@id/button_get_orders" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="0.0dp" android:layout_marginBottom="12.0dp" android:text="Забрать заказ" style="@style/DefaultGreenMaterialRoundButtonS" />
+                <com.google.android.material.button.MaterialButton android:id="@id/payButton" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="0.0dp" android:layout_marginBottom="12.0dp" android:text="Оплатить" style="@style/DefaultGreenMaterialRoundButtonS" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="6.0dp">
+                <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/repeatButton" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginTop="0.0dp" android:layout_marginBottom="12.0dp" android:lines="1" android:layout_marginHorizontal="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/callToCourierButton" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/DefaultGrayMaterialRoundButtonS" />
+                <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/callToCourierButton" android:layout_width="0.0dp" android:layout_height="40.0dp" android:layout_marginTop="0.0dp" android:layout_marginBottom="12.0dp" android:lines="1" android:layout_marginHorizontal="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/repeatButton" app:layout_constraintTop_toTopOf="parent" style="@style/DefaultGreenMaterialRoundButtonS" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

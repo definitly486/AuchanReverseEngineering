@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <auchan.WrapTextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/key_label" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sans-serif" android:layout_marginEnd="20.0dp" android:textFontWeight="500" />
+            <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <auchan.WrapTextView android:textSize="12.0sp" android:textColor="@color/basics700" android:id="@id/value_label" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sans-serif" android:textFontWeight="500" />
+            <ImageButton android:id="@id/copy_number_button" android:background="@android:color/transparent" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginLeft="4.0dp" android:src="@drawable/btn_copy" android:scaleType="fitCenter" android:tint="#00854d" />
+            <Space android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray200" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

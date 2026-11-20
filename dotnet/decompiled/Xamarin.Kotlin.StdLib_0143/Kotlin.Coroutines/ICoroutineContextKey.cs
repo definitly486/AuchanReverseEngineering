@@ -1,0 +1,11 @@
+using System;
+using Android.Runtime;
+using Java.Interop;
+
+namespace Kotlin.Coroutines;
+
+[Register("kotlin/coroutines/CoroutineContext$Key", "", "Kotlin.Coroutines.ICoroutineContextKeyInvoker")]
+[JavaTypeParameters(new string[] { "E extends kotlin.coroutines.CoroutineContext.Element" })]
+public interface ICoroutineContextKey : IJavaObject, IDisposable, IJavaPeerable
+{
+}

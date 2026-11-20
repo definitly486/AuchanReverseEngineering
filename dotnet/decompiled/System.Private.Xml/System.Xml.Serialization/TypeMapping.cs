@@ -1,0 +1,95 @@
+using System.Diagnostics.CodeAnalysis;
+
+namespace System.Xml.Serialization;
+
+internal abstract class TypeMapping : Mapping
+{
+	private TypeDesc _typeDesc;
+
+	private string _typeNs;
+
+	private string _typeName;
+
+	private bool _includeInSchema = true;
+
+	internal string Namespace
+	{
+		get
+		{
+			return _typeNs;
+		}
+		set
+		{
+			_typeNs = value;
+		}
+	}
+
+	internal string TypeName
+	{
+		get
+		{
+			return _typeName;
+		}
+		set
+		{
+			_typeName = value;
+		}
+	}
+
+	internal TypeDesc TypeDesc
+	{
+		get
+		{
+			return _typeDesc;
+		}
+		set
+		{
+			_typeDesc = value;
+		}
+	}
+
+	internal bool IncludeInSchema
+	{
+		get
+		{
+			return _includeInSchema;
+		}
+		set
+		{
+			_includeInSchema = value;
+		}
+	}
+
+	internal virtual bool IsList
+	{
+		get
+		{
+			return false;
+		}
+		set
+		{
+		}
+	}
+
+	[MemberNotNullWhen(false, "_typeName")]
+	internal bool IsAnonymousType
+	{
+		[MemberNotNullWhen(false, "_typeName")]
+		get
+		{
+			return string.IsNullOrEmpty(_typeName);
+		}
+	}
+
+	internal virtual string DefaultElementName
+	{
+		get
+		{
+			if (!IsAnonymousType)
+			{
+				return _typeName;
+			}
+			return XmlConvert.EncodeLocalName(_typeDesc.Name);
+		}
+	}
+}

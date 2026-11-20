@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_12" android:layout_width="103.0dp" android:layout_height="96.0dp" android:layout_marginEnd="10.0dp" android:elevation="13.0dp" android:paddingHorizontal="8.0dp" android:paddingVertical="12.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/card_image_view" android:layout_width="32.0dp" android:layout_height="32.0dp" />
+    <TextView android:textAppearance="@style/TextAppearance.SubtextMedium" android:textColor="@color/light_main" android:id="@id/card_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+</LinearLayout>

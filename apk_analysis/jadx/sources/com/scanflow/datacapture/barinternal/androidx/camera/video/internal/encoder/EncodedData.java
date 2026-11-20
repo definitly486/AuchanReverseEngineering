@@ -1,0 +1,20 @@
+package com.scanflow.datacapture.barinternal.androidx.camera.video.internal.encoder;
+
+import android.media.MediaCodec;
+import java.nio.ByteBuffer;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface EncodedData extends AutoCloseable {
+    @Override // java.lang.AutoCloseable
+    void close();
+
+    MediaCodec.BufferInfo getBufferInfo();
+
+    ByteBuffer getByteBuffer();
+
+    long getPresentationTimeUs();
+
+    boolean isKeyFrame();
+
+    long size();
+}

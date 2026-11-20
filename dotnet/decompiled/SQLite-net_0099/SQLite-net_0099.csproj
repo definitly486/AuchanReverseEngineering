@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SQLite-net</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>../../dll/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>../../dll/SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>../../dll/SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>../../dll/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

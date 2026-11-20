@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/feedback_hint" android:paddingTop="18.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Обращайтесь в любое время, мы всегда рады помочь. Просто позвоните 88007005800 или напишите нам" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="Общая информация" />
+    <include android:id="@id/categories_and_topics_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" layout="@layout/layout_feedback_categories" />
+</LinearLayout>

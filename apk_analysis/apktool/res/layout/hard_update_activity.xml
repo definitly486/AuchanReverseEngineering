@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/buttonsBlock" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/hardUpdateImageView" android:layout_width="224.0dp" android:layout_height="168.0dp" android:src="@drawable/hard_update_image" />
+        <TextView android:id="@id/hardUpdateMessageTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" style="@style/DefaultSemiboldLabel" />
+        <TextView android:id="@id/hardUpdateHintTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/hard_update_hint_message" style="@style/HintLabel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonsBlock" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/hardUpdateQRCodeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="Показать карту лояльности" android:textAllCaps="false" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" style="@style/DefaultLightGrayButton" />
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/hardUpdateUpdateButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hard_update_update_button" android:textAllCaps="false" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" style="@style/DefaultPrimarydButton" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NLog</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>../../dll/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>../../dll/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>../../dll/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>../../dll/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>../../dll/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>../../dll/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>../../dll/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>../../dll/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>../../dll/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>../../dll/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>../../dll/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

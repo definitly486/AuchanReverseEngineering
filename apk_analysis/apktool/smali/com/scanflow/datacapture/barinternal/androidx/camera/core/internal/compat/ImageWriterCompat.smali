@@ -1,0 +1,45 @@
+.class public abstract Lcom/scanflow/datacapture/barinternal/androidx/camera/core/internal/compat/ImageWriterCompat;
+.super Ljava/lang/Object;
+.source "ImageWriterCompat.java"
+
+
+# direct methods
+.method public static close(Landroid/media/ImageWriter;)V
+    .locals 0
+
+    .line 168
+    invoke-static {p0}, Lcom/scanflow/datacapture/barinternal/androidx/camera/core/internal/compat/ImageWriterCompatApi23Impl;->close(Landroid/media/ImageWriter;)V
+
+    return-void
+.end method
+
+.method public static dequeueInputImage(Landroid/media/ImageWriter;)Landroid/media/Image;
+    .locals 0
+
+    .line 134
+    invoke-static {p0}, Lcom/scanflow/datacapture/barinternal/androidx/camera/core/internal/compat/ImageWriterCompatApi23Impl;->dequeueInputImage(Landroid/media/ImageWriter;)Landroid/media/Image;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static newInstance(Landroid/view/Surface;I)Landroid/media/ImageWriter;
+    .locals 0
+
+    .line 115
+    invoke-static {p0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/camera/core/internal/compat/ImageWriterCompatApi23Impl;->newInstance(Landroid/view/Surface;I)Landroid/media/ImageWriter;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static queueInputImage(Landroid/media/ImageWriter;Landroid/media/Image;)V
+    .locals 0
+
+    .line 152
+    invoke-static {p0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/camera/core/internal/compat/ImageWriterCompatApi23Impl;->queueInputImage(Landroid/media/ImageWriter;Landroid/media/Image;)V
+
+    return-void
+.end method

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Xamarin.AndroidX.Lifecycle.ViewModel.Android</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.KotlinX.Coroutines.Core.Jvm">
+      <HintPath>../../dll/Xamarin.KotlinX.Coroutines.Core.Jvm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Kotlin.StdLib">
+      <HintPath>../../dll/Xamarin.Kotlin.StdLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Runtime">
+      <HintPath>../../dll/Mono.Android.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

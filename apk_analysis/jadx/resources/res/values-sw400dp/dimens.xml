@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="loyalty_card_points_title_font_size">14sp</dimen>
+    <dimen name="loyalty_card_points_value_font_size">24sp</dimen>
+    <dimen name="loyalty_card_qr_button_size">70dp</dimen>
+</resources>

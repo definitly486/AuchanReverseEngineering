@@ -1,0 +1,175 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.protobuf.nano.CodedInputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.CodedOutputByteBufferNano;
+import io.appmetrica.analytics.protobuf.nano.InternalNano;
+import io.appmetrica.analytics.protobuf.nano.InvalidProtocolBufferNanoException;
+import io.appmetrica.analytics.protobuf.nano.MessageNano;
+import io.appmetrica.analytics.protobuf.nano.WireFormatNano;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class A8 extends MessageNano {
+    public static volatile A8[] f;
+    public byte[] a;
+    public byte[] b;
+    public E8 c;
+    public B8[] d;
+    public int e;
+
+    public A8() {
+        a();
+    }
+
+    public static A8[] b() {
+        if (f == null) {
+            synchronized (InternalNano.LAZY_INIT_LOCK) {
+                try {
+                    if (f == null) {
+                        f = new A8[0];
+                    }
+                } catch (Throwable th) {
+                    throw th;
+                }
+            }
+        }
+        return f;
+    }
+
+    public final A8 a() {
+        byte[] bArr = WireFormatNano.EMPTY_BYTES;
+        this.a = bArr;
+        this.b = bArr;
+        this.c = null;
+        this.d = B8.b();
+        this.e = 0;
+        this.cachedSize = -1;
+        return this;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final int computeSerializedSize() {
+        int iComputeSerializedSize = super.computeSerializedSize();
+        byte[] bArr = this.a;
+        byte[] bArr2 = WireFormatNano.EMPTY_BYTES;
+        if (!Arrays.equals(bArr, bArr2)) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeBytesSize(1, this.a);
+        }
+        if (!Arrays.equals(this.b, bArr2)) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeBytesSize(2, this.b);
+        }
+        E8 e8 = this.c;
+        if (e8 != null) {
+            iComputeSerializedSize += CodedOutputByteBufferNano.computeMessageSize(3, e8);
+        }
+        B8[] b8Arr = this.d;
+        if (b8Arr != null && b8Arr.length > 0) {
+            int i = 0;
+            while (true) {
+                B8[] b8Arr2 = this.d;
+                if (i >= b8Arr2.length) {
+                    break;
+                }
+                B8 b8 = b8Arr2[i];
+                if (b8 != null) {
+                    iComputeSerializedSize = CodedOutputByteBufferNano.computeMessageSize(4, b8) + iComputeSerializedSize;
+                }
+                i++;
+            }
+        }
+        int i2 = this.e;
+        return i2 != 0 ? CodedOutputByteBufferNano.computeUInt32Size(5, i2) + iComputeSerializedSize : iComputeSerializedSize;
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    public final void writeTo(CodedOutputByteBufferNano codedOutputByteBufferNano) throws CodedOutputByteBufferNano.OutOfSpaceException {
+        byte[] bArr = this.a;
+        byte[] bArr2 = WireFormatNano.EMPTY_BYTES;
+        if (!Arrays.equals(bArr, bArr2)) {
+            codedOutputByteBufferNano.writeBytes(1, this.a);
+        }
+        if (!Arrays.equals(this.b, bArr2)) {
+            codedOutputByteBufferNano.writeBytes(2, this.b);
+        }
+        E8 e8 = this.c;
+        if (e8 != null) {
+            codedOutputByteBufferNano.writeMessage(3, e8);
+        }
+        B8[] b8Arr = this.d;
+        if (b8Arr != null && b8Arr.length > 0) {
+            int i = 0;
+            while (true) {
+                B8[] b8Arr2 = this.d;
+                if (i >= b8Arr2.length) {
+                    break;
+                }
+                B8 b8 = b8Arr2[i];
+                if (b8 != null) {
+                    codedOutputByteBufferNano.writeMessage(4, b8);
+                }
+                i++;
+            }
+        }
+        int i2 = this.e;
+        if (i2 != 0) {
+            codedOutputByteBufferNano.writeUInt32(5, i2);
+        }
+        super.writeTo(codedOutputByteBufferNano);
+    }
+
+    @Override // io.appmetrica.analytics.protobuf.nano.MessageNano
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final A8 mergeFrom(CodedInputByteBufferNano codedInputByteBufferNano) throws InvalidProtocolBufferNanoException {
+        while (true) {
+            int tag = codedInputByteBufferNano.readTag();
+            if (tag == 0) {
+                break;
+            }
+            if (tag == 10) {
+                this.a = codedInputByteBufferNano.readBytes();
+            } else if (tag == 18) {
+                this.b = codedInputByteBufferNano.readBytes();
+            } else if (tag == 26) {
+                if (this.c == null) {
+                    this.c = new E8();
+                }
+                codedInputByteBufferNano.readMessage(this.c);
+            } else if (tag == 34) {
+                int repeatedFieldArrayLength = WireFormatNano.getRepeatedFieldArrayLength(codedInputByteBufferNano, 34);
+                B8[] b8Arr = this.d;
+                int length = b8Arr == null ? 0 : b8Arr.length;
+                int i = repeatedFieldArrayLength + length;
+                B8[] b8Arr2 = new B8[i];
+                if (length != 0) {
+                    System.arraycopy(b8Arr, 0, b8Arr2, 0, length);
+                }
+                while (length < i - 1) {
+                    B8 b8 = new B8();
+                    b8Arr2[length] = b8;
+                    codedInputByteBufferNano.readMessage(b8);
+                    codedInputByteBufferNano.readTag();
+                    length++;
+                }
+                B8 b9 = new B8();
+                b8Arr2[length] = b9;
+                codedInputByteBufferNano.readMessage(b9);
+                this.d = b8Arr2;
+            } else if (tag != 40) {
+                if (!WireFormatNano.parseUnknownField(codedInputByteBufferNano, tag)) {
+                    break;
+                }
+            } else {
+                this.e = codedInputByteBufferNano.readUInt32();
+            }
+        }
+        return this;
+    }
+
+    public static A8 b(CodedInputByteBufferNano codedInputByteBufferNano) {
+        return new A8().mergeFrom(codedInputByteBufferNano);
+    }
+
+    public static A8 a(byte[] bArr) {
+        return (A8) MessageNano.mergeFrom(new A8(), bArr);
+    }
+}

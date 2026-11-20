@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/reserved_items_container_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:text="Резерв в магазине"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Товары, требующие подтверждения возраста, будут зарезервированы для оплаты в магазине при получении заказа."
+            android:maxLines="5"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            style="@style/MediumDescriptionLabel"/>
+    </LinearLayout>
+</LinearLayout>

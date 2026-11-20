@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NLog.Targets.ConcurrentFile</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>../../dll/NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>../../dll/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>../../dll/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>../../dll/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>../../dll/System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>../../dll/System.IO.Compression.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

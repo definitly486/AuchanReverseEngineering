@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SkiaSharp.Views.Android</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="SkiaSharp">
+      <HintPath>../../dll/SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="_Microsoft.Android.Resource.Designer">
+      <HintPath>../../dll/_Microsoft.Android.Resource.Designer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,115 @@
+.class public final Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;
+.super Ljava/lang/Object;
+.source "EmojiTextViewHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$SkippingHelper19;,
+        Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;,
+        Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal19;
+    }
+.end annotation
+
+
+# instance fields
+.field private final mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+
+# direct methods
+.method public constructor <init>(Landroid/widget/TextView;Z)V
+    .locals 1
+
+    .line 94
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 95
+    const-string v0, "textView cannot be null"
+
+    invoke-static {p1, v0}, Lcom/scanflow/datacapture/barinternal/androidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-nez p2, :cond_0
+
+    .line 97
+    new-instance p2, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$SkippingHelper19;
+
+    invoke-direct {p2, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$SkippingHelper19;-><init>(Landroid/widget/TextView;)V
+
+    iput-object p2, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    return-void
+
+    .line 99
+    :cond_0
+    new-instance p2, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal19;
+
+    invoke-direct {p2, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal19;-><init>(Landroid/widget/TextView;)V
+
+    iput-object p2, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getFilters([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+    .locals 1
+
+    .line 128
+    iget-object v0, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    invoke-virtual {v0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;->getFilters([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public isEnabled()Z
+    .locals 1
+
+    .line 176
+    iget-object v0, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    invoke-virtual {v0}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;->isEnabled()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public setAllCaps(Z)V
+    .locals 1
+
+    .line 169
+    iget-object v0, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    invoke-virtual {v0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;->setAllCaps(Z)V
+
+    return-void
+.end method
+
+.method public setEnabled(Z)V
+    .locals 1
+
+    .line 159
+    iget-object v0, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    invoke-virtual {v0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;->setEnabled(Z)V
+
+    return-void
+.end method
+
+.method public wrapTransformationMethod(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
+    .locals 1
+
+    .line 141
+    iget-object v0, p0, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper;->mHelper:Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;
+
+    invoke-virtual {v0, p1}, Lcom/scanflow/datacapture/barinternal/androidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal;->wrapTransformationMethod(Landroid/text/method/TransformationMethod;)Landroid/text/method/TransformationMethod;
+
+    move-result-object p1
+
+    return-object p1
+.end method

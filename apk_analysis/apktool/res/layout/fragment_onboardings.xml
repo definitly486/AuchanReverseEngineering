@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/default_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/indicatorGuideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="20.0dp" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/centerVerticalGuideLine" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/onboarding_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout android:id="@id/closeButtonContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/close_button" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="11.0dp" android:src="@drawable/ic_close_black" android:layout_marginEnd="24.0dp" />
+        </FrameLayout>
+        <com.google.android.material.card.MaterialCardView android:layout_gravity="center|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/basics200" app:cardCornerRadius="8.0dp" app:layout_constraintBottom_toBottomOf="@id/indicatorGuideLine" app:layout_constraintLeft_toLeftOf="@id/centerVerticalGuideLine" app:layout_constraintRight_toRightOf="@id/centerVerticalGuideLine" app:layout_constraintTop_toTopOf="@id/indicatorGuideLine">
+            <me.relex.circleindicator.CircleIndicator android:id="@id/circle_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4.0dp" app:ci_animator="@animator/no_op" app:ci_drawable="@drawable/ic_pager_indicator_active_gray900_2dp" app:ci_drawable_unselected="@drawable/ic_pager_indicator_inactive_gray400_2dp" app:ci_height="4.0dp" app:ci_margin="2.0dp" app:ci_width="4.0dp" />
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/error" />
+    <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+</FrameLayout>

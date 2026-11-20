@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="60.0dp" layout="@layout/layout_toolbar_view" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/defaultLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.core.widget.NestedScrollView android:id="@id/rootScrollView" android:layout_width="match_parent" android:layout_height="0.0dp" android:overScrollMode="never" android:scrollIndicators="none" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@id/unreviewedRecyclerView" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/error" />
+            <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

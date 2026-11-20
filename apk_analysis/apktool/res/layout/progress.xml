@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/basics100" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="100.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/basics100" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <crc64fac7521b55e1fcf3.SkottieAnimationView android:id="@id/progressBar" android:layout_width="40.0dp" android:layout_height="40.0dp" app:buttonTint="@color/primary400" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:skottie_autoPlay="true" app:skottie_fileName="lottie-loader.json" app:skottie_loop="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/light_main" android:gravity="center" android:id="@id/progressTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="17.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/progressBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/separatorColor" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <crc64fac7521b55e1fcf3.NavigationCellView android:id="@id/faq_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:cellIcon="@drawable/ic_help_button" app:separatorMarginLeft="20.0dp" app:separatorMarginRight="20.0dp" />
+    <crc64fac7521b55e1fcf3.NavigationCellView android:id="@id/contact_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:cellIcon="@drawable/ic_support_chat_profile_open_chat" app:separatorMarginLeft="20.0dp" app:separatorMarginRight="20.0dp" />
+    <crc64fac7521b55e1fcf3.NavigationCellView android:id="@id/payment_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:cellIcon="@drawable/ic_payment" app:separatorMarginLeft="20.0dp" app:separatorMarginRight="20.0dp" />
+    <crc64fac7521b55e1fcf3.NavigationCellView android:id="@id/rules_cell" android:layout_width="match_parent" android:layout_height="wrap_content" app:cellIcon="@drawable/ic_document" />
+</LinearLayout>

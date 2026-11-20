@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/date_layout" android:background="@drawable/bg_radio_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dp" android:paddingHorizontal="12.0dp" android:paddingVertical="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Body2Medium" android:textColor="@color/color_slot_title" android:id="@id/dateTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineHeight="20.0sp" />
+    <TextView android:textAppearance="@style/TextAppearance.SubtextRegular" android:textColor="@color/text_secondary" android:id="@id/dayOfWeekTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineHeight="14.0sp" />
+</LinearLayout>

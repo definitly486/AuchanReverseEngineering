@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>../../dll/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>../../dll/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>../../dll/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>../../dll/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>../../dll/System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>../../dll/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>../../dll/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>../../dll/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

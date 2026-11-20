@@ -1,0 +1,42 @@
+package crc64396a3fe5f8138e3f;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+import java.util.ArrayList;
+import mono.android.IGCUserPeer;
+import mono.android.TypeManager;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class KeepAliveService extends Service implements IGCUserPeer {
+    private ArrayList refList;
+
+    private native IBinder n_onBind(Intent intent);
+
+    public KeepAliveService() {
+        if (getClass() == KeepAliveService.class) {
+            TypeManager.Activate("AndroidX.Browser.CustomTabs.KeepAliveService, Xamarin.AndroidX.Browser", "", this, new Object[0]);
+        }
+    }
+
+    @Override // android.app.Service
+    public IBinder onBind(Intent intent) {
+        return n_onBind(intent);
+    }
+
+    @Override // mono.android.IGCUserPeer
+    public void monodroidAddReference(Object obj) {
+        if (this.refList == null) {
+            this.refList = new ArrayList();
+        }
+        this.refList.add(obj);
+    }
+
+    @Override // mono.android.IGCUserPeer
+    public void monodroidClearReferences() {
+        ArrayList arrayList = this.refList;
+        if (arrayList != null) {
+            arrayList.clear();
+        }
+    }
+}

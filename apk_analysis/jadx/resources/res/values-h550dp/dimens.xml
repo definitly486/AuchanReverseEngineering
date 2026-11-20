@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dob_selection_days_vertical_space">16dp</dimen>
+    <dimen name="dob_selection_dividers_inset">16dp</dimen>
+    <dimen name="dob_selection_subtitle_inset">12dp</dimen>
+    <dimen name="dob_selection_subtitle_size">16sp</dimen>
+    <dimen name="dob_selection_toolbar_size">66dp</dimen>
+</resources>

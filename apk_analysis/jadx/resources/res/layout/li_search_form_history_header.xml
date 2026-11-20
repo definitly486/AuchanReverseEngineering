@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/light_main"
+        android:layout_gravity="center"
+        android:id="@+id/history_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:layout_marginEnd="12dp"
+        android:textFontWeight="700"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/gray600"
+        android:layout_gravity="center"
+        android:id="@+id/history_clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textFontWeight="500"/>
+</LinearLayout>

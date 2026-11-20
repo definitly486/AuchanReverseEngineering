@@ -1,0 +1,15 @@
+using System;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+
+namespace Auchan.CommonRefitInternalGenerated;
+
+[ExcludeFromCodeCoverage]
+[EditorBrowsable(EditorBrowsableState.Never)]
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct | AttributeTargets.Enum | AttributeTargets.Constructor | AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Event | AttributeTargets.Interface | AttributeTargets.Delegate)]
+internal sealed class PreserveAttribute : Attribute
+{
+	public bool AllMembers;
+
+	public bool Conditional;
+}

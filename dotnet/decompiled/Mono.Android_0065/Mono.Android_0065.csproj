@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mono.Android</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>../../dll/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>../../dll/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>../../dll/System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>../../dll/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.Brotli">
+      <HintPath>../../dll/System.IO.Compression.Brotli.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Runtime">
+      <HintPath>../../dll/Mono.Android.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>../../dll/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>../../dll/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Xml">
+      <HintPath>../../dll/System.Private.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>../../dll/System.Console.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

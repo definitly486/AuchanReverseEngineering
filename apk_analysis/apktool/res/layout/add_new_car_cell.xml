@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="25.0px" android:minHeight="25.0px"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/add_new_car_icon_container" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginTop="15.0dp" android:layout_marginBottom="15.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/add_new_car_icon" android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_drive_add_car" app:layout_constraintLeft_toLeftOf="parent" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/add_new_car_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:text="Добавить новый автомобиль" app:layout_constraintBottom_toBottomOf="@id/add_new_car_icon_container" app:layout_constraintLeft_toRightOf="@id/add_new_car_icon_container" app:layout_constraintTop_toTopOf="@id/add_new_car_icon_container" />
+    <View android:background="@color/basics200" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10.0dp" android:paddingBottom="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bottomSheetLine" android:layout_width="36.0dp" android:layout_height="5.0dp" android:src="@drawable/bottom_sheet_line" />
+    <ImageView android:id="@id/auchan_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dp" android:src="@drawable/ic_aic_error" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/basics600" android:gravity="center" android:id="@id/loyalty_sent_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="37.0dp" />
+    <TextView android:textColor="@color/basics600" android:gravity="center" android:id="@id/description_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" />
+    <com.google.android.material.button.MaterialButton android:id="@id/continue_button" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="32.0dp" style="@style/DefaultRedButton" />
+</LinearLayout>

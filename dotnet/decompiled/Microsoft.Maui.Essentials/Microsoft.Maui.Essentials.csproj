@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Microsoft.Maui.Essentials</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Core">
+      <HintPath>../../dll/Xamarin.AndroidX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maui.Graphics">
+      <HintPath>../../dll/Microsoft.Maui.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Browser">
+      <HintPath>../../dll/Xamarin.AndroidX.Browser.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

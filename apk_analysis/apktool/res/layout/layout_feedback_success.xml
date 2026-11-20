@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="172.0dp" android:layout_height="172.0dp" android:src="@mipmap/img_feedback_success" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/shark" android:gravity="center" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="42.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/oslo_gray" android:gravity="center" android:id="@id/message" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="12.0dp" android:lineSpacingExtra="4.0dp" />
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2.0" />
+            <Button android:id="@id/close_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Отлично!" android:layout_marginHorizontal="20.0dp" style="@style/DefaultRedButton" />
+            <Button android:id="@id/navigate_profile_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="20.0dp" android:text="Перейти в профиль" android:textAllCaps="false" style="@style/ButtonAsRedLabel" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

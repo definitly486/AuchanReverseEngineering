@@ -1,0 +1,20 @@
+.class public Lcom/yandex/mapkit/location/LocationSettingsFactory;
+.super Ljava/lang/Object;
+.source "LocationSettingsFactory.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static native coarseSettings()Lcom/yandex/mapkit/location/LocationSettings;
+.end method
+
+.method public static native fineSettings()Lcom/yandex/mapkit/location/LocationSettings;
+.end method

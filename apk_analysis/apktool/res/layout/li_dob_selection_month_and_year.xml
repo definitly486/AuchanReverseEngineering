@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/color_text_dob_selection_month_and_year" android:id="@id/title_label" android:background="@drawable/bg_rounded_8" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/color_bg_dob_selection_month_and_year" android:layout_marginHorizontal="4.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout android:paddingLeft="@dimen/abc_dialog_padding_material" android:paddingRight="@dimen/abc_dialog_padding_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Количество" app:endIconMode="custom" app:errorIconDrawable="@null" style="@style/DefaultInputLayout"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/black" android:id="@id/qty_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" app:emojiCompatEnabled="false" />
+</com.google.android.material.textfield.TextInputLayout>

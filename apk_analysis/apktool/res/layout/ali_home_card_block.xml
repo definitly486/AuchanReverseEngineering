@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/card_section" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="120.0dp" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/cardSectionLayout" android:background="@color/basics100" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+            <include android:id="@id/for_business_card" android:layout_width="103.0dp" android:layout_height="96.0dp" android:layout_marginEnd="10.0dp" layout="@layout/li_home_card" />
+            <include android:id="@id/sales_and_news_card" android:layout_width="103.0dp" android:layout_height="96.0dp" android:layout_marginEnd="10.0dp" layout="@layout/li_home_card" />
+            <include android:id="@id/shop_card" android:layout_width="103.0dp" android:layout_height="96.0dp" layout="@layout/li_home_card" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>

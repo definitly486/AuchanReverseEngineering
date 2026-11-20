@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/basics100" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/default_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/suggestions_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/appbar_constraint_layout" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_weight="1.0" android:layout_marginStart="20.0dp">
+                    <auchan.CustomSearchView android:textColor="@color/light_main" android:textColorHint="#636c78" android:id="@id/query_edit_text" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:inputType="text" app:closeIcon="@drawable/ic_close_dark" app:iconifiedByDefault="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:queryBackground="@null" app:queryHint="Поиск" app:searchIcon="@drawable/ic_search_gray" style="@style/SearchView.Grey200" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:textAppearance="@style/TextAppearance.Body1Medium" android:textColor="@color/primary02_TextActive" android:layout_gravity="center_vertical" android:id="@id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textEnd" android:layout_marginStart="10.0dp" android:layout_marginEnd="20.0dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/autofill_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <View android:id="@id/autofill_separator" android:background="@color/gray200" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/autofill_recycler" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/progress_layout" android:visibility="gone" layout="@layout/progress" />
+</FrameLayout>

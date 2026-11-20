@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.scanflow.datacapture.sfbarcode.SFCameraView android:id="@id/cameraView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+        <ToggleButton android:id="@id/torchButton" android:background="@drawable/ic_torch_selector" android:layout_width="24.0dp" android:layout_height="24.0dp" android:textOn="" android:textOff="" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="@id/headerTextView" app:layout_constraintEnd_toStartOf="@id/headerTextView" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/headerTextView" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/headerTextView" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="Заголовок" app:layout_constraintEnd_toStartOf="@id/closeButton" app:layout_constraintHorizontal_weight="5.0" app:layout_constraintStart_toEndOf="@id/torchButton" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/closeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dp" app:layout_constraintBottom_toBottomOf="@id/headerTextView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/headerTextView" app:layout_constraintTop_toTopOf="@id/headerTextView" app:srcCompat="@drawable/ic_close" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/focusOverlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/subHeaderTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dp" app:layout_constraintBottom_toTopOf="@id/focusImage" app:layout_constraintEnd_toEndOf="@id/focusImage" app:layout_constraintStart_toStartOf="@id/focusImage" />
+        <View android:id="@id/focusImage" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="1.2:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.8" />
+        <FrameLayout android:id="@id/actionLayout" android:layout_width="0.0dp" android:layout_height="60.0dp" android:layout_marginStart="22.0dp" android:layout_marginEnd="22.0dp" app:layout_constraintBottom_toTopOf="@id/bottom_guideline" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/focusImage">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/snackLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/snackIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dp" />
+                <auchan.WrapTextView android:textColor="@color/white" android:id="@id/snackText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3.0sp" />
+            </LinearLayout>
+            <Button android:layout_gravity="center" android:id="@id/enterManuallyButton" android:layout_width="200.0dp" android:layout_height="52.0dp" android:textAllCaps="false" style="@style/OutlineTransparentButton" />
+        </FrameLayout>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/bottom_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+</FrameLayout>

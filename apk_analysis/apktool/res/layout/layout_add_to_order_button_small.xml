@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:id="@id/clickArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/alertLightGreen" app:cardCornerRadius="8.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12.0dp">
+            <ImageView android:id="@id/icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="2.0dp" android:src="@drawable/ic_add_to_order_cart" android:layout_marginStart="2.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="@color/primary02_TextActive" />
+            <TextView android:textAppearance="@style/TextAppearance.Body2Medium" android:textColor="@color/primary02_TextActive" android:id="@id/addToCartTextView" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginStart="10.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton android:id="@id/addToOrderButton" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="8.0dp" android:textAllCaps="false" app:cornerRadius="8.0dp" style="@style/DefaultGreenMaterialRoundButtonS" />
+</LinearLayout>

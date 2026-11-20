@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/orders_item_status" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginStart="4.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:id="@id/status_bg" android:background="@drawable/rounded_corners_8_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="4.0dp">
+            <TextView android:textSize="10.0sp" android:textColor="@color/basics200" android:id="@id/status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/changed_bg" android:background="@drawable/rounded_corners_8_order_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:layout_marginTop="4.0dp" android:backgroundTint="@color/informations100">
+            <TextView android:textSize="10.0sp" android:textColor="@color/informations300" android:id="@id/changed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/basics600" android:id="@id/number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="№486168" android:layout_marginStart="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/orders_item_status" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/basics600" android:id="@id/orders_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginEnd="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/number_text" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/basics500" android:id="@id/orders_item_delivery_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="Авто 27 августа 2020" android:layout_marginStart="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/number_text" />
+</merge>

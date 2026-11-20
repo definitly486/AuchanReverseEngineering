@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/custom_ripple" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/navigation_cell_icon" android:layout_width="22.0dp" android:layout_height="22.0dp" android:layout_marginLeft="20.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/light_main" android:ellipsize="end" android:gravity="left|top" android:layout_gravity="center_vertical" android:id="@id/navigation_cell_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="13.0dp" android:layout_weight="1.0" android:translationY="-1.0dp" android:fontFamily="sans-serif" android:textAlignment="gravity" android:layout_marginStart="12.0dp" android:layout_marginEnd="14.0dp" android:textFontWeight="500" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/navigation_cell_unread_view" android:background="@drawable/bg_unread_message_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:layout_marginStart="10.0dp" android:layout_marginEnd="12.0dp">
+            <TextView android:textSize="12.0sp" android:textColor="@color/basics100" android:id="@id/navigation_cell_unread_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_marginStart="9.0dp" android:layout_marginEnd="9.0dp" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="6.0dp" android:layout_height="12.0dp" android:layout_marginRight="28.0dp" android:src="@drawable/ic_small_chevron_right" />
+    </LinearLayout>
+    <View android:id="@id/navigation_cell_separator" android:background="@color/separatorColor" android:layout_width="match_parent" android:layout_height="1.0dp" />
+</LinearLayout>

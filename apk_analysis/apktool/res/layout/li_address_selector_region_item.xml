@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radioButton" android:clickable="false" android:layout_width="24.0dp" android:layout_height="24.0dp" style="@style/RadioButtonGreen" />
+    <TextView android:textAppearance="@style/DefaultLabel" android:ellipsize="end" android:id="@id/name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12.0dp" android:maxLines="1" />
+</LinearLayout>

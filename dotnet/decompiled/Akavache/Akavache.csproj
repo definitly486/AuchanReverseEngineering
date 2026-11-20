@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Akavache</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Akavache.Core">
+      <HintPath>../../dll/Akavache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2">
+      <HintPath>../../dll/SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>../../dll/Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>../../dll/Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="_Microsoft.Android.Resource.Designer">
+      <HintPath>../../dll/_Microsoft.Android.Resource.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>../../dll/System.Reactive.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

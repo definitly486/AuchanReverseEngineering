@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/default_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/splash_logo" android:layout_width="157.0dp" android:layout_height="48.0dp" android:layout_marginTop="75.0dp" android:src="@drawable/splash_logo" />
+        <ImageView android:layout_gravity="center" android:id="@id/qr_code_on_screen" android:background="@drawable/red_corner_border" android:visibility="gone" android:layout_width="335.0dp" android:layout_height="87.0dp" android:layout_marginTop="35.0dp" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/text_qr_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:text="Ваша карта лояльности" android:textAlignment="center" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/textSecondary" android:gravity="center" android:id="@id/loyalty_card_subtext_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:textAlignment="center" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <crc64fac7521b55e1fcf3.SkottieAnimationView android:id="@id/snow_animation" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,1:1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:skottie_autoPlay="true" app:skottie_loop="false" />
+        <ProgressBar android:layout_width="0.0dp" android:layout_height="6.0dp" android:layout_marginTop="20.0dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/rounded_progress_bar_splash" android:indeterminateTintMode="src_in" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.586" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

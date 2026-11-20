@@ -1,0 +1,91 @@
+using AndroidX.Fragment.App;
+using Auchan.Android.AppAnalytics.Appmetrica;
+using Auchan.Android.AppAnalytics.YandexMetrica;
+using Auchan.Android.AuchanPay.Services;
+using Auchan.Android.Authorization;
+using Auchan.Android.Authorization.Managers;
+using Auchan.Android.Base;
+using Auchan.Android.Cashback.Wallet;
+using Auchan.Android.Common;
+using Auchan.Android.Common.Network;
+using Auchan.Android.Deeplinks;
+using Auchan.Android.Dialogs;
+using Auchan.Android.Ecom.PriceChecker;
+using Auchan.Android.Ecom.Product;
+using Auchan.Android.HardUpdate;
+using Auchan.Android.Managers.AppActionManager;
+using Auchan.Android.Navigation;
+using Auchan.Android.NewYearGame;
+using Auchan.Android.Profile.Orders.Services;
+using Auchan.Android.Promotions.ExtraPromotions;
+using Auchan.Android.PushNotifications;
+using Auchan.Android.SafeEntrance;
+using Auchan.Android.Sms;
+using Auchan.Android.SupportChat;
+using Auchan.Common.Analytics.YandexAppMetrica;
+using Auchan.Common.AuchanPay.Services;
+using Auchan.Common.Cashback.Wallet;
+using Auchan.Common.Common;
+using Auchan.Common.HardUpdate;
+using Auchan.Common.Managers.AppActionManager;
+using Auchan.Common.Managers.Dialogs;
+using Auchan.Common.Networking;
+using Auchan.Common.PersonalCabinet;
+using Auchan.Common.PersonalCabinet.Authorization.Managers;
+using Auchan.Common.Profile.Orders.Services;
+using Auchan.Common.SafeEntrance.Managers;
+using Auchan.Common.SupportChat;
+using DryIoc;
+using Microsoft.Maui.ApplicationModel.Communication;
+
+namespace Auchan.Android.DependencyInjection;
+
+internal static class DependencyRegistry
+{
+	public static void Register(IRegistrator registrator)
+	{
+		registrator.Register<IMetricaPlatformSdk, MetricaAndroidSdk>(Reuse.Singleton);
+		registrator.Register<IDeferredLinkSupport, DeferredLinkSupport>();
+		registrator.Register<YandexMetricaDeviceIdListener>(Reuse.Singleton);
+		registrator.Register<DIBackgroundFragmentRegistrar>(Reuse.Singleton);
+		registrator.Register<FragmentFactory, DIFragmentFactory>();
+		registrator.Register<ProcessLifecycleObserver>(Reuse.Singleton);
+		registrator.Register<IDeviceService, AndroidDeviceService>(Reuse.Singleton);
+		registrator.Register<IAppAvailabilityService, AndroidAppAvailabilityService>(Reuse.Singleton);
+		registrator.RegisterMany<DroidInfoMessageService>(Reuse.Singleton);
+		registrator.Register<ICurrentStoreSelectDialog, AndroidCurrentStoreSelectDialog>(Reuse.Singleton);
+		registrator.Register<IAgeGateDialog, DroidAgeGateDialog>(Reuse.Singleton);
+		registrator.Register<IWaitListDialogService, WaitListDialogService>(Reuse.Singleton);
+		registrator.Register<IModificationsDialogService, ModificationsDialogService>(Reuse.Singleton);
+		registrator.Register<IRestartService, DroidRestartService>(Reuse.Singleton);
+		registrator.Register<IDeeplinkManager, DeeplinkManager>(Reuse.Singleton);
+		registrator.Register<ProductQtyInputDialog>(Reuse.Singleton);
+		registrator.Register<ProductFooterBinder>();
+		registrator.Register<DroidPopupQueue>();
+		registrator.Register<INavigationOverride, AuthorizationNavigationOverride>();
+		registrator.Register<INavigationOverride, SelfScanNavigationOverride>();
+		registrator.Register<INavigationOverride, GameNavigationOverride>();
+		registrator.Register<INavigationOverride, TabActivatorNavigationOverride>();
+		registrator.Register<INavigationOverride, DialogNavigationOverride>();
+		registrator.Register<IBrowserActivator, BrowserActivator>();
+		registrator.Register<ILocationPermissionManager, DefaultLocationPermissionManager>(Reuse.Singleton);
+		registrator.Register<IWalletPassManager, WalletPassManager>(Reuse.Singleton);
+		registrator.Register<AndroidNotificationService>(Reuse.Singleton);
+		registrator.RegisterMany<NavigationService>(Reuse.Singleton);
+		registrator.RegisterMany<HardUpdateManager>(Reuse.Singleton);
+		registrator.Register<IUpdateService, UpdateService>(Reuse.Singleton);
+		registrator.RegisterMany<ExtraPromotionService>(Reuse.Singleton);
+		registrator.RegisterMany<AndroidSafeEntranceStateObserver>(Reuse.Singleton);
+		registrator.Register<IBiometryManager, AndroidBiometricService>();
+		registrator.Register<ILoginManager, LoginManager>(Reuse.Singleton);
+		registrator.Register<IVkAuthLauncher, VkAuthLauncher>(Reuse.Singleton);
+		registrator.Register<IAuchanPayDialogManager, AuchanPayDialogManager>(Reuse.Transient);
+		registrator.Register<ICancelOrderManager, CancelOrderManager>(Reuse.Transient);
+		registrator.Register<IOpenSystemBrowserUseCase, OpenSystemBrowserUseCase>(Reuse.Singleton);
+		registrator.Register<IHttpMessageHandler, AuchanMessageHandler>(Reuse.Transient);
+		registrator.Register<IPickerOptionsProvider, PickerOptionsProvider>(Reuse.Transient);
+		registrator.Register<IAppActionIconProvider, AppActionIconProvider>(Reuse.Singleton);
+		registrator.Register<IPhoneDialer, PhoneDialerImplementation>(Reuse.Singleton);
+		registrator.RegisterMany<DroidSmsRetrieverMock>(Reuse.Singleton);
+	}
+}

@@ -1,0 +1,28 @@
+using System.Diagnostics;
+using System.Reflection;
+using System.Resources;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using Polly;
+using Polly.CircuitBreaker;
+using Polly.Timeout;
+
+[assembly: AssemblyCompany("App vNext")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCopyright("Copyright (c) 2015-2025, App vNext")]
+[assembly: AssemblyDescription("Polly is a .NET resilience and transient-fault-handling library that allows developers to express resilience and transient fault handling policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner.")]
+[assembly: AssemblyFileVersion("8.6.1.4745")]
+[assembly: AssemblyInformationalVersion("8.6.1+b5a1aa4557d2a2a99496bebf1fa81e79678ce01f")]
+[assembly: AssemblyProduct("Polly")]
+[assembly: AssemblyTitle("Polly")]
+[assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/App-vNext/Polly")]
+[assembly: NeutralResourcesLanguage("en-US")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2, PublicKey=0024000004800000940000000602000000240000525341310004000001000100c547cac37abd99c8db225ef2f6c8a3602f3b3606cc9891605d02baa56104f4cfc0734aa39b93bf7852f7d9266654753cc297e7d2edfe0bac1cdcf9f717241550e0a7b191195b7667bb4f64bcb8e2121380fd1d9d46ad2d92d2d15605093924cceaf74c4861eff62abf69b9291ed0a340e113be11e6a7d3113e92484cf7045cc7")]
+[assembly: InternalsVisibleTo("Polly.Specs, PublicKey=0024000004800000940000000602000000240000525341310004000001000100150819e3494f97263a3abdd18e5e0c47b04e6c0ede44a6c51d50b545d403ceeb7cbb32d18dbbbcdd1d88a87d7b73206b126be134b0609c36aa3cb31dd2e47e393293102809b8d77f192f3188618a42e651c14ebf05f8f5b76aa91b431642b23497ed82b65d63791cdaa31d4282a2d6cbabc3fe0745b6b6690c417cabf6a1349c")]
+[assembly: AssemblyVersion("8.0.0.0")]
+[assembly: TypeForwardedTo(typeof(BrokenCircuitException))]
+[assembly: TypeForwardedTo(typeof(CircuitState))]
+[assembly: TypeForwardedTo(typeof(IsolatedCircuitException))]
+[assembly: TypeForwardedTo(typeof(ExecutionRejectedException))]
+[assembly: TypeForwardedTo(typeof(TimeoutRejectedException))]
+[module: RefSafetyRules(11)]

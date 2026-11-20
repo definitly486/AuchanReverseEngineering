@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Akavache.Sqlite3</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Splat">
+      <HintPath>../../dll/Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core">
+      <HintPath>../../dll/SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>../../dll/SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>../../dll/System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Core">
+      <HintPath>../../dll/Akavache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>../../dll/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>../../dll/Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="_Microsoft.Android.Resource.Designer">
+      <HintPath>../../dll/_Microsoft.Android.Resource.Designer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

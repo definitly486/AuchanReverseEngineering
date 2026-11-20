@@ -1,0 +1,14 @@
+package com.google.mlkit.vision.text.internal;
+
+import com.google.mlkit.vision.common.InputImage;
+import com.google.mlkit.vision.text.Text;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-mlkit-text-recognition-common@@19.1.0 */
+/* JADX INFO: loaded from: classes3.dex */
+interface zzm {
+    Text zza(InputImage inputImage);
+
+    void zzb();
+
+    void zzc();
+}

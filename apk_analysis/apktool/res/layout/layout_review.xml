@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reviewContainer" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/light_primary" android:id="@id/nameText" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginHorizontal="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/menu_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/menu_button" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_more_horizontal" android:tint="@color/gray600" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <auchan.RatingView android:orientation="horizontal" android:id="@id/rateView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="8.0dp" android:layout_marginHorizontal="4.0dp" />
+    <include layout="@layout/layout_trigger_words" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/light_primary" android:ellipsize="end" android:id="@id/reviewText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:breakStrategy="simple" android:layout_marginHorizontal="4.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/primary02_TextActive" android:id="@id/showAllButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginHorizontal="4.0dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/thumbnailContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layout_marginHorizontal="4.0dp" app:layout_goneMarginTop="0.0dp" />
+    <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/bottomContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginHorizontal="4.0dp">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/dateText" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/responseCountContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/responseThumbnail" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_review_response" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/light_primary" android:id="@id/responseCountText" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

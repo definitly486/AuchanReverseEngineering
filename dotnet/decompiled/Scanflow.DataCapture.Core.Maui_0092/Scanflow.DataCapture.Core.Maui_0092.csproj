@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Scanflow.DataCapture.Core.Maui</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Camera.View">
+      <HintPath>../../dll/Xamarin.AndroidX.Camera.View.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Android.Material">
+      <HintPath>../../dll/Xamarin.Google.Android.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Camera.Core">
+      <HintPath>../../dll/Xamarin.AndroidX.Camera.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Kotlin.StdLib">
+      <HintPath>../../dll/Xamarin.Kotlin.StdLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Runtime">
+      <HintPath>../../dll/Mono.Android.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

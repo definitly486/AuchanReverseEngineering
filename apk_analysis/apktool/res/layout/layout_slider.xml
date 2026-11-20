@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <helper.TouchListenerViewGroup android:id="@id/touch_intercept" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="155.0dp" android:layout_marginTop="16.0dp">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/slider_viewpager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20.0dp" android:paddingEnd="20.0dp" />
+    </helper.TouchListenerViewGroup>
+    <me.relex.circleindicator.CircleIndicator android:layout_gravity="center" android:id="@id/circle_indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" style="@style/CarouselIndicator" />
+</LinearLayout>

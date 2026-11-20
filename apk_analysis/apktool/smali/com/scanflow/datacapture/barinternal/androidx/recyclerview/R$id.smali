@@ -1,0 +1,7 @@
+.class public abstract Lcom/scanflow/datacapture/barinternal/androidx/recyclerview/R$id;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# static fields
+.field public static final item_touch_helper_previous_elevation:I = 0x7f090477

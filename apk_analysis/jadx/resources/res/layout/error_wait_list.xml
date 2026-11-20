@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/gray200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:src="@drawable/ic_bird_error"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/shark"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Упс! Что-то пошло не так :("
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/light_main"
+            android:gravity="center"
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="К сожалению, у нас что-то сломалось и сейчас данный раздел недоступен. Пока мы исправляем ошибки, вы можете сходить за покупками"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+        <Button
+            android:id="@+id/action_button"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:text="В каталог за покупками"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message"
+            style="@style/DefaultGreenMaterialRoundButton"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

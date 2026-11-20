@@ -1,0 +1,43 @@
+package com.scanflow.datacapture.barinternal.kotlinx.coroutines.internal;
+
+import com.scanflow.datacapture.barinternal.kotlin.KotlinNothingValueException;
+import com.scanflow.datacapture.barinternal.kotlinx.coroutines.MainCoroutineDispatcher;
+import java.util.List;
+
+/* JADX INFO: compiled from: MainDispatchers.kt */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class MainDispatchersKt {
+    public static final MainCoroutineDispatcher tryCreateDispatcher(MainDispatcherFactory mainDispatcherFactory, List list) {
+        try {
+            return mainDispatcherFactory.createDispatcher(list);
+        } catch (Throwable th) {
+            return createMissingDispatcher(th, mainDispatcherFactory.hintOnError());
+        }
+    }
+
+    public static final boolean isMissing(MainCoroutineDispatcher mainCoroutineDispatcher) {
+        return mainCoroutineDispatcher.getImmediate() instanceof MissingMainCoroutineDispatcher;
+    }
+
+    static /* synthetic */ MissingMainCoroutineDispatcher createMissingDispatcher$default(Throwable th, String str, int i, Object obj) {
+        if ((i & 1) != 0) {
+            th = null;
+        }
+        if ((i & 2) != 0) {
+            str = null;
+        }
+        return createMissingDispatcher(th, str);
+    }
+
+    private static final MissingMainCoroutineDispatcher createMissingDispatcher(Throwable th, String str) throws Throwable {
+        if (th != null) {
+            throw th;
+        }
+        throwMissingMainDispatcherException();
+        throw new KotlinNothingValueException();
+    }
+
+    public static final Void throwMissingMainDispatcherException() {
+        throw new IllegalStateException("Module with the Main dispatcher is missing. Add dependency providing the Main dispatcher, e.g. 'kotlinx-coroutines-android' and ensure it has the same version as 'kotlinx-coroutines-core'");
+    }
+}

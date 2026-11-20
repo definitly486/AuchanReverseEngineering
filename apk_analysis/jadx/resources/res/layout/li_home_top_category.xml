@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="106dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/category_image"
+                android:background="@drawable/round_corners_12"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_catalog_placeholder"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:id="@+id/category_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="12dp"
+                android:maxLines="2"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_image"
+                style="@style/Home.CategoryCard.Title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

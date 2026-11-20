@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:shapeAppearance="@style/TopCornersShape">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/defaultLayout" android:background="@color/white" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/puller" android:layout_width="36.0dp" android:layout_height="5.0dp" android:layout_marginTop="8.0dp" android:src="@drawable/bottom_sheet_line" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp">
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/basics600" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:text="Добавьте автомобиль" />
+                    <ImageView android:id="@id/close_button" android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_close_dark" app:layout_constraintRight_toRightOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/basics600" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="20.0dp" android:text="Пожалуйста, добавьте данные Вашего автомобиля, чтобы мы смогли найти его в зоне выдачи" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/car_number_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:hint="Номер автомобиля *" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:errorIconDrawable="@null" style="@style/DefaultInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/black" android:id="@id/car_number" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext" android:imeActionId="@id/car_color" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/car_color_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:hint="Цвет *" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:errorIconDrawable="@null" style="@style/DefaultInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/black" android:id="@id/car_color" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext" android:imeActionId="@id/car_brand" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/car_brand_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:hint="Марка *" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" app:errorIconDrawable="@null" style="@style/DefaultInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/black" android:id="@id/car_brand" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionUnspecified|normal" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton android:id="@id/save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="Сохранить" android:layout_marginStart="20.0dp" android:layout_marginEnd="20.0dp" style="@style/DefaultMaterialButton" />
+            </LinearLayout>
+            <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+            <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/comarch_error_view" />
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

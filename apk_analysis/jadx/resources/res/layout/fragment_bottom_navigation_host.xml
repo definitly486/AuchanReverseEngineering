@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/host_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include
+            android:id="@+id/progress"
+            android:visibility="gone"
+            layout="@layout/progress"/>
+    </FrameLayout>
+    <View
+        android:background="@color/basics200"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        app:itemIconTint="@drawable/bottom_navigation_icon_colors"
+        app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+        app:itemTextAppearanceActiveBoldEnabled="false"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+        app:itemTextColor="@drawable/bottom_navigation_text_colors"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_navigation"
+        app:theme="@style/Theme.MaterialComponents"/>
+    <View
+        android:id="@+id/bottom_inset_target"
+        android:background="@color/basics100"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

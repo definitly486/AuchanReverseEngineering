@@ -1,0 +1,11 @@
+.class public abstract Lcom/scanflow/datacapture/barinternal/androidx/fragment/R$id;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# static fields
+.field public static final fragment_container_view_tag:I = 0x7f0903c1
+
+.field public static final special_effects_controller_view_tag:I = 0x7f090879
+
+.field public static final visible_removing_fragment_view_tag:I = 0x7f0909fb

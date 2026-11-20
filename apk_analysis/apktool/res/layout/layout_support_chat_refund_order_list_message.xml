@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/items" android:clipChildren="false" android:clipToPadding="false" android:layout_width="0.0dp" android:layout_height="112.0dp" android:paddingStart="16.0dp" android:paddingEnd="51.0dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <me.relex.circleindicator.CircleIndicator android:layout_gravity="center" android:id="@id/indicator" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:ci_animator="@animator/no_op" app:ci_drawable="@drawable/ic_pager_indicator_active_gray600_2dp" app:ci_drawable_unselected="@drawable/ic_pager_indicator_inactive_gray400_2dp" app:ci_height="4.0dp" app:ci_margin="3.0dp" app:ci_width="4.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/items" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

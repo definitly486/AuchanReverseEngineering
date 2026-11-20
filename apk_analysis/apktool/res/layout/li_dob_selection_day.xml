@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/color_text_dob_selection_day" android:gravity="center" android:id="@id/title_label" android:background="@drawable/bg_rounded_6" android:layout_width="match_parent" android:layout_height="32.0dp" android:backgroundTint="@color/color_bg_dob_selection_day"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" />

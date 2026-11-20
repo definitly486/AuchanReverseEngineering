@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/bottom_content"
+    android:background="@color/white_lilac"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_order_total"/>
+    <p000auchan.RecommendationsView
+        android:id="@+id/recommendations_container"
+        android:background="@color/white_lilac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetStart="0.0dp" app:title="Лист ожидания">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dp">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/back_button" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="14.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ToolbarImageButton.Back" />
+            <TextView android:textAppearance="@style/TextAppearance.Title" android:ellipsize="end" android:gravity="center" android:id="@id/toolbar_title" android:layout_width="0.0dp" android:layout_height="0.0dp" android:maxLines="1" android:lines="1" android:layout_marginEnd="44.0dp" app:layout_constraintBottom_toBottomOf="@id/back_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/back_button" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/filter_button" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_filter_green" android:layout_marginEnd="20.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:id="@id/toolbar_divider" android:background="@color/basics200" android:layout_width="match_parent" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/toolbarRecycler" android:layout_width="wrap_content" android:layout_height="26.0dp" android:layout_marginTop="20.0dp" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/defaultLayout" android:background="@color/gray200" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/emptyLayout" android:background="@color/basics100" android:clipChildren="false" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="32.0dp" android:animateLayoutChanges="true" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+            <ImageView android:id="@id/emptyIcon" android:layout_width="190.0dp" android:layout_height="126.0dp" android:src="@drawable/ic_wait_list_empty" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/light_main" android:gravity="center" android:id="@id/emptyTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:gravity="center" android:id="@id/emptyMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="14.0dp" />
+            <Button android:id="@id/navigateToCatalogButton" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginBottom="8.0dp" android:textAllCaps="false" style="@style/DefaultGreenMaterialRoundButton" />
+        </LinearLayout>
+        <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+        <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/error_wait_list" />
+    </FrameLayout>
+</LinearLayout>

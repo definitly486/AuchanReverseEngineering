@@ -1,0 +1,74 @@
+using System.Collections;
+
+namespace System.Xml.Schema;
+
+public class XmlSchemaObjectCollection : CollectionBase
+{
+	private readonly XmlSchemaObject _parent;
+
+	public virtual XmlSchemaObject this[int index]
+	{
+		get
+		{
+			return (XmlSchemaObject)base.List[index];
+		}
+		set
+		{
+			base.List[index] = value;
+		}
+	}
+
+	public new XmlSchemaObjectEnumerator GetEnumerator()
+	{
+		return new XmlSchemaObjectEnumerator(base.InnerList.GetEnumerator());
+	}
+
+	public int Add(XmlSchemaObject item)
+	{
+		return base.List.Add(item);
+	}
+
+	public void Insert(int index, XmlSchemaObject item)
+	{
+		base.List.Insert(index, item);
+	}
+
+	public void Remove(XmlSchemaObject item)
+	{
+		base.List.Remove(item);
+	}
+
+	protected override void OnInsert(int index, object? item)
+	{
+		_parent?.OnAdd(this, item);
+	}
+
+	protected override void OnSet(int index, object? oldValue, object? newValue)
+	{
+		if (_parent != null)
+		{
+			_parent.OnRemove(this, oldValue);
+			_parent.OnAdd(this, newValue);
+		}
+	}
+
+	protected override void OnClear()
+	{
+		_parent?.OnClear(this);
+	}
+
+	protected override void OnRemove(int index, object? item)
+	{
+		_parent?.OnRemove(this, item);
+	}
+
+	internal XmlSchemaObjectCollection Clone()
+	{
+		return new XmlSchemaObjectCollection { this };
+	}
+
+	private void Add(XmlSchemaObjectCollection collToAdd)
+	{
+		base.InnerList.InsertRange(0, collToAdd);
+	}
+}

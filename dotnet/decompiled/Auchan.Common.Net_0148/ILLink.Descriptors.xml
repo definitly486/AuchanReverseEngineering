@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<linker>
+
+  <assembly fullname="DryIoc">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="CsvHelper">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Akavache.Sqlite3">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Akavache.Core">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Akavache">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="CSharpFunctionalExtensions">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="NLog">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Refit">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Polly">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Splat">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="SQLitePCLRaw.batteries_v2">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="System.Net.Http">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Newtonsoft.Json">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="System.Runtime.Serialization.Primitives">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="System.Private.CoreLib">
+    <type fullname="*" />
+  </assembly>
+
+  <assembly fullname="Auchan.Common.Net">
+    <type fullname="*" />
+  </assembly>
+
+</linker>

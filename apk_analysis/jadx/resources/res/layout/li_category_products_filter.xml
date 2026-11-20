@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:layout_marginStart="2dp"
+        style="@style/CheckboxMainStyle"/>
+    <TextView
+        android:id="@+id/itemCount"
+        android:background="@drawable/bg_rounded_grey_8"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="101"
+        style="@style/TextViewIndicator"/>
+</LinearLayout>

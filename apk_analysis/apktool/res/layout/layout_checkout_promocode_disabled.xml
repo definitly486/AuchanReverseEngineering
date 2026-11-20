@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="8.0dp" app:cardElevation="8.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="21.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/points_image_disabled" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="20.0dp" android:layout_marginTop="22.0dp" android:src="@drawable/ic_checkout_coupons_gray" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/basics700" android:id="@id/title_text_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="Промокод" app:layout_constraintBottom_toBottomOf="@id/points_image_disabled" app:layout_constraintLeft_toRightOf="@id/points_image_disabled" app:layout_constraintTop_toTopOf="@id/points_image_disabled" />
+        <ImageView android:id="@id/hide_image_disabled" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="21.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_checkout_plus" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

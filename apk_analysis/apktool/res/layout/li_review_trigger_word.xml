@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:ellipsize="end" android:id="@id/title" android:background="@drawable/bg_review_trigger_word" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:fontFamily="sans-serif" android:paddingStart="12.0dp" android:paddingEnd="12.0dp" android:lineHeight="20.0dp" android:textFontWeight="500"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

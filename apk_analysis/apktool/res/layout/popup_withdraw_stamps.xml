@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="wrap_content" app:shapeAppearance="@style/TopCornersShape"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/default_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:paddingHorizontal="20.0dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/puller" android:layout_width="36.0dp" android:layout_height="5.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/bottom_sheet_line" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/basics700" android:gravity="left" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/basics700" android:gravity="left" android:id="@id/collectedStamps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" android:fontFamily="sans-serif" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/basics700" android:gravity="left" android:id="@id/actionDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_weight="1.0" android:lineSpacingMultiplier="1.2" android:fontFamily="sans-serif" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/products_recycler_view" android:layout_width="match_parent" android:layout_height="240.0dp" android:layout_marginTop="16.0dp" android:nestedScrollingEnabled="true" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <com.google.android.material.button.MaterialButton android:id="@id/continue_button" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="16.0dp" app:cornerRadius="8.0dp" style="@style/DefaultGreenMaterialRoundButton" />
+        <com.google.android.material.button.MaterialButton android:id="@id/dont_apply_button" android:layout_width="match_parent" android:layout_height="48.0dp" android:layout_marginTop="8.0dp" android:layout_marginBottom="12.0dp" app:cornerRadius="8.0dp" style="@style/DefaultGrayMaterialRoundButton" />
+    </LinearLayout>
+    <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/comarch_error_view" />
+</com.google.android.material.card.MaterialCardView>

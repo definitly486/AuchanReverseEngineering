@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:padding="0.0dp" android:layout_width="162.0dp" android:layout_height="302.0dp" app:cardCornerRadius="16.0dp" app:cardElevation="10.0dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/bg_rounded_12" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/product_stub_background" android:scaleType="centerCrop" />
+</androidx.cardview.widget.CardView>

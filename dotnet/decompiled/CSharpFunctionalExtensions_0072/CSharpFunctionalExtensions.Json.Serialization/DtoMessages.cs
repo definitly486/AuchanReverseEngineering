@@ -1,0 +1,15 @@
+using System.Net;
+
+namespace CSharpFunctionalExtensions.Json.Serialization;
+
+internal static class DtoMessages
+{
+	public static readonly string HttpResponseMessageIsNull = "HttpResponseMessage is null";
+
+	public static readonly string ContentJsonNotResult = "The response content in not a Result";
+
+	public static string NotSuccessStatusCodeFormat(HttpStatusCode statusCode, string content)
+	{
+		return $"HttpStatus code is {statusCode}, Content {content}";
+	}
+}

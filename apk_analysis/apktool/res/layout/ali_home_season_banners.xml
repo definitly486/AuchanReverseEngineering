@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/light_primary" android:id="@id/season_offers_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:textAllCaps="false" android:paddingStart="20.0dp" android:layout_marginEnd="20.0dp" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/season_offers" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15.0dp" android:paddingEnd="15.0dp" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</FrameLayout>

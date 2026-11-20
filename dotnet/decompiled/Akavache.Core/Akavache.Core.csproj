@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Akavache.Core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp9.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Reactive">
+      <HintPath>../../dll/System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>../../dll/Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>../../dll/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson">
+      <HintPath>../../dll/Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="_Microsoft.Android.Resource.Designer">
+      <HintPath>../../dll/_Microsoft.Android.Resource.Designer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

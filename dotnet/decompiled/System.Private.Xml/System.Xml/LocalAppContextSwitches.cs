@@ -1,0 +1,74 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
+
+namespace System.Xml;
+
+internal static class LocalAppContextSwitches
+{
+	private static int s_dontThrowOnInvalidSurrogatePairs;
+
+	private static int s_ignoreKindInUtcTimeSerialization;
+
+	private static int s_allowXsdTimeToTimeOnlyWithOffsetLoss;
+
+	private static int s_allowDefaultResolver;
+
+	private static int s_isNetworkingEnabledByDefault;
+
+	private static int s_ignoreObsoleteMembers;
+
+	public static bool DontThrowOnInvalidSurrogatePairs
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("Switch.System.Xml.DontThrowOnInvalidSurrogatePairs", ref s_dontThrowOnInvalidSurrogatePairs);
+		}
+	}
+
+	public static bool IgnoreKindInUtcTimeSerialization
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("Switch.System.Xml.IgnoreKindInUtcTimeSerialization", ref s_ignoreKindInUtcTimeSerialization);
+		}
+	}
+
+	public static bool AllowXsdTimeToTimeOnlyWithOffsetLoss
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("Switch.System.Xml.AllowXsdTimeToTimeOnlyWithOffsetLoss", ref s_allowXsdTimeToTimeOnlyWithOffsetLoss);
+		}
+	}
+
+	public static bool AllowDefaultResolver
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("Switch.System.Xml.AllowDefaultResolver", ref s_allowDefaultResolver);
+		}
+	}
+
+	[FeatureSwitchDefinition("System.Xml.XmlResolver.IsNetworkingEnabledByDefault")]
+	public static bool IsNetworkingEnabledByDefault
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("System.Xml.XmlResolver.IsNetworkingEnabledByDefault", ref s_isNetworkingEnabledByDefault);
+		}
+	}
+
+	public static bool IgnoreObsoleteMembers
+	{
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		get
+		{
+			return System.LocalAppContextSwitches.GetCachedSwitchValue("Switch.System.Xml.IgnoreObsoleteMembers", ref s_ignoreObsoleteMembers);
+		}
+	}
+}

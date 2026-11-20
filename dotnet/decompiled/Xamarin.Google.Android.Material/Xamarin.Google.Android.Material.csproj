@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Xamarin.Google.Android.Material</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.AppCompat">
+      <HintPath>../../dll/Xamarin.AndroidX.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.CoordinatorLayout">
+      <HintPath>../../dll/Xamarin.AndroidX.CoordinatorLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.CardView">
+      <HintPath>../../dll/Xamarin.AndroidX.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Activity">
+      <HintPath>../../dll/Xamarin.AndroidX.Activity.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Core">
+      <HintPath>../../dll/Xamarin.AndroidX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.ViewPager">
+      <HintPath>../../dll/Xamarin.AndroidX.ViewPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android.Runtime">
+      <HintPath>../../dll/Mono.Android.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

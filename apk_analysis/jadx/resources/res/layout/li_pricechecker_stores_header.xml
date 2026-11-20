@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <crc64fac7521b55e1fcf3.SnackView
+        android:id="@+id/delivery_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Цены на товары в разных магазинах могут отличаться"
+        app:cellBackground="@drawable/bg_snack_light_info"
+        app:cellIcon="@drawable/ic_info_blue_24x24"
+        app:cellTextColor="@color/text_info"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/basics600"
+        android:gravity="start"
+        android:id="@+id/delivery_store_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Список магазинов"
+        android:includeFontPadding="false"/>
+</LinearLayout>

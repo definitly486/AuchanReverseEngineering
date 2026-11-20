@@ -1,0 +1,53 @@
+.class Landroidx/camera/video/Recorder$RecordingRecord$1;
+.super Ljava/lang/Object;
+.source "Recorder.java"
+
+# interfaces
+.implements Landroidx/camera/video/Recorder$RecordingRecord$AudioSourceSupplier;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/camera/video/Recorder$RecordingRecord;->initializeRecording(Landroid/content/Context;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroidx/camera/video/Recorder$RecordingRecord;
+
+.field final synthetic val$context:Landroid/content/Context;
+
+
+# direct methods
+.method constructor <init>(Landroidx/camera/video/Recorder$RecordingRecord;Landroid/content/Context;)V
+    .locals 0
+
+    .line 3105
+    iput-object p1, p0, Landroidx/camera/video/Recorder$RecordingRecord$1;->this$0:Landroidx/camera/video/Recorder$RecordingRecord;
+
+    iput-object p2, p0, Landroidx/camera/video/Recorder$RecordingRecord$1;->val$context:Landroid/content/Context;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public get(Lcom/scanflow/datacapture/barinternal/androidx/camera/video/internal/audio/AudioSettings;Ljava/util/concurrent/Executor;)Lcom/scanflow/datacapture/barinternal/androidx/camera/video/internal/audio/AudioSource;
+    .locals 2
+
+    .line 3114
+    new-instance v0, Lcom/scanflow/datacapture/barinternal/androidx/camera/video/internal/audio/AudioSource;
+
+    iget-object v1, p0, Landroidx/camera/video/Recorder$RecordingRecord$1;->val$context:Landroid/content/Context;
+
+    invoke-direct {v0, p1, p2, v1}, Lcom/scanflow/datacapture/barinternal/androidx/camera/video/internal/audio/AudioSource;-><init>(Lcom/scanflow/datacapture/barinternal/androidx/camera/video/internal/audio/AudioSettings;Ljava/util/concurrent/Executor;Landroid/content/Context;)V
+
+    return-object v0
+.end method

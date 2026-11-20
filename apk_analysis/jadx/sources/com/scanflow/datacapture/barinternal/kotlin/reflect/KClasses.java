@@ -1,0 +1,17 @@
+package com.scanflow.datacapture.barinternal.kotlin.reflect;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.KClass;
+
+/* JADX INFO: compiled from: KClasses.kt */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class KClasses {
+    public static final Object cast(KClass kClass, Object obj) {
+        Intrinsics.checkNotNullParameter(kClass, "<this>");
+        if (!kClass.isInstance(obj)) {
+            throw new ClassCastException("Value cannot be cast to " + kClass.getQualifiedName());
+        }
+        Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type T of kotlin.reflect.KClasses.cast");
+        return obj;
+    }
+}

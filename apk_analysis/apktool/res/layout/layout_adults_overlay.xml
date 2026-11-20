@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/adults_only_container" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/adults_only_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_eye_hide" android:tint="@color/text_secondary" app:layout_constraintLeft_toLeftOf="@id/adults_only_text" app:layout_constraintRight_toRightOf="@id/adults_only_text" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textAppearance="@style/TextAppearance.SubtextMedium" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/adults_only_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/adults_only_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+    <ImageView
+        android:id="@+id/pull"
+        android:layout_width="36dp"
+        android:layout_height="5dp"
+        android:src="@drawable/bottom_sheet_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_close_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pull"/>
+    <ImageView
+        android:id="@+id/center_image"
+        android:layout_width="224dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/img_auchan_pay_unavailable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_button"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/basics600"
+        android:gravity="center"
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="У вас уже подтвержден\10Социальный статус карты лояльности."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/center_image"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/understand_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_label"
+        style="@style/DefaultRedButton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

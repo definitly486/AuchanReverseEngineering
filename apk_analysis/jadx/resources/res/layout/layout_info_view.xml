@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/basics600"
+        android:id="@+id/info_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Данные о товаре"/>
+    <TextView
+        android:textSize="16dp"
+        android:textColor="#333333"
+        android:id="@+id/info_view_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мы ответственно подходим к качеству товара. Пожалуйста, укажите информацию ниже при описании обращения, если у Вас есть замечания по качеству наших продуктов. Не знаете, где найти эту информацию? Переходите сюда, мы все расскажем!"/>
+</LinearLayout>

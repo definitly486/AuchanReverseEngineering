@@ -1,0 +1,140 @@
+package com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal;
+
+import android.hardware.camera2.CameraCaptureSession;
+import android.view.Surface;
+import com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.compat.ApiCompat$Api23Impl;
+import com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.compat.ApiCompat$Api26Impl;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes.dex */
+final class SynchronizedCaptureSessionStateCallbacks extends SynchronizedCaptureSession.StateCallback {
+    private final List mCallbacks;
+
+    static SynchronizedCaptureSession.StateCallback createComboCallback(SynchronizedCaptureSession.StateCallback... stateCallbackArr) {
+        return new SynchronizedCaptureSessionStateCallbacks(Arrays.asList(stateCallbackArr));
+    }
+
+    SynchronizedCaptureSessionStateCallbacks(List list) {
+        ArrayList arrayList = new ArrayList();
+        this.mCallbacks = arrayList;
+        arrayList.addAll(list);
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onSurfacePrepared(SynchronizedCaptureSession synchronizedCaptureSession, Surface surface) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onSurfacePrepared(synchronizedCaptureSession, surface);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onReady(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onReady(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onActive(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onActive(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onCaptureQueueEmpty(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onCaptureQueueEmpty(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onConfigured(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onConfigured(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onConfigureFailed(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onConfigureFailed(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    public void onClosed(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onClosed(synchronizedCaptureSession);
+        }
+    }
+
+    @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+    void onSessionFinished(SynchronizedCaptureSession synchronizedCaptureSession) {
+        Iterator it = this.mCallbacks.iterator();
+        while (it.hasNext()) {
+            ((SynchronizedCaptureSession.StateCallback) it.next()).onSessionFinished(synchronizedCaptureSession);
+        }
+    }
+
+    static class Adapter extends SynchronizedCaptureSession.StateCallback {
+        private final CameraCaptureSession.StateCallback mCameraCaptureSessionStateCallback;
+
+        Adapter(CameraCaptureSession.StateCallback stateCallback) {
+            this.mCameraCaptureSessionStateCallback = stateCallback;
+        }
+
+        Adapter(List list) {
+            this(CameraCaptureSessionStateCallbacks.createComboCallback(list));
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onSurfacePrepared(SynchronizedCaptureSession synchronizedCaptureSession, Surface surface) {
+            ApiCompat$Api23Impl.onSurfacePrepared(this.mCameraCaptureSessionStateCallback, synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession(), surface);
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onReady(SynchronizedCaptureSession synchronizedCaptureSession) {
+            this.mCameraCaptureSessionStateCallback.onReady(synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onActive(SynchronizedCaptureSession synchronizedCaptureSession) {
+            this.mCameraCaptureSessionStateCallback.onActive(synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onCaptureQueueEmpty(SynchronizedCaptureSession synchronizedCaptureSession) {
+            ApiCompat$Api26Impl.onCaptureQueueEmpty(this.mCameraCaptureSessionStateCallback, synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onConfigured(SynchronizedCaptureSession synchronizedCaptureSession) {
+            this.mCameraCaptureSessionStateCallback.onConfigured(synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onConfigureFailed(SynchronizedCaptureSession synchronizedCaptureSession) {
+            this.mCameraCaptureSessionStateCallback.onConfigureFailed(synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        public void onClosed(SynchronizedCaptureSession synchronizedCaptureSession) {
+            this.mCameraCaptureSessionStateCallback.onClosed(synchronizedCaptureSession.toCameraCaptureSessionCompat().toCameraCaptureSession());
+        }
+
+        @Override // com.scanflow.datacapture.barinternal.androidx.camera.camera2.internal.SynchronizedCaptureSession.StateCallback
+        void onSessionFinished(SynchronizedCaptureSession synchronizedCaptureSession) {
+        }
+    }
+}

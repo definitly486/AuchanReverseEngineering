@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bg_snack_blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="0.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_margin="12.0dp" android:src="@drawable/ic_info_blue" />
+            <TextView android:textSize="14.0dp" android:textColor="@color/basics500" android:id="@id/warning_view_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Убедитесь, что ваша контактная информация верна." />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

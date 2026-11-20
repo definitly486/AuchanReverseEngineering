@@ -1,0 +1,1510 @@
+
+========================================
+System.Collections.Immutable.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Immutable.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Transactions.Local_0057.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Transactions.Local_0057.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Scanflow.BarcodeCapture.Maui.Android_0091.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Scanflow.BarcodeCapture.Maui.Android_0091.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.MemoryMappedFiles.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.MemoryMappedFiles.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+CsvHelper_0073.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/CsvHelper_0073.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Resources_0094.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Resources_0094.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Fragment.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Fragment.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+DryIoc.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/DryIoc.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Android.Play.Review_0140.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Android.Play.Review_0140.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.CSharp_0000.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.CSharp_0000.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Console_0010.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Console_0010.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Http_0028.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Http_0028.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Http.Json.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Http.Json.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.RangeSlider.Droid.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.RangeSlider.Droid.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ConstraintLayout.Core_0118.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ConstraintLayout.Core_0118.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NLog.Targets.ConcurrentFile_0085.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NLog.Targets.ConcurrentFile_0085.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ViewPager2.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ViewPager2.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+CsvHelper.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/CsvHelper.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.CSharp.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.CSharp.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.View_0115.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.View_0115.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Console.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Console.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Polly.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Polly.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.RecyclerView_0131.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.RecyclerView_0131.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Threading.Channels.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Threading.Channels.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebSockets.Client.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebSockets.Client.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.IsolatedStorage_0021.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.IsolatedStorage_0021.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Xml.Linq.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Xml.Linq.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Serialization.Primitives_0048.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Serialization.Primitives_0048.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Requests.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Requests.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.RegularExpressions_0054.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.RegularExpressions_0054.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Common.Jvm_0125.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Common.Jvm_0125.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Linq.Expressions_0024.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Linq.Expressions_0024.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Reflection.Metadata.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Reflection.Metadata.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.Specialized.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Specialized.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Drawing.Primitives_0015.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Drawing.Primitives_0015.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CardView_0116.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CardView_0116.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Memory_0026.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Memory_0026.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Java.Interop.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Java.Interop.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Reactive.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Reactive.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NLog.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NLog.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.LiveData.Core_0126.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.LiveData.Core_0126.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Bindings.Input-Mask-Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Bindings.Input-Mask-Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.GridLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.GridLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Activity.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Activity.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Runtime.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ViewPager2_0135.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ViewPager2_0135.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Packaging.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Packaging.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.RangeSlider.Droid_0145.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.RangeSlider.Droid_0145.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Android.Material.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Android.Material.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Scanflow.DataCapture.Core.Maui_0092.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Scanflow.DataCapture.Core.Maui_0092.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Polly.Core_0088.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Polly.Core_0088.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Websocket.Client.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Websocket.Client.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.NonGeneric_0003.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.NonGeneric_0003.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+AsyncAwaitBestPractices.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/AsyncAwaitBestPractices.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.Annotations_0006.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.Annotations_0006.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.Json_0053.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.Json_0053.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Views.Android_0097.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Views.Android_0097.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Memory.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Memory.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache.Core_0068.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache.Core_0068.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Reactive_0104.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Reactive_0104.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Activity_0109.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Activity_0109.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Yandex.MapKit.Lite_0147.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Yandex.MapKit.Lite_0147.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Refit.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Refit.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Quic.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Quic.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.AI.Edge.LiteRT.Support.API.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Fragment_0123.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Fragment_0123.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Plugin.StoreReview.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Plugin.StoreReview.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Newtonsoft.Json.Bson.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Newtonsoft.Json.Bson.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android.Export_0063.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android.Export_0063.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.AI.Edge.LiteRT.API.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.AI.Edge.LiteRT.API.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Appmetrica.Android_0070.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Appmetrica.Android_0070.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CoordinatorLayout_0119.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CoordinatorLayout_0119.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+_Microsoft.Android.Resource.Designer.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/_Microsoft.Android.Resource.Designer.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 2 sections
+
+========================================
+AsyncAwaitBestPractices_0071.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/AsyncAwaitBestPractices_0071.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.FileSystem.Watcher.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.FileSystem.Watcher.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Sockets.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Sockets.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Compression_0019.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Compression_0019.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Security.Claims.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Security.Claims.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.DiagnosticSource_0012.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.DiagnosticSource_0012.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.IsolatedStorage.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.IsolatedStorage.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Auchan.Android.Net.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Auchan.Android.Net.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Sockets_0035.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Sockets_0035.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Biometric_0111.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Biometric_0111.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Linq.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Linq.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Java.Interop_0062.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Java.Interop_0062.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android.Runtime_0064.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android.Runtime_0064.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Auchan.Common.Net.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Auchan.Common.Net.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Plugin.StoreReview_0086.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Plugin.StoreReview_0086.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Newtonsoft.Json.Bson_0083.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Newtonsoft.Json.Bson_0083.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Auchan.Common.Net_0148.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Auchan.Common.Net_0148.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Websocket.Client_0105.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Websocket.Client_0105.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Numerics_0046.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Numerics_0046.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Maui.Graphics.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Maui.Graphics.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Kotlin.StdLib_0143.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Kotlin.StdLib_0143.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Android.Material_0139.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Android.Material_0139.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.provider.e_sqlite3.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.provider.e_sqlite3.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Biometric.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Biometric.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.NetworkInformation_0030.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.NetworkInformation_0030.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime_0049.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime_0049.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Process_0127.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Process_0127.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Splat_0098.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Splat_0098.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Formats.Asn1.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Formats.Asn1.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Web.HttpUtility.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Web.HttpUtility.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Polly_0087.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Polly_0087.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Refit.Newtonsoft.Json_0090.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Refit.Newtonsoft.Json_0090.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.RecyclerView.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.RecyclerView.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+ZeroBranch.SwipeLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/ZeroBranch.SwipeLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.SceneGraph_0095.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.SceneGraph_0095.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.Video_0114.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.Video_0114.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.InteropServices.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.InteropServices.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.Primitives.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.Primitives.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.KotlinX.Coroutines.Core.Jvm_0144.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.KotlinX.Coroutines.Core.Jvm_0144.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.SwipeRefreshLayout_0133.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.SwipeRefreshLayout_0133.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Resources.Writer_0044.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Resources.Writer_0044.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.AI.Edge.LiteRT.API_0137.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.AI.Edge.LiteRT.API_0137.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache_0067.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache_0067.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Auchan.Android.Net_0150.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Auchan.Android.Net_0150.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Security.Claims_0050.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Security.Claims_0050.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.TraceSource.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.TraceSource.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Resources.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Resources.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Android.Glide.Transformations_0107.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Android.Glide.Transformations_0107.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Common.Jvm.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.Process.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.Process.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache.Sqlite3.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache.Sqlite3.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.Encodings.Web.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.Encodings.Web.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Compression.Brotli_0018.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Compression.Brotli_0018.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Web.HttpUtility_0058.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Web.HttpUtility_0058.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Linq_0025.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Linq_0025.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Compression.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Compression.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android.Runtime.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android.Runtime.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebSockets_0038.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebSockets_0038.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ConstraintLayout.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ConstraintLayout.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.core_0101.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.core_0101.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.DrawerLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.DrawerLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.NonGeneric.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.NonGeneric.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+DryIoc_0074.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/DryIoc_0074.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.IO.RecyclableMemoryStream.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.IO.RecyclableMemoryStream.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Serialization.Primitives.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Serialization.Primitives.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Refit_0089.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Refit_0089.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.FileSystem.Watcher_0020.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.FileSystem.Watcher_0020.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Views.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Views.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.Concurrent.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Concurrent.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.Specialized_0004.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Specialized_0004.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Http.Json_0027.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Http.Json_0027.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.batteries_v2.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.batteries_v2.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Akavache.Sqlite3_0069.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Akavache.Sqlite3_0069.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+PhotoView.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/PhotoView.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Refit.Newtonsoft.Json.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Refit.Newtonsoft.Json.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Android.Glide_0106.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Android.Glide_0106.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Numerics.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Numerics.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NLog_0084.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NLog_0084.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Drawing.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Drawing.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Xml_0042.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Xml_0042.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.Concurrent_0001.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Concurrent_0001.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Splat.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Splat.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Uri_0040.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Uri_0040.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Skottie_0096.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Skottie_0096.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.GooglePlayServices.Tasks.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.GooglePlayServices.Tasks.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Data.Common_0011.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Data.Common_0011.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Compression.Brotli.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Compression.Brotli.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.DiagnosticSource.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.DiagnosticSource.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebSockets.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebSockets.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Android.Glide.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Android.Glide.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.Primitives_0007.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.Primitives_0007.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.Core_0113.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.Core_0113.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp_0093.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp_0093.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.provider.e_sqlite3_0102.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.provider.e_sqlite3_0102.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Maui.Graphics_0080.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Maui.Graphics_0080.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NanoXLSX_0081.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NanoXLSX_0081.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Quic_0032.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Quic_0032.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.GridLayout_0124.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.GridLayout_0124.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CardView.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CardView.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.NetworkInformation.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.NetworkInformation.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Packaging_0103.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Packaging_0103.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Drawing.Primitives.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Drawing.Primitives.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Scanflow.DataCapture.Core.Maui.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Scanflow.DataCapture.Core.Maui.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Uri.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Uri.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Process.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Process.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Appmetrica.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Appmetrica.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Loader.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Loader.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections_0005.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections_0005.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.NameResolution_0029.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.NameResolution_0029.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Ongakuer.CircleIndicator.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Ongakuer.CircleIndicator.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Xml.Linq.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Xml.Linq.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Yandex.MapKit.Lite.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Yandex.MapKit.Lite.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System_0060.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System_0060.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Primitives.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Primitives.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CoordinatorLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CoordinatorLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Guava.ListenableFuture_0141.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Guava.ListenableFuture_0141.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Newtonsoft.Json_0082.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Newtonsoft.Json_0082.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Newtonsoft.Json.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Newtonsoft.Json.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Security.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Security.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.CoreLib_0061.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.CoreLib_0061.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Threading_0056.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Threading_0056.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.Encodings.Web_0052.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.Encodings.Web_0052.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.KotlinX.Coroutines.Core.Jvm.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.KotlinX.Coroutines.Core.Jvm.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Threading.Channels_0055.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Threading.Channels_0055.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Xml.Linq_0059.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Xml.Linq_0059.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Reflection.Metadata_0043.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Reflection.Metadata_0043.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.SwipeRefreshLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.SwipeRefreshLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Bindings.Input-Mask-Android_0136.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Bindings.Input-Mask-Android_0136.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.SavedState.SavedState.Android_0132.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.SavedState.SavedState.Android_0132.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Polly.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Polly.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Http.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Http.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.TraceSource_0014.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.TraceSource_0014.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Security.Cryptography.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Security.Cryptography.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebSockets.Client_0037.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebSockets.Client_0037.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.Annotations.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.Annotations.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+XamarinShortcutBadger.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/XamarinShortcutBadger.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Pipelines_0023.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Pipelines_0023.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebHeaderCollection_0036.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebHeaderCollection_0036.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Xml.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Xml.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel_0009.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel_0009.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Kotlin.StdLib.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Kotlin.StdLib.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ConstraintLayout_0117.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ConstraintLayout_0117.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Transactions.Local.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Transactions.Local.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Diagnostics.Process_0013.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Diagnostics.Process_0013.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android.Export.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android.Export.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.CoreLib.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.CoreLib.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.SavedState.SavedState.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.SavedState.SavedState.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.Core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.Core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLite-net.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLite-net.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Drawing_0016.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Drawing_0016.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLite-net_0099.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLite-net_0099.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.NameResolution.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.NameResolution.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.Video.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.Video.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NLog.Targets.ConcurrentFile.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NLog.Targets.ConcurrentFile.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.MemoryMappedFiles_0022.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.MemoryMappedFiles_0022.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Camera.View.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Camera.View.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.Skottie.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.Skottie.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Google.FlexboxLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Google.FlexboxLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ViewPager_0134.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ViewPager_0134.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.DrawerLayout_0122.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.DrawerLayout_0122.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.TypeConverter.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.TypeConverter.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Serialization.Formatters_0047.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Serialization.Formatters_0047.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Loader_0130.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Loader_0130.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.Runtime.Android_0128.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.Runtime.Android_0128.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Private.Xml.Linq_0041.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Private.Xml.Linq_0041.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Browser.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Browser.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Scanflow.BarcodeCapture.Maui.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Scanflow.BarcodeCapture.Maui.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android_0065.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android_0065.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Linq.Expressions.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Linq.Expressions.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CursorAdapter.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CursorAdapter.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.batteries_v2_0100.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.batteries_v2_0100.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ObjectModel_0039.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ObjectModel_0039.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Data.Common.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Data.Common.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.CursorAdapter_0121.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.CursorAdapter_0121.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Android.Glide.Transformations.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Android.Glide.Transformations.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Resources.Writer.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Resources.Writer.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+ZeroBranch.SwipeLayout_0149.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/ZeroBranch.SwipeLayout_0149.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Mono.Android.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Mono.Android.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+CSharpFunctionalExtensions.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/CSharpFunctionalExtensions.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.RegularExpressions.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.RegularExpressions.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ViewPager.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ViewPager.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.AppCompat.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.AppCompat.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.AppCompat_0110.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.AppCompat_0110.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+_Microsoft.Android.Resource.Designer_0066.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/_Microsoft.Android.Resource.Designer_0066.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 2 sections
+
+========================================
+System.Net.Requests_0033.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Requests_0033.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ObjectModel.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ObjectModel.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Maui.Essentials_0079.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Maui.Essentials_0079.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+CSharpFunctionalExtensions_0072.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/CSharpFunctionalExtensions_0072.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+PhotoView_0108.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/PhotoView_0108.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Text.Json.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Text.Json.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Core_0120.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Core_0120.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.Serialization.Formatters.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.Serialization.Formatters.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Threading.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Threading.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SQLitePCLRaw.core.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SQLitePCLRaw.core.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.IO.RecyclableMemoryStream_0078.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.IO.RecyclableMemoryStream_0078.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+XamarinShortcutBadger_0146.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/XamarinShortcutBadger_0146.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Extensions.Logging.Abstractions.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Extensions.Logging.Abstractions.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Collections.Immutable_0002.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Collections.Immutable_0002.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.ConstraintLayout.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.ConstraintLayout.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Security_0034.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Security_0034.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.ComponentModel.TypeConverter_0008.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.ComponentModel.TypeConverter_0008.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.GooglePlayServices.Tasks_0142.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.GooglePlayServices.Tasks_0142.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Runtime.InteropServices_0045.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Runtime.InteropServices_0045.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Security.Cryptography_0051.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Security.Cryptography_0051.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Browser_0112.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Browser_0112.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Formats.Asn1_0017.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Formats.Asn1_0017.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+NanoXLSX.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/NanoXLSX.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Extensions.Logging.Abstractions_0077.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Extensions.Logging.Abstractions_0077.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Microsoft.Maui.Essentials.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Microsoft.Maui.Essentials.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Ongakuer.CircleIndicator_0076.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Ongakuer.CircleIndicator_0076.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Android.Play.Review.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Android.Play.Review.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.Guava.ListenableFuture.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.Guava.ListenableFuture.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.WebHeaderCollection.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.WebHeaderCollection.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Google.FlexboxLayout_0075.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Google.FlexboxLayout_0075.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+SkiaSharp.SceneGraph.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/SkiaSharp.SceneGraph.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.Net.Primitives_0031.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.Net.Primitives_0031.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+Xamarin.Google.AI.Edge.LiteRT.Support.API_0138.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/Xamarin.Google.AI.Edge.LiteRT.Support.API_0138.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections
+
+========================================
+System.IO.Pipelines.dll
+========================================
+/home/definitly/AuchanReverseEngineering/dotnet/dll/System.IO.Pipelines.dll: PE32 executable for MS Windows 4.00 (DLL), Intel i386 Mono/.Net assembly, 3 sections

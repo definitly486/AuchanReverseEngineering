@@ -1,0 +1,93 @@
+# APK and temporary data
+original/
+tmp/
+*.apk
+*.apks
+*.aab
+
+# Binary artifacts
+*.dll
+*.so
+dotnet/assembly_store_payloads/
+dotnet/assembly_store_legacy/
+native/aot_analysis/strings/
+native/aot_analysis/interesting_strings.txt
+dotnet/metadata/assembly_store_*.json
+*.dylib
+*.dex
+*.o
+*.a
+*.class
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Personal data
+*.har
+*.pcap
+*.pcapng
+*.db
+*.sqlite
+*.sqlite3
+*.cookie
+*.cookies
+*.token
+*.secret
+.env
+.env.*
+
+# Local build output
+bin/
+obj/
+build/
+.gradle/
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Logs may contain private traffic data
+logs/traffic*
+
+# Original APK and Android binaries
+*.apk
+*.aab
+*.dex
+*.odex
+*.vdex
+*.so
+*.dll
+*.class
+
+# Private data and traffic
+*.db
+*.sqlite
+*.sqlite3
+*.pcap
+*.pcapng
+*.har
+*.pem
+*.key
+*.keystore
+*.jks
+*.p12
+*.pfx
+
+# Credentials
+.env
+.env.*
+*token*
+*cookie*
+*secret*
+*credential*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/defaultLayout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/default_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/header_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.15" />
+            <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reattach_account_icon" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/header_guideline" />
+            <TextView android:textSize="14.0sp" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image" style="@style/TextAppearance.Title" />
+            <TextView android:gravity="center" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header" style="@style/MediumDescriptionLabelMultiline" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/enter_number_button" android:layout_width="0.0dp" android:layout_height="52.0dp" android:layout_marginBottom="12.0dp" android:maxWidth="335.0dp" android:textAllCaps="false" app:layout_constraintBottom_toTopOf="@id/attach_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/OutlineRedButton" />
+            <Button android:id="@id/attach_button" android:layout_width="0.0dp" android:layout_height="52.0dp" android:layout_marginBottom="24.0dp" android:maxWidth="335.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/DefaultMaterialButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/progress" android:visibility="gone" layout="@layout/progress" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

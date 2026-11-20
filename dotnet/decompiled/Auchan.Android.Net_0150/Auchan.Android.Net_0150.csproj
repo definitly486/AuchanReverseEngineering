@@ -1,0 +1,210 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Auchan.Android.Net</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>../../dll/Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.RecyclerView">
+      <HintPath>../../dll/Xamarin.AndroidX.RecyclerView.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>../../dll/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="DryIoc">
+      <HintPath>../../dll/DryIoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Glide">
+      <HintPath>../../dll/Xamarin.Android.Glide.dll</HintPath>
+    </Reference>
+    <Reference Include="Appmetrica.Android">
+      <HintPath>../../dll/Appmetrica.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Auchan.Common.Net">
+      <HintPath>../../dll/Auchan.Common.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.AppCompat">
+      <HintPath>../../dll/Xamarin.AndroidX.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Common.Jvm">
+      <HintPath>../../dll/Xamarin.AndroidX.Lifecycle.Common.Jvm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Process">
+      <HintPath>../../dll/Xamarin.AndroidX.Lifecycle.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maui.Essentials">
+      <HintPath>../../dll/Microsoft.Maui.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncAwaitBestPractices">
+      <HintPath>../../dll/AsyncAwaitBestPractices.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>../../dll/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ZeroBranch.SwipeLayout">
+      <HintPath>../../dll/ZeroBranch.SwipeLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>../../dll/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.Android.Material">
+      <HintPath>../../dll/Xamarin.Google.Android.Material.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>../../dll/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Bindings.Input-Mask-Android">
+      <HintPath>../../dll/Xamarin.Bindings.Input-Mask-Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Scanflow.DataCapture.Core.Maui">
+      <HintPath>../../dll/Scanflow.DataCapture.Core.Maui.dll</HintPath>
+    </Reference>
+    <Reference Include="Scanflow.BarcodeCapture.Maui.Android">
+      <HintPath>../../dll/Scanflow.BarcodeCapture.Maui.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.AI.Edge.LiteRT.API">
+      <HintPath>../../dll/Xamarin.Google.AI.Edge.LiteRT.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Google.AI.Edge.LiteRT.Support.API">
+      <HintPath>../../dll/Xamarin.Google.AI.Edge.LiteRT.Support.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Fragment">
+      <HintPath>../../dll/Xamarin.AndroidX.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>../../dll/System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Core">
+      <HintPath>../../dll/Xamarin.AndroidX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="_Microsoft.Android.Resource.Designer">
+      <HintPath>../../dll/_Microsoft.Android.Resource.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.ConstraintLayout">
+      <HintPath>../../dll/Xamarin.AndroidX.ConstraintLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop">
+      <HintPath>../../dll/Java.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>../../dll/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>../../dll/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.CardView">
+      <HintPath>../../dll/Xamarin.AndroidX.CardView.dll</HintPath>
+    </Reference>
+    <Reference Include="Ongakuer.CircleIndicator">
+      <HintPath>../../dll/Ongakuer.CircleIndicator.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>../../dll/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.SwipeRefreshLayout">
+      <HintPath>../../dll/Xamarin.AndroidX.SwipeRefreshLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>../../dll/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Activity">
+      <HintPath>../../dll/Xamarin.AndroidX.Activity.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.FlexboxLayout">
+      <HintPath>../../dll/Google.FlexboxLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.ViewPager2">
+      <HintPath>../../dll/Xamarin.AndroidX.ViewPager2.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Skottie">
+      <HintPath>../../dll/SkiaSharp.Skottie.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.ViewPager">
+      <HintPath>../../dll/Xamarin.AndroidX.ViewPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.CoordinatorLayout">
+      <HintPath>../../dll/Xamarin.AndroidX.CoordinatorLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>../../dll/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>../../dll/System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Glide.Transformations">
+      <HintPath>../../dll/Xamarin.Android.Glide.Transformations.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharpFunctionalExtensions">
+      <HintPath>../../dll/CSharpFunctionalExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Yandex.MapKit.Lite">
+      <HintPath>../../dll/Yandex.MapKit.Lite.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.GridLayout">
+      <HintPath>../../dll/Xamarin.AndroidX.GridLayout.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>../../dll/SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Resources">
+      <HintPath>../../dll/SkiaSharp.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.SceneGraph">
+      <HintPath>../../dll/SkiaSharp.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Android">
+      <HintPath>../../dll/SkiaSharp.Views.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotoView">
+      <HintPath>../../dll/PhotoView.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>../../dll/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Biometric">
+      <HintPath>../../dll/Xamarin.AndroidX.Biometric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>../../dll/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>../../dll/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Browser">
+      <HintPath>../../dll/Xamarin.AndroidX.Browser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>../../dll/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>../../dll/System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Droid">
+      <HintPath>../../dll/Xamarin.RangeSlider.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="XamarinShortcutBadger">
+      <HintPath>../../dll/XamarinShortcutBadger.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.Runtime.Android">
+      <HintPath>../../dll/Xamarin.AndroidX.Lifecycle.Runtime.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Android">
+      <HintPath>../../dll/Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

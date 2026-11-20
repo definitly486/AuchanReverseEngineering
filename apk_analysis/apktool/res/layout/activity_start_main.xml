@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/maintenanceLayout" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_maintenance" />
+    <include android:id="@id/error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/error_fullscreen" />
+    <include android:id="@id/activity_qr_splash_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_qr_splash" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="26.0dp" android:width="276.0dp" android:viewportWidth="276.0" android:viewportHeight="26.0"
+  xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M6,13H270" android:strokeColor="@drawable/$ic_pivot_view_center_line__0" android:strokeWidth="2.0" />
+    <path android:fillColor="#00000000" android:pathData="M96.38,13H179.62" android:strokeColor="#2256de" android:strokeWidth="3.0" />
+</vector>

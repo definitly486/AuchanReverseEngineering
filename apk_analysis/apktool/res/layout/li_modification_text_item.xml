@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/timeslot_active" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/basics500" android:id="@id/li_modification_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

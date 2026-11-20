@@ -1,0 +1,166 @@
+using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using Android.OS;
+using Android.Runtime;
+using Java.Interop;
+using Java.Lang;
+
+namespace Android.Views;
+
+[Register("android/view/WindowManager$LayoutParams", DoNotGenerateAcw = true)]
+public class WindowManagerLayoutParams : ViewGroup.LayoutParams, IParcelable, IJavaObject, IDisposable, IJavaPeerable
+{
+	private static readonly JniPeerMembers _members = new XAPeerMembers("android/view/WindowManager$LayoutParams", typeof(WindowManagerLayoutParams));
+
+	private static Delegate? cb_describeContents_DescribeContents_I;
+
+	private static Delegate? cb_writeToParcel_WriteToParcel_Landroid_os_Parcel_I_V;
+
+	[Register("screenBrightness")]
+	public float ScreenBrightness
+	{
+		get
+		{
+			return _members.InstanceFields.GetSingleValue("screenBrightness.F", this);
+		}
+		set
+		{
+			_members.InstanceFields.SetValue("screenBrightness.F", this, value);
+		}
+	}
+
+	[Register("softInputMode")]
+	public SoftInput SoftInputMode => (SoftInput)_members.InstanceFields.GetInt32Value("softInputMode.I", this);
+
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public override JniPeerMembers JniPeerMembers => _members;
+
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	protected override nint ThresholdClass => _members.JniPeerType.PeerReference.Handle;
+
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	protected override Type ThresholdType => _members.ManagedPeerType;
+
+	protected WindowManagerLayoutParams(nint javaReference, JniHandleOwnership transfer)
+		: base(javaReference, transfer)
+	{
+	}
+
+	public unsafe WindowManagerLayoutParams()
+		: base(IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+	{
+		if (base.Handle == IntPtr.Zero)
+		{
+			SetHandle(_members.InstanceMethods.StartCreateInstance("()V", GetType(), null).Handle, JniHandleOwnership.TransferLocalRef);
+			_members.InstanceMethods.FinishCreateInstance("()V", this, null);
+		}
+	}
+
+	public unsafe int CopyFrom(WindowManagerLayoutParams? o)
+	{
+		try
+		{
+			JniArgumentValue* ptr = stackalloc JniArgumentValue[1];
+			*ptr = new JniArgumentValue(o?.Handle ?? IntPtr.Zero);
+			return _members.InstanceMethods.InvokeNonvirtualInt32Method("copyFrom.(Landroid/view/WindowManager$LayoutParams;)I", this, ptr);
+		}
+		finally
+		{
+			GC.KeepAlive(o);
+		}
+	}
+
+	private static Delegate GetDescribeContentsHandler()
+	{
+		return new _JniMarshal_PP_I(n_DescribeContents);
+	}
+
+	[DebuggerDisableUserUnhandledExceptions]
+	private static int n_DescribeContents(nint jnienv, nint native__this)
+	{
+		if (!JniEnvironment.BeginMarshalMethod(jnienv, out JniTransition transition, out JniRuntime runtime))
+		{
+			return 0;
+		}
+		try
+		{
+			return Java.Lang.Object.GetObject<WindowManagerLayoutParams>(jnienv, native__this, JniHandleOwnership.DoNotTransfer).DescribeContents();
+		}
+		catch (System.Exception e)
+		{
+			runtime.OnUserUnhandledException(ref transition, e);
+			return 0;
+		}
+		finally
+		{
+			JniEnvironment.EndMarshalMethod(ref transition);
+		}
+	}
+
+	public unsafe virtual int DescribeContents()
+	{
+		return _members.InstanceMethods.InvokeVirtualInt32Method("describeContents.()I", this, null);
+	}
+
+	private static Delegate GetWriteToParcel_Landroid_os_Parcel_IHandler()
+	{
+		return new _JniMarshal_PPLI_V(n_WriteToParcel_Landroid_os_Parcel_I);
+	}
+
+	[DebuggerDisableUserUnhandledExceptions]
+	private static void n_WriteToParcel_Landroid_os_Parcel_I(nint jnienv, nint native__this, nint native__out, int native_parcelableFlags)
+	{
+		if (!JniEnvironment.BeginMarshalMethod(jnienv, out JniTransition transition, out JniRuntime runtime))
+		{
+			return;
+		}
+		try
+		{
+			WindowManagerLayoutParams? windowManagerLayoutParams = Java.Lang.Object.GetObject<WindowManagerLayoutParams>(jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			Parcel parcel = Java.Lang.Object.GetObject<Parcel>(native__out, JniHandleOwnership.DoNotTransfer);
+			windowManagerLayoutParams.WriteToParcel(parcel, (ParcelableWriteFlags)native_parcelableFlags);
+		}
+		catch (System.Exception e)
+		{
+			runtime.OnUserUnhandledException(ref transition, e);
+		}
+		finally
+		{
+			JniEnvironment.EndMarshalMethod(ref transition);
+		}
+	}
+
+	public unsafe virtual void WriteToParcel(Parcel? @out, ParcelableWriteFlags parcelableFlags)
+	{
+		try
+		{
+			JniArgumentValue* ptr = stackalloc JniArgumentValue[2];
+			*ptr = new JniArgumentValue(@out?.Handle ?? IntPtr.Zero);
+			ptr[1] = new JniArgumentValue((int)parcelableFlags);
+			_members.InstanceMethods.InvokeVirtualVoidMethod("writeToParcel.(Landroid/os/Parcel;I)V", this, ptr);
+		}
+		finally
+		{
+			GC.KeepAlive(@out);
+		}
+	}
+
+	int IJavaPeerable.get_JniIdentityHashCode()
+	{
+		return base.JniIdentityHashCode;
+	}
+
+	JniObjectReference IJavaPeerable.get_PeerReference()
+	{
+		return base.PeerReference;
+	}
+
+	void IJavaPeerable.UnregisterFromRuntime()
+	{
+		UnregisterFromRuntime();
+	}
+}

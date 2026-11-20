@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/transparent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <crc64fac7521b55e1fcf3.SkottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:skottie_autoPlay="true"
+            app:skottie_fileName="banner_home.json"
+            app:skottie_loop="true"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:textAppearance="@style/TextAppearance.BoldButtonText"
+            android:textColor="@color/basics100"
+            android:id="@+id/playButton"
+            android:background="@mipmap/img_new_year_button_banner"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

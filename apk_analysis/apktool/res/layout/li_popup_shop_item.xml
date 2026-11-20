@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/light_main" android:ellipsize="end" android:id="@id/stores_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:id="@id/stores_item_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="2" app:layout_constraintTop_toBottomOf="@id/stores_item_name" />
+        <ImageView android:id="@id/stores_item_working_icon" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="5.0dp" android:src="@drawable/ic_status_later" app:layout_constraintTop_toBottomOf="@id/stores_item_address" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:id="@id/stores_item_working" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" android:textAlignment="center" android:layout_marginStart="5.0dp" app:layout_constraintStart_toEndOf="@id/stores_item_working_icon" app:layout_constraintTop_toBottomOf="@id/stores_item_address" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/green_counter" android:id="@id/quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:maxLines="1" android:textAlignment="center" app:layout_constraintTop_toBottomOf="@id/stores_item_working" />
+        <View android:id="@id/separator" android:background="#dde0e6" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="10.0dp" android:textAlignment="center" app:layout_constraintTop_toBottomOf="@id/quantity" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

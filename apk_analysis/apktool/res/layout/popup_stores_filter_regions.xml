@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dp">
+        <ImageView android:layout_gravity="center" android:id="@id/puller" android:layout_width="36.0dp" android:layout_height="5.0dp" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" android:src="@drawable/bottom_sheet_line" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/basics700" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Укажите свой регион" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff0522" android:id="@id/close_button" android:paddingTop="10.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Закрыть" />
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/regions_list" android:scrollbars="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</FrameLayout>

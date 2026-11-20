@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/placeholder_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:endIconMode="none" style="@style/DefaultInputLayout.Grey">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/oslo_gray" android:id="@id/placeholder_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="date" android:imeOptions="actionDone" app:emojiCompatEnabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:boxBackgroundColor="@null" app:boxBackgroundMode="filled" style="@style/DefaultInputLayout.Grey">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/black" android:id="@id/edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="date" android:imeOptions="actionDone" android:backgroundTint="@android:color/transparent" app:emojiCompatEnabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

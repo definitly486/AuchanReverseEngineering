@@ -1,0 +1,380 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace System.Reflection.Emit;
+
+[StructLayout(LayoutKind.Sequential)]
+public sealed class SignatureHelper
+{
+	internal enum SignatureHelperType
+	{
+		HELPER_FIELD,
+		HELPER_LOCAL,
+		HELPER_METHOD,
+		HELPER_PROPERTY
+	}
+
+	private ModuleBuilder module;
+
+	private Type[] arguments;
+
+	private SignatureHelperType type;
+
+	private Type returnType;
+
+	private CallingConventions callConv;
+
+	private CallingConvention unmanagedCallConv;
+
+	private Type[][] modreqs;
+
+	private Type[][] modopts;
+
+	internal SignatureHelper(ModuleBuilder module, SignatureHelperType type)
+	{
+		AssemblyBuilder.EnsureDynamicCodeSupported();
+		this.type = type;
+		this.module = module;
+	}
+
+	public static SignatureHelper GetFieldSigHelper(Module? mod)
+	{
+		if (mod != null && !(mod is ModuleBuilder))
+		{
+			throw new NotSupportedException("NotSupported_MustBeModuleBuilder");
+		}
+		return new SignatureHelper((ModuleBuilder)mod, SignatureHelperType.HELPER_FIELD);
+	}
+
+	public static SignatureHelper GetLocalVarSigHelper(Module? mod)
+	{
+		if (mod != null && !(mod is ModuleBuilder))
+		{
+			throw new NotSupportedException("NotSupported_MustBeModuleBuilder");
+		}
+		return new SignatureHelper((ModuleBuilder)mod, SignatureHelperType.HELPER_LOCAL);
+	}
+
+	public static SignatureHelper GetLocalVarSigHelper()
+	{
+		return new SignatureHelper(null, SignatureHelperType.HELPER_LOCAL);
+	}
+
+	public static SignatureHelper GetMethodSigHelper(CallingConventions callingConvention, Type? returnType)
+	{
+		return GetMethodSigHelper(null, callingConvention, (CallingConvention)0, returnType, null);
+	}
+
+	public static SignatureHelper GetMethodSigHelper(Module? mod, CallingConventions callingConvention, Type? returnType)
+	{
+		return GetMethodSigHelper(mod, callingConvention, (CallingConvention)0, returnType, null);
+	}
+
+	public static SignatureHelper GetMethodSigHelper(Module? mod, Type? returnType, Type[]? parameterTypes)
+	{
+		return GetMethodSigHelper(mod, CallingConventions.Standard, (CallingConvention)0, returnType, parameterTypes);
+	}
+
+	public static SignatureHelper GetPropertySigHelper(Module? mod, Type? returnType, Type[]? parameterTypes)
+	{
+		throw new NotImplementedException();
+	}
+
+	public static SignatureHelper GetPropertySigHelper(Module? mod, Type? returnType, Type[]? requiredReturnTypeCustomModifiers, Type[]? optionalReturnTypeCustomModifiers, Type[]? parameterTypes, Type[][]? requiredParameterTypeCustomModifiers, Type[][]? optionalParameterTypeCustomModifiers)
+	{
+		throw new NotImplementedException();
+	}
+
+	public static SignatureHelper GetPropertySigHelper(Module? mod, CallingConventions callingConvention, Type? returnType, Type[]? requiredReturnTypeCustomModifiers, Type[]? optionalReturnTypeCustomModifiers, Type[]? parameterTypes, Type[][]? requiredParameterTypeCustomModifiers, Type[][]? optionalParameterTypeCustomModifiers)
+	{
+		throw new NotImplementedException();
+	}
+
+	private static int AppendArray([NotNull] ref Type[] array, Type t)
+	{
+		if (array != null)
+		{
+			Type[] array2 = new Type[array.Length + 1];
+			Array.Copy(array, array2, array.Length);
+			array2[array.Length] = t;
+			array = array2;
+			return array.Length - 1;
+		}
+		array = new Type[1];
+		array[0] = t;
+		return 0;
+	}
+
+	private static void AppendArrayAt([NotNull] ref Type[][] array, Type[] t, int pos)
+	{
+		int num = Math.Max(pos, (array != null) ? array.Length : 0);
+		Type[][] array2 = new Type[num + 1][];
+		if (array != null)
+		{
+			Array.Copy(array, array2, num);
+		}
+		array2[pos] = t;
+		array = array2;
+	}
+
+	private static void ValidateParameterModifiers(string name, Type[] parameter_modifiers)
+	{
+		foreach (Type obj in parameter_modifiers)
+		{
+			ArgumentNullException.ThrowIfNull(obj, name);
+			if (obj.IsArray)
+			{
+				throw new ArgumentException("Argument_ArraysInvalid", name);
+			}
+			if (obj.ContainsGenericParameters)
+			{
+				throw new ArgumentException("Argument_OpenGenericTypeNotPermitted", name);
+			}
+		}
+	}
+
+	private static void ValidateCustomModifier(int n, Type[][] custom_modifiers, string name)
+	{
+		if (custom_modifiers == null)
+		{
+			return;
+		}
+		if (custom_modifiers.Length != n)
+		{
+			throw new ArgumentException(SR.Format("Argument_CustomModifierLengthInvalidLength", custom_modifiers.Length));
+		}
+		foreach (Type[] array in custom_modifiers)
+		{
+			if (array != null)
+			{
+				ValidateParameterModifiers(name, array);
+			}
+		}
+	}
+
+	private static Exception MissingFeature()
+	{
+		throw new NotImplementedException("NotImplemented_NoSupportForModOpt");
+	}
+
+	public void AddArguments(Type[]? arguments, Type[][]? requiredCustomModifiers, Type[][]? optionalCustomModifiers)
+	{
+		ArgumentNullException.ThrowIfNull(arguments, "arguments");
+		if (requiredCustomModifiers != null || optionalCustomModifiers != null)
+		{
+			throw MissingFeature();
+		}
+		ValidateCustomModifier(arguments.Length, requiredCustomModifiers, "requiredCustomModifiers");
+		ValidateCustomModifier(arguments.Length, optionalCustomModifiers, "optionalCustomModifiers");
+		for (int i = 0; i < arguments.Length; i++)
+		{
+			AddArgument(arguments[i], (requiredCustomModifiers != null) ? requiredCustomModifiers[i] : null, (optionalCustomModifiers != null) ? optionalCustomModifiers[i] : null);
+		}
+	}
+
+	public void AddArgument(Type argument, bool pinned)
+	{
+		AddArgument(argument);
+	}
+
+	public void AddArgument(Type argument, Type[]? requiredCustomModifiers, Type[]? optionalCustomModifiers)
+	{
+		ArgumentNullException.ThrowIfNull(argument, "argument");
+		if (requiredCustomModifiers != null)
+		{
+			ValidateParameterModifiers("requiredCustomModifiers", requiredCustomModifiers);
+		}
+		if (optionalCustomModifiers != null)
+		{
+			ValidateParameterModifiers("optionalCustomModifiers", optionalCustomModifiers);
+		}
+		int pos = AppendArray(ref arguments, argument);
+		if (requiredCustomModifiers != null)
+		{
+			AppendArrayAt(ref modreqs, requiredCustomModifiers, pos);
+		}
+		if (optionalCustomModifiers != null)
+		{
+			AppendArrayAt(ref modopts, optionalCustomModifiers, pos);
+		}
+	}
+
+	public void AddArgument(Type clsArgument)
+	{
+		ArgumentNullException.ThrowIfNull(clsArgument, "clsArgument");
+		AppendArray(ref arguments, clsArgument);
+	}
+
+	public void AddSentinel()
+	{
+		throw new NotImplementedException();
+	}
+
+	private static bool CompareOK(Type[][] one, Type[][] two)
+	{
+		if (one == null)
+		{
+			if (two == null)
+			{
+				return true;
+			}
+			return false;
+		}
+		if (two == null)
+		{
+			return false;
+		}
+		if (one.Length != two.Length)
+		{
+			return false;
+		}
+		for (int i = 0; i < one.Length; i++)
+		{
+			Type[] array = one[i];
+			Type[] array2 = two[i];
+			if (array == null)
+			{
+				if (array2 == null)
+				{
+					continue;
+				}
+			}
+			else if (array2 == null)
+			{
+				return false;
+			}
+			if (array.Length != array2.Length)
+			{
+				return false;
+			}
+			for (int j = 0; j < array.Length; j++)
+			{
+				Type type = array[j];
+				Type type2 = array2[j];
+				if (type == null)
+				{
+					if (!(type2 == null))
+					{
+						return false;
+					}
+					continue;
+				}
+				if (type2 == null)
+				{
+					return false;
+				}
+				if (!type.Equals(type2))
+				{
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	public override bool Equals(object? obj)
+	{
+		if (!(obj is SignatureHelper signatureHelper))
+		{
+			return false;
+		}
+		if (signatureHelper.module != module || signatureHelper.returnType != returnType || signatureHelper.callConv != callConv || signatureHelper.unmanagedCallConv != unmanagedCallConv)
+		{
+			return false;
+		}
+		if (arguments != null)
+		{
+			if (signatureHelper.arguments == null)
+			{
+				return false;
+			}
+			if (arguments.Length != signatureHelper.arguments.Length)
+			{
+				return false;
+			}
+			for (int i = 0; i < arguments.Length; i++)
+			{
+				if (!signatureHelper.arguments[i].Equals(arguments[i]))
+				{
+					return false;
+				}
+			}
+		}
+		else if (signatureHelper.arguments != null)
+		{
+			return false;
+		}
+		if (CompareOK(signatureHelper.modreqs, modreqs))
+		{
+			return CompareOK(signatureHelper.modopts, modopts);
+		}
+		return false;
+	}
+
+	public override int GetHashCode()
+	{
+		return 0;
+	}
+
+	[MethodImpl(MethodImplOptions.InternalCall)]
+	internal extern byte[] get_signature_local();
+
+	[MethodImpl(MethodImplOptions.InternalCall)]
+	internal extern byte[] get_signature_field();
+
+	public byte[] GetSignature()
+	{
+		RuntimeTypeBuilder.ResolveUserTypes(arguments);
+		return type switch
+		{
+			SignatureHelperType.HELPER_LOCAL => get_signature_local(), 
+			SignatureHelperType.HELPER_FIELD => get_signature_field(), 
+			_ => throw new NotImplementedException(), 
+		};
+	}
+
+	public override string ToString()
+	{
+		return "SignatureHelper";
+	}
+
+	internal static SignatureHelper GetMethodSigHelper(Module mod, CallingConventions callingConvention, CallingConvention unmanagedCallingConvention, Type returnType, Type[] parameters)
+	{
+		if (mod != null && !(mod is ModuleBuilder))
+		{
+			throw new NotSupportedException("NotSupported_MustBeModuleBuilder");
+		}
+		if ((object)returnType == null)
+		{
+			returnType = typeof(void);
+		}
+		if (returnType.IsUserType)
+		{
+			throw new NotSupportedException("PlatformNotSupported_UserDefinedSubclassesOfType");
+		}
+		if (parameters != null)
+		{
+			for (int i = 0; i < parameters.Length; i++)
+			{
+				if (parameters[i].IsUserType)
+				{
+					throw new NotSupportedException("PlatformNotSupported_UserDefinedSubclassesOfType");
+				}
+			}
+		}
+		SignatureHelper signatureHelper = new SignatureHelper((ModuleBuilder)mod, SignatureHelperType.HELPER_METHOD);
+		signatureHelper.returnType = returnType;
+		signatureHelper.callConv = callingConvention;
+		signatureHelper.unmanagedCallConv = unmanagedCallingConvention;
+		if (parameters != null)
+		{
+			signatureHelper.arguments = new Type[parameters.Length];
+			for (int j = 0; j < parameters.Length; j++)
+			{
+				signatureHelper.arguments[j] = parameters[j];
+			}
+		}
+		return signatureHelper;
+	}
+}

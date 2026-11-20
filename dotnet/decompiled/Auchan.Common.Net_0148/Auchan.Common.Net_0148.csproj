@@ -1,0 +1,164 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Auchan.Common.Net</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ILLink.Descriptors.xml" />
+    <EmbeddedResource Include="ILLink.Descriptors.xml" LogicalName="ILLink.Descriptors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Private.CoreLib">
+      <HintPath>../../dll/System.Private.CoreLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>../../dll/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Refit">
+      <HintPath>../../dll/Refit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>../../dll/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>../../dll/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>../../dll/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>../../dll/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncAwaitBestPractices">
+      <HintPath>../../dll/AsyncAwaitBestPractices.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache">
+      <HintPath>../../dll/Akavache.dll</HintPath>
+    </Reference>
+    <Reference Include="DryIoc">
+      <HintPath>../../dll/DryIoc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Maui.Essentials">
+      <HintPath>../../dll/Microsoft.Maui.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>../../dll/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Refit.Newtonsoft.Json">
+      <HintPath>../../dll/Refit.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>../../dll/System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharpFunctionalExtensions">
+      <HintPath>../../dll/CSharpFunctionalExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.Uri">
+      <HintPath>../../dll/System.Private.Uri.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>../../dll/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.HttpUtility">
+      <HintPath>../../dll/System.Web.HttpUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>../../dll/System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>../../dll/Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>../../dll/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive">
+      <HintPath>../../dll/System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>../../dll/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>../../dll/Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Websocket.Client">
+      <HintPath>../../dll/Websocket.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>../../dll/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>../../dll/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.StoreReview">
+      <HintPath>../../dll/Plugin.StoreReview.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>../../dll/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>../../dll/Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>../../dll/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>../../dll/System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>../../dll/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>../../dll/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>../../dll/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>../../dll/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>../../dll/CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>../../dll/NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Targets.ConcurrentFile">
+      <HintPath>../../dll/NLog.Targets.ConcurrentFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>../../dll/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>../../dll/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>../../dll/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>../../dll/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>../../dll/System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>../../dll/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NanoXLSX">
+      <HintPath>../../dll/NanoXLSX.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Core">
+      <HintPath>../../dll/Akavache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly.Core">
+      <HintPath>../../dll/Polly.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

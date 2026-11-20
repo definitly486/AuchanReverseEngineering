@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/files_interaction_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/media_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerPadding="10dp"/>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/remove_files_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:paddingStart="20dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_review_delete_photos"
+                android:tint="@color/gray600"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.Body1Regular"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Удалить все файлы"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

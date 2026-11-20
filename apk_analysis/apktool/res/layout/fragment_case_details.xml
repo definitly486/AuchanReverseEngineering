@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:contentInsetStart="0.0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/back_button" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ToolbarImageButton.Back" />
+                <TextView android:textAppearance="@style/TextAppearance.Title" android:gravity="center" android:id="@id/toolbar_title" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/right_button" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_top_info" android:layout_marginEnd="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ToolbarImageButton" />
+                <View android:id="@id/scrolled_line_view" android:background="@color/gray400" android:layout_width="0.0dp" android:layout_height="1.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:id="@id/defaultLayout" android:background="@color/basics100" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:paddingTop="16.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/topSection" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="500" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/green_primary" android:id="@id/status_chip" android:background="@drawable/rounded_corners_16_order_status" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="20.0dp" android:fontFamily="sans-serif" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:backgroundTint="@color/apple_green" android:lineHeight="14.0dp" android:textFontWeight="500" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/topics_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="500" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topic_title" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/textSecondary" android:id="@id/created_on_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:fontFamily="sans-serif" android:lineHeight="14.0dp" android:textFontWeight="500" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/topics_text" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/description_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/description_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="500" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/description_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:lineSpacingExtra="2.0dp" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="400" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/answer_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                        <View android:background="@color/gray400" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/answer_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="500" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/textSecondary" android:id="@id/answer_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:fontFamily="sans-serif" android:lineHeight="14.0dp" android:textFontWeight="500" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/answer_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:lineSpacingExtra="2.0dp" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="400" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/rating_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                        <View android:background="@color/gray400" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/light_main" android:id="@id/rating_title" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:fontFamily="sans-serif" android:lineHeight="20.0dp" android:textFontWeight="500" app:layout_constraintEnd_toStartOf="@id/rating_stars" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            <TextView android:textAppearance="@style/TextAppearance.Body1Medium" android:textColor="@color/warning400" android:id="@id/rating_stars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0.08" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/closed_section" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+                        <View android:background="@color/gray400" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/textSecondary" android:id="@id/closed_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:fontFamily="sans-serif" android:lineHeight="24.0dp" android:textFontWeight="500" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <include android:id="@id/emptyLayout" android:visibility="gone" layout="@layout/empty_cases" />
+            <include android:id="@id/errorLayout" android:visibility="gone" layout="@layout/error" />
+            <include android:id="@id/progressLayout" android:visibility="gone" layout="@layout/progress" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

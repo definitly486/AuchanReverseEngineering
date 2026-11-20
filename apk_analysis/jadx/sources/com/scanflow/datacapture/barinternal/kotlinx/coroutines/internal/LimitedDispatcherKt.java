@@ -1,0 +1,18 @@
+package com.scanflow.datacapture.barinternal.kotlinx.coroutines.internal;
+
+import com.scanflow.datacapture.barinternal.kotlinx.coroutines.CoroutineDispatcher;
+
+/* JADX INFO: compiled from: LimitedDispatcher.kt */
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class LimitedDispatcherKt {
+    public static final void checkParallelism(int i) {
+        if (i >= 1) {
+            return;
+        }
+        throw new IllegalArgumentException(("Expected positive parallelism level, but got " + i).toString());
+    }
+
+    public static final CoroutineDispatcher namedOrThis(CoroutineDispatcher coroutineDispatcher, String str) {
+        return str != null ? new NamedDispatcher(coroutineDispatcher, str) : coroutineDispatcher;
+    }
+}

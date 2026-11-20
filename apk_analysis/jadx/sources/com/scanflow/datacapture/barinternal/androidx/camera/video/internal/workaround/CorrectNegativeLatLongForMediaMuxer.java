@@ -1,0 +1,20 @@
+package com.scanflow.datacapture.barinternal.androidx.camera.video.internal.workaround;
+
+import android.util.Pair;
+import androidx.camera.video.internal.compat.quirk.DeviceQuirks;
+import androidx.camera.video.internal.compat.quirk.NegativeLatLongSavesIncorrectlyQuirk;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class CorrectNegativeLatLongForMediaMuxer {
+    public static Pair adjustGeoLocation(double d, double d2) {
+        if (DeviceQuirks.get(NegativeLatLongSavesIncorrectlyQuirk.class) != null) {
+            d = adjustInternal(d);
+            d2 = adjustInternal(d2);
+        }
+        return Pair.create(Double.valueOf(d), Double.valueOf(d2));
+    }
+
+    private static double adjustInternal(double d) {
+        return d >= 0.0d ? d : ((d * 10000.0d) - 1.0d) / 10000.0d;
+    }
+}

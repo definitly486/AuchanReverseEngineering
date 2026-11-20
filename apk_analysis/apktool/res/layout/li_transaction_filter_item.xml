@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/li_transaction_filter_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="12.0dp" app:cardBackgroundColor="@color/basics150" app:cardCornerRadius="8.0dp" app:cardElevation="2.0dp" app:cardUseCompatPadding="true"
+  xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/basics450" android:layout_gravity="center" android:id="@id/li_transaction_filter_value" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.cardview.widget.CardView>

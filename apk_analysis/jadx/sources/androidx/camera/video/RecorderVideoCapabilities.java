@@ -1,0 +1,134 @@
+package androidx.camera.video;
+
+import android.util.Size;
+import androidx.arch.core.util.Function;
+import androidx.camera.core.DynamicRange;
+import androidx.camera.core.impl.CameraInfoInternal;
+import androidx.camera.core.impl.DynamicRanges;
+import androidx.camera.core.impl.EncoderProfilesProvider;
+import androidx.camera.core.impl.Quirks;
+import androidx.camera.video.internal.compat.quirk.DeviceQuirks;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.BackupHdrProfileEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.DynamicRangeMatchedEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.QualityExploredEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.VideoValidatedEncoderProfilesProxy;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.workaround.QualityAddedEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.workaround.QualityResolutionModifiedEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.camera.video.internal.workaround.QualityValidatedEncoderProfilesProvider;
+import com.scanflow.datacapture.barinternal.androidx.core.util.Preconditions;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class RecorderVideoCapabilities implements VideoCapabilities {
+    private final Map mCapabilitiesMapForFullySpecifiedDynamicRange = new HashMap();
+    private final Map mCapabilitiesMapForNonFullySpecifiedDynamicRange = new HashMap();
+    private final boolean mIsStabilizationSupported;
+    private final EncoderProfilesProvider mProfilesProvider;
+
+    RecorderVideoCapabilities(int i, CameraInfoInternal cameraInfoInternal, Function function) {
+        Function function2;
+        Preconditions.checkArgument(i == 0 || i == 1, "Not a supported video capabilities source: " + i);
+        EncoderProfilesProvider encoderProfilesProvider = cameraInfoInternal.getEncoderProfilesProvider();
+        Quirks all = DeviceQuirks.getAll();
+        EncoderProfilesProvider qualityAddedEncoderProfilesProvider = new QualityAddedEncoderProfilesProvider(encoderProfilesProvider, all, cameraInfoInternal, function);
+        if (i == 1) {
+            function2 = function;
+            qualityAddedEncoderProfilesProvider = new QualityExploredEncoderProfilesProvider(qualityAddedEncoderProfilesProvider, Quality.getSortedQualities(), Collections.singleton(DynamicRange.SDR), cameraInfoInternal.getSupportedResolutions(34), function2);
+        } else {
+            function2 = function;
+        }
+        EncoderProfilesProvider qualityResolutionModifiedEncoderProfilesProvider = new QualityResolutionModifiedEncoderProfilesProvider(qualityAddedEncoderProfilesProvider, all);
+        this.mProfilesProvider = new QualityValidatedEncoderProfilesProvider(isHlg10SupportedByCamera(cameraInfoInternal) ? new BackupHdrProfileEncoderProfilesProvider(qualityResolutionModifiedEncoderProfilesProvider, function2) : qualityResolutionModifiedEncoderProfilesProvider, cameraInfoInternal, all);
+        for (DynamicRange dynamicRange : cameraInfoInternal.getSupportedDynamicRanges()) {
+            CapabilitiesByQuality capabilitiesByQuality = new CapabilitiesByQuality(new DynamicRangeMatchedEncoderProfilesProvider(this.mProfilesProvider, dynamicRange));
+            if (!capabilitiesByQuality.getSupportedQualities().isEmpty()) {
+                this.mCapabilitiesMapForFullySpecifiedDynamicRange.put(dynamicRange, capabilitiesByQuality);
+            }
+        }
+        this.mIsStabilizationSupported = cameraInfoInternal.isVideoStabilizationSupported();
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public Set getSupportedDynamicRanges() {
+        return this.mCapabilitiesMapForFullySpecifiedDynamicRange.keySet();
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public List getSupportedQualities(DynamicRange dynamicRange) {
+        CapabilitiesByQuality capabilities = getCapabilities(dynamicRange);
+        return capabilities == null ? new ArrayList() : capabilities.getSupportedQualities();
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public boolean isQualitySupported(Quality quality, DynamicRange dynamicRange) {
+        CapabilitiesByQuality capabilities = getCapabilities(dynamicRange);
+        return capabilities != null && capabilities.isQualitySupported(quality);
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public boolean isStabilizationSupported() {
+        return this.mIsStabilizationSupported;
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public VideoValidatedEncoderProfilesProxy getProfiles(Quality quality, DynamicRange dynamicRange) {
+        CapabilitiesByQuality capabilities = getCapabilities(dynamicRange);
+        if (capabilities == null) {
+            return null;
+        }
+        return capabilities.getProfiles(quality);
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public VideoValidatedEncoderProfilesProxy findNearestHigherSupportedEncoderProfilesFor(Size size, DynamicRange dynamicRange) {
+        CapabilitiesByQuality capabilities = getCapabilities(dynamicRange);
+        if (capabilities == null) {
+            return null;
+        }
+        return capabilities.findNearestHigherSupportedEncoderProfilesFor(size);
+    }
+
+    @Override // androidx.camera.video.VideoCapabilities
+    public Quality findNearestHigherSupportedQualityFor(Size size, DynamicRange dynamicRange) {
+        CapabilitiesByQuality capabilities = getCapabilities(dynamicRange);
+        if (capabilities == null) {
+            return Quality.NONE;
+        }
+        return capabilities.findNearestHigherSupportedQualityFor(size);
+    }
+
+    private CapabilitiesByQuality getCapabilities(DynamicRange dynamicRange) {
+        if (dynamicRange.isFullySpecified()) {
+            return (CapabilitiesByQuality) this.mCapabilitiesMapForFullySpecifiedDynamicRange.get(dynamicRange);
+        }
+        if (this.mCapabilitiesMapForNonFullySpecifiedDynamicRange.containsKey(dynamicRange)) {
+            return (CapabilitiesByQuality) this.mCapabilitiesMapForNonFullySpecifiedDynamicRange.get(dynamicRange);
+        }
+        CapabilitiesByQuality capabilitiesByQualityGenerateCapabilitiesForNonFullySpecifiedDynamicRange = generateCapabilitiesForNonFullySpecifiedDynamicRange(dynamicRange);
+        this.mCapabilitiesMapForNonFullySpecifiedDynamicRange.put(dynamicRange, capabilitiesByQualityGenerateCapabilitiesForNonFullySpecifiedDynamicRange);
+        return capabilitiesByQualityGenerateCapabilitiesForNonFullySpecifiedDynamicRange;
+    }
+
+    private static boolean isHlg10SupportedByCamera(CameraInfoInternal cameraInfoInternal) {
+        for (DynamicRange dynamicRange : cameraInfoInternal.getSupportedDynamicRanges()) {
+            Integer numValueOf = Integer.valueOf(dynamicRange.getEncoding());
+            int bitDepth = dynamicRange.getBitDepth();
+            if (numValueOf.equals(3) && bitDepth == 10) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private CapabilitiesByQuality generateCapabilitiesForNonFullySpecifiedDynamicRange(DynamicRange dynamicRange) {
+        if (DynamicRanges.canResolve(dynamicRange, getSupportedDynamicRanges())) {
+            return new CapabilitiesByQuality(new DynamicRangeMatchedEncoderProfilesProvider(this.mProfilesProvider, dynamicRange));
+        }
+        return null;
+    }
+}

@@ -1,0 +1,10 @@
+package com.scanflow.datacapture.barinternal.androidx.core.net;
+
+import android.net.ConnectivityManager;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class ConnectivityManagerCompat {
+    public static boolean isActiveNetworkMetered(ConnectivityManager connectivityManager) {
+        return connectivityManager.isActiveNetworkMetered();
+    }
+}
