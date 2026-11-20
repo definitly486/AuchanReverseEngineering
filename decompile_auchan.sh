@@ -210,7 +210,37 @@ export DOTNET_ROLL_FORWARD
 CURRENT_STEP="CREATE DIRECTORIES"
 info "CREATE DIRECTORIES"
 
-mkdir -p \
+mkdir -p write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report write_reference_report \\
+    "chequeNumber detail loading references" \\
+    'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \\
+    "$DEEP_DIR/10_cheque_number_detail_loading_references.txt"\
+    "needHash true response references" \\
+    'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \\
+    "$DEEP_DIR/09_needhash_true_response_references.txt"\
+    "Device ID and UDID mapping references" \\
+    'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \\
+    "$DEEP_DIR/08_device_id_udid_mapping_references.txt"\
+    "Token20 client password references" \\
+    'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \\
+    "$DEEP_DIR/07_token20_client_password_references.txt"\
+    "Loyalty history response references" \\
+    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber' \\
+    "$DEEP_DIR/06_loyalty_history_response_references.txt"\
+    "Device ID, needHash and Token80 references" \\
+    'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \\
+    "$DEEP_DIR/05_deviceid_needhash_token80_references.txt"\
+    "Personal cabinet API references" \\
+    'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL' \\
+    "$DEEP_DIR/04_personal_cabinet_api_references.txt"\
+    "Receipt item and detail references" \\
+    'GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|ReceiptItem|PurchaseItem|ChequeNumber|ReceiptNumber|ProductName|ProductDto|ProductItem|ItemName|Nomenclature|Sku|Barcode' \\
+    "$DEEP_DIR/03_receipt_item_references.txt"\
+    "Loymax URL provider references" \\
+    'LoymaxLoyaltyProgramUrlProvider|Loymax.*UrlProvider|UrlProvider.*Loymax|ILoymaxLoyaltyApi|LoymaxLoyaltyApi|LoyaltyProgramDependencyRegistry' \\
+    "$DEEP_DIR/02_loymax_registration_references.txt"\
+    "PinInteractor.SendPin references" \\
+    'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \\
+    "$DEEP_DIR/01_pin_interactor_references.txt"
     "$ROOT/original" \
     "$ROOT/tmp" \
     "$ROOT/apk_analysis/manifest" \
@@ -1336,6 +1366,33 @@ write_context_report() {
     else
         echo "[OK] $label: $output"
     fi
+}
+
+# Write a lightweight C# reference report only when it is missing or empty.
+# This prevents recursive source scans on every repeated run.
+write_reference_report() {
+    local label="$1"
+    local pattern="$2"
+    local output="$3"
+
+    if [[ -s "$output" ]]; then
+        echo "[SKIP] $label: готовый отчёт уже существует: $output"
+        return 0
+    fi
+
+    {
+        echo "# $label"
+        echo "# Generated: $(date)"
+        echo "# Search expression: $pattern"
+        echo
+        if [[ -d "$CS_DIR" ]]; then
+            grep -RniE "$pattern" "$CS_DIR" --include='*.cs' 2>/dev/null || true
+        else
+            echo "[WARNING] C# source directory not found: $CS_DIR"
+        fi
+    } > "$output"
+
+    echo "[OK] $label: $output"
 }
 
 # 1. SMS flow: locate the exact PinInteractor implementation and all callers.
