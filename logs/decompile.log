@@ -81446,3 +81446,1843 @@ Next steps:
 
 Do not upload the original APK, private traffic captures,
 tokens, cookies or personal purchase data.
+[INFO] Старт: пятница, 20 ноября 2026 г. 22:51:02 (MSK)
+[INFO] Bash: 5.3.20(0)-release
+[INFO] FreeBSD: FreeBSD  15.1-RELEASE FreeBSD 15.1-RELEASE releng/15.1-n283562-96841ea08dcf GENERIC amd64
+[INFO] Лог: /home/definitly/AuchanReverseEngineering/logs/decompile.log
+
+============================================================
+CHECK APK
+============================================================
+APK SHA256: 3bbc3588cb26d03c100bd51e3baa52b7dcc3a5b723d8b176fe9215e2b3a702b3
+APK: /home/definitly/auchan.apk
+Output: /home/definitly/AuchanReverseEngineering
+
+============================================================
+CHECK TOOLS
+============================================================
+[OK] unzip: /usr/bin/unzip
+[OK] git: /usr/local/bin/git
+[OK] java: /usr/local/bin/java
+[OK] python3: /usr/local/bin/python3
+[OK] apktool: /usr/local/bin/apktool
+[OK] jadx: /usr/local/bin/jadx
+
+============================================================
+CREATE DIRECTORIES
+============================================================
+
+============================================================
+EXTRACT APK
+============================================================
+
+============================================================
+APK METADATA
+============================================================
+
+============================================================
+APKTOOL DECOMPILATION
+============================================================
+[SKIP] Найдена готовая декомпиляция Apktool от предыдущего запуска; добавлен маркер.
+
+============================================================
+JADX DECOMPILATION
+============================================================
+[SKIP] Найдена готовая декомпиляция JADX от предыдущего запуска; найдено исходников: 15747
+
+============================================================
+DEX FILES
+============================================================
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes2.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes4.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes3.dex
+
+============================================================
+EXTRACT DOTNET DLL
+============================================================
+
+============================================================
+CHECK PREVIOUS DLL EXTRACTION
+============================================================
+DLL count: 302
+
+============================================================
+NATIVE LIBRARIES
+============================================================
+
+============================================================
+ASSEMBLY STORE EXTRACTION
+============================================================
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/arm64-v8a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27136 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 265728 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4712960 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2565632 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/armeabi-v7a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27648 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 266240 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4631552 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2281984 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+Assembly Store candidates: 2
+Assembly Store extracted: 2
+[INFO] DLL count after Assembly Store extraction: 302
+
+============================================================
+NATIVE ELF INFORMATION
+============================================================
+
+============================================================
+MONO AOT NATIVE-IMAGE ANALYSIS
+============================================================
+Mono AOT native-image libraries: 302
+Mono AOT string report: /home/definitly/AuchanReverseEngineering/native/aot_analysis
+[INFO] Raw string dumps are local-only and will be excluded from Git.
+
+============================================================
+DLL METADATA
+============================================================
+
+============================================================
+ILSPY C# DECOMPILATION
+============================================================
+[SKIP] ILSpy: System.Collections.Immutable уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Transactions.Local_0057 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Scanflow.BarcodeCapture.Maui.Android_0091 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.MemoryMappedFiles уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: CsvHelper_0073 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Resources_0094 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Fragment уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: DryIoc уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Android.Play.Review_0140 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.CSharp_0000 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Console_0010 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Http_0028 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Http.Json уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.RangeSlider.Droid уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout.Core_0118 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NLog.Targets.ConcurrentFile_0085 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager2 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: CsvHelper уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.CSharp уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.View_0115 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Console уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Polly уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.RecyclerView_0131 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Threading.Channels уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebSockets.Client уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.IsolatedStorage_0021 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Xml.Linq уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Serialization.Primitives_0048 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Requests уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.RegularExpressions_0054 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Common.Jvm_0125 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Linq.Expressions_0024 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Reflection.Metadata уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.Specialized уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Drawing.Primitives_0015 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CardView_0116 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Memory_0026 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Java.Interop уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Reactive уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NLog уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.LiveData.Core_0126 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Bindings.Input-Mask-Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.GridLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Activity уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Runtime.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager2_0135 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Packaging уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.RangeSlider.Droid_0145 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Android.Material уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Scanflow.DataCapture.Core.Maui_0092 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Polly.Core_0088 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Websocket.Client уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.NonGeneric_0003 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: AsyncAwaitBestPractices уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.Annotations_0006 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.Json_0053 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Views.Android_0097 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Memory уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache.Core_0068 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Reactive_0104 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Activity_0109 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Yandex.MapKit.Lite_0147 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Refit уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Quic уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.Support.API уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Fragment_0123 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Plugin.StoreReview уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Newtonsoft.Json.Bson уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android.Export_0063 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.API уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Appmetrica.Android_0070 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CoordinatorLayout_0119 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: _Microsoft.Android.Resource.Designer уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: AsyncAwaitBestPractices_0071 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.FileSystem.Watcher уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Sockets уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Compression_0019 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Security.Claims уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.DiagnosticSource_0012 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.IsolatedStorage уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Auchan.Android.Net уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Sockets_0035 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Biometric_0111 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Linq уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Java.Interop_0062 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android.Runtime_0064 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Auchan.Common.Net уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Plugin.StoreReview_0086 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Newtonsoft.Json.Bson_0083 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Auchan.Common.Net_0148 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Websocket.Client_0105 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Numerics_0046 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Maui.Graphics уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Kotlin.StdLib_0143 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Android.Material_0139 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.provider.e_sqlite3 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Biometric уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.NetworkInformation_0030 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime_0049 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Process_0127 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Splat_0098 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Formats.Asn1 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Web.HttpUtility уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Polly_0087 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Refit.Newtonsoft.Json_0090 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.RecyclerView уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: ZeroBranch.SwipeLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.SceneGraph_0095 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Video_0114 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.InteropServices уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.ViewModel.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.Primitives уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.KotlinX.Coroutines.Core.Jvm_0144 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.SwipeRefreshLayout_0133 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Resources.Writer_0044 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.API_0137 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache_0067 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Auchan.Android.Net_0150 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Security.Claims_0050 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.TraceSource уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Resources уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Android.Glide.Transformations_0107 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Common.Jvm уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.Process уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache.Sqlite3 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.Encodings.Web уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Compression.Brotli_0018 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Web.HttpUtility_0058 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Linq_0025 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Compression уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android.Runtime уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebSockets_0038 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.core_0101 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.DrawerLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.NonGeneric уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: DryIoc_0074 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.IO.RecyclableMemoryStream уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Serialization.Primitives уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Refit_0089 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.FileSystem.Watcher_0020 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Views.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.Concurrent уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.Specialized_0004 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Http.Json_0027 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.batteries_v2 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Akavache.Sqlite3_0069 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: PhotoView уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Refit.Newtonsoft.Json уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Android.Glide_0106 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Numerics уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NLog_0084 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Drawing уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Xml_0042 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.Concurrent_0001 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Splat уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Uri_0040 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Skottie_0096 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.GooglePlayServices.Tasks уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Data.Common_0011 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Compression.Brotli уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.DiagnosticSource уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebSockets уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Android.Glide уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.Primitives_0007 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Core_0113 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp_0093 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.provider.e_sqlite3_0102 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Maui.Graphics_0080 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NanoXLSX_0081 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Quic_0032 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.GridLayout_0124 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CardView уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.NetworkInformation уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Packaging_0103 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Drawing.Primitives уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Scanflow.DataCapture.Core.Maui уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Uri уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Process уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Appmetrica.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Loader уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections_0005 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.NameResolution_0029 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Ongakuer.CircleIndicator уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Xml.Linq уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Yandex.MapKit.Lite уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System_0060 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Primitives уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CoordinatorLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Guava.ListenableFuture_0141 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Newtonsoft.Json_0082 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Newtonsoft.Json уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Security уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.CoreLib_0061 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Threading_0056 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.Encodings.Web_0052 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.KotlinX.Coroutines.Core.Jvm уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Threading.Channels_0055 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Xml.Linq_0059 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Reflection.Metadata_0043 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.SwipeRefreshLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Bindings.Input-Mask-Android_0136 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.SavedState.SavedState.Android_0132 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Polly.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Http уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.TraceSource_0014 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Security.Cryptography уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebSockets.Client_0037 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.Annotations уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: XamarinShortcutBadger уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Pipelines_0023 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebHeaderCollection_0036 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Xml уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel_0009 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Kotlin.StdLib уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout_0117 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Transactions.Local уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Diagnostics.Process_0013 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.LiveData.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android.Export уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.CoreLib уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.SavedState.SavedState.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLite-net уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Drawing_0016 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLite-net_0099 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.NameResolution уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Video уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NLog.Targets.ConcurrentFile уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.MemoryMappedFiles_0022 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.View уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.Skottie уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Google.FlexboxLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager_0134 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.DrawerLayout_0122 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.TypeConverter уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Serialization.Formatters_0047 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Loader_0130 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Runtime.Android_0128 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Private.Xml.Linq_0041 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Browser уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Scanflow.BarcodeCapture.Maui.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android_0065 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Linq.Expressions уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CursorAdapter уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.batteries_v2_0100 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ObjectModel_0039 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Data.Common уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.CursorAdapter_0121 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Android.Glide.Transformations уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Resources.Writer уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: ZeroBranch.SwipeLayout_0149 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Mono.Android уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: CSharpFunctionalExtensions уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.RegularExpressions уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.AppCompat уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.AppCompat_0110 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: _Microsoft.Android.Resource.Designer_0066 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Requests_0033 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ObjectModel уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Maui.Essentials_0079 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: CSharpFunctionalExtensions_0072 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: PhotoView_0108 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Text.Json уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Core_0120 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.Serialization.Formatters уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Threading уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SQLitePCLRaw.core уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.IO.RecyclableMemoryStream_0078 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: XamarinShortcutBadger_0146 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Extensions.Logging.Abstractions уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Collections.Immutable_0002 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Security_0034 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.ComponentModel.TypeConverter_0008 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.GooglePlayServices.Tasks_0142 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Runtime.InteropServices_0045 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Security.Cryptography_0051 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Browser_0112 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Formats.Asn1_0017 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: NanoXLSX уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Extensions.Logging.Abstractions_0077 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Microsoft.Maui.Essentials уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Ongakuer.CircleIndicator_0076 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Android.Play.Review уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.Guava.ListenableFuture уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.WebHeaderCollection уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Google.FlexboxLayout_0075 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: SkiaSharp.SceneGraph уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.Net.Primitives_0031 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.Support.API_0138 уже имеет C# исходники (старый результат без маркера); принят как готовый.
+[SKIP] ILSpy: System.IO.Pipelines уже имеет C# исходники (старый результат без маркера); принят как готовый.
+
+============================================================
+SEARCH API ENDPOINTS
+============================================================
+
+============================================================
+SEARCH AUTHENTICATION
+============================================================
+
+============================================================
+SEARCH SMS AUTHENTICATION
+============================================================
+grep: repetition-operator operand invalid
+
+============================================================
+SEARCH PURCHASE HISTORY
+============================================================
+
+============================================================
+SEARCH DTO
+============================================================
+
+============================================================
+SEARCH LOYMAX CONFIGURATION
+============================================================
+
+============================================================
+DEEP PURCHASE HISTORY RESEARCH
+============================================================
+/home/definitly/decompile_auchan.sh: строка 1264: ((: ${#source_dirs[@]}: arithmetic syntax error: operand expected (неверный маркер «${#source_dirs[@]}»)
+[OK] PinInteractor.SendPin call chain: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research/01_pin_interactor_sendpin.txt
+/home/definitly/decompile_auchan.sh: строка 1264: ((: ${#source_dirs[@]}: arithmetic syntax error: operand expected (неверный маркер «${#source_dirs[@]}»)
+[OK] LoymaxLoyaltyProgramUrlProvider and registration: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research/02_loymax_url_provider.txt
+[INFO] Старт: пятница, 20 ноября 2026 г. 23:36:28 (MSK)
+[INFO] Bash: 5.3.20(0)-release
+[INFO] FreeBSD: FreeBSD  15.1-RELEASE FreeBSD 15.1-RELEASE releng/15.1-n283562-96841ea08dcf GENERIC amd64
+[INFO] Лог: /home/definitly/AuchanReverseEngineering/logs/decompile.log
+
+============================================================
+CHECK APK
+============================================================
+APK SHA256: 3bbc3588cb26d03c100bd51e3baa52b7dcc3a5b723d8b176fe9215e2b3a702b3
+APK: /home/definitly/auchan.apk
+Output: /home/definitly/AuchanReverseEngineering
+
+============================================================
+CHECK TOOLS
+============================================================
+[OK] unzip: /usr/bin/unzip
+[OK] git: /usr/local/bin/git
+[OK] java: /usr/local/bin/java
+[OK] python3: /usr/local/bin/python3
+[OK] apktool: /usr/local/bin/apktool
+[OK] jadx: /usr/local/bin/jadx
+
+============================================================
+CREATE DIRECTORIES
+============================================================
+
+============================================================
+EXTRACT APK
+============================================================
+
+============================================================
+APK METADATA
+============================================================
+
+============================================================
+APKTOOL DECOMPILATION
+============================================================
+[SKIP] Apktool уже декомпилировал этот APK; результат используется повторно.
+
+============================================================
+JADX DECOMPILATION
+============================================================
+[SKIP] JADX уже декомпилировал этот APK; найдено исходников: 15747
+
+============================================================
+DEX FILES
+============================================================
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes2.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes4.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes3.dex
+/home/definitly/AuchanReverseEngineering/tmp/apk/classes.dex
+
+============================================================
+EXTRACT DOTNET DLL
+============================================================
+
+============================================================
+CHECK PREVIOUS DLL EXTRACTION
+============================================================
+DLL count: 302
+
+============================================================
+NATIVE LIBRARIES
+============================================================
+
+============================================================
+ASSEMBLY STORE EXTRACTION
+============================================================
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/arm64-v8a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27136 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 265728 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4712960 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2565632 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+[INFO] Assembly Store candidate: /home/definitly/AuchanReverseEngineering/native/armeabi-v7a/libassembly-store.so
+[OK] Microsoft.CSharp.dll: 244736 bytes (XALZ/LZ4)
+[OK] System.Collections.Concurrent.dll: 39424 bytes (XALZ/LZ4)
+[OK] System.Collections.Immutable.dll: 113664 bytes (XALZ/LZ4)
+[OK] System.Collections.NonGeneric.dll: 21504 bytes (XALZ/LZ4)
+[OK] System.Collections.Specialized.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.Collections.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Annotations.dll: 6144 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.Primitives.dll: 16896 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.TypeConverter.dll: 151552 bytes (XALZ/LZ4)
+[OK] System.ComponentModel.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Console.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Data.Common.dll: 548864 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.DiagnosticSource.dll: 140800 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.Process.dll: 59904 bytes (XALZ/LZ4)
+[OK] System.Diagnostics.TraceSource.dll: 23040 bytes (XALZ/LZ4)
+[OK] System.Drawing.Primitives.dll: 44544 bytes (XALZ/LZ4)
+[OK] System.Drawing.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Formats.Asn1.dll: 65536 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.Brotli.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.IO.Compression.dll: 122368 bytes (XALZ/LZ4)
+[OK] System.IO.FileSystem.Watcher.dll: 33280 bytes (XALZ/LZ4)
+[OK] System.IO.IsolatedStorage.dll: 17920 bytes (XALZ/LZ4)
+[OK] System.IO.MemoryMappedFiles.dll: 27648 bytes (XALZ/LZ4)
+[OK] System.IO.Pipelines.dll: 7168 bytes (XALZ/LZ4)
+[OK] System.Linq.Expressions.dll: 493056 bytes (XALZ/LZ4)
+[OK] System.Linq.dll: 114688 bytes (XALZ/LZ4)
+[OK] System.Memory.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Net.Http.Json.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.Http.dll: 606720 bytes (XALZ/LZ4)
+[OK] System.Net.NameResolution.dll: 33792 bytes (XALZ/LZ4)
+[OK] System.Net.NetworkInformation.dll: 26112 bytes (XALZ/LZ4)
+[OK] System.Net.Primitives.dll: 75264 bytes (XALZ/LZ4)
+[OK] System.Net.Quic.dll: 127488 bytes (XALZ/LZ4)
+[OK] System.Net.Requests.dll: 95744 bytes (XALZ/LZ4)
+[OK] System.Net.Security.dll: 176640 bytes (XALZ/LZ4)
+[OK] System.Net.Sockets.dll: 126464 bytes (XALZ/LZ4)
+[OK] System.Net.WebHeaderCollection.dll: 15360 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.Client.dll: 30720 bytes (XALZ/LZ4)
+[OK] System.Net.WebSockets.dll: 72192 bytes (XALZ/LZ4)
+[OK] System.ObjectModel.dll: 23552 bytes (XALZ/LZ4)
+[OK] System.Private.Uri.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.Linq.dll: 47104 bytes (XALZ/LZ4)
+[OK] System.Private.Xml.dll: 1419264 bytes (XALZ/LZ4)
+[OK] System.Reflection.Metadata.dll: 76800 bytes (XALZ/LZ4)
+[OK] System.Resources.Writer.dll: 5632 bytes (XALZ/LZ4)
+[OK] System.Runtime.InteropServices.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Numerics.dll: 116224 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Formatters.dll: 9216 bytes (XALZ/LZ4)
+[OK] System.Runtime.Serialization.Primitives.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Runtime.dll: 10240 bytes (XALZ/LZ4)
+[OK] System.Security.Claims.dll: 16384 bytes (XALZ/LZ4)
+[OK] System.Security.Cryptography.dll: 274432 bytes (XALZ/LZ4)
+[OK] System.Text.Encodings.Web.dll: 31232 bytes (XALZ/LZ4)
+[OK] System.Text.Json.dll: 266240 bytes (XALZ/LZ4)
+[OK] System.Text.RegularExpressions.dll: 353280 bytes (XALZ/LZ4)
+[OK] System.Threading.Channels.dll: 29696 bytes (XALZ/LZ4)
+[OK] System.Threading.dll: 12288 bytes (XALZ/LZ4)
+[OK] System.Transactions.Local.dll: 82944 bytes (XALZ/LZ4)
+[OK] System.Web.HttpUtility.dll: 11264 bytes (XALZ/LZ4)
+[OK] System.Xml.Linq.dll: 4608 bytes (XALZ/LZ4)
+[OK] System.dll: 5120 bytes (XALZ/LZ4)
+[OK] System.Private.CoreLib.dll: 4631552 bytes (XALZ/LZ4)
+[OK] Java.Interop.dll: 187904 bytes (XALZ/LZ4)
+[OK] Mono.Android.Export.dll: 32768 bytes (XALZ/LZ4)
+[OK] Mono.Android.Runtime.dll: 11776 bytes (XALZ/LZ4)
+[OK] Mono.Android.dll: 2281984 bytes (XALZ/LZ4)
+[OK] _Microsoft.Android.Resource.Designer.dll: 46080 bytes (XALZ/LZ4)
+[OK] Akavache.dll: 7168 bytes (XALZ/LZ4)
+[OK] Akavache.Core.dll: 77312 bytes (XALZ/LZ4)
+[OK] Akavache.Sqlite3.dll: 71680 bytes (XALZ/LZ4)
+[OK] Appmetrica.Android.dll: 235520 bytes (XALZ/LZ4)
+[OK] AsyncAwaitBestPractices.dll: 13824 bytes (XALZ/LZ4)
+[OK] CSharpFunctionalExtensions.dll: 1189888 bytes (XALZ/LZ4)
+[OK] CsvHelper.dll: 225280 bytes (XALZ/LZ4)
+[OK] DryIoc.dll: 680448 bytes (XALZ/LZ4)
+[OK] Google.FlexboxLayout.dll: 27648 bytes (XALZ/LZ4)
+[OK] Ongakuer.CircleIndicator.dll: 14336 bytes (XALZ/LZ4)
+[OK] Microsoft.Extensions.Logging.Abstractions.dll: 16384 bytes (XALZ/LZ4)
+[OK] Microsoft.IO.RecyclableMemoryStream.dll: 33280 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Essentials.dll: 106496 bytes (XALZ/LZ4)
+[OK] Microsoft.Maui.Graphics.dll: 40448 bytes (XALZ/LZ4)
+[OK] NanoXLSX.dll: 90624 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.dll: 696832 bytes (XALZ/LZ4)
+[OK] Newtonsoft.Json.Bson.dll: 79360 bytes (XALZ/LZ4)
+[OK] NLog.dll: 855040 bytes (XALZ/LZ4)
+[OK] NLog.Targets.ConcurrentFile.dll: 82944 bytes (XALZ/LZ4)
+[OK] Plugin.StoreReview.dll: 10240 bytes (XALZ/LZ4)
+[OK] Polly.dll: 271360 bytes (XALZ/LZ4)
+[OK] Polly.Core.dll: 22528 bytes (XALZ/LZ4)
+[OK] Refit.dll: 114688 bytes (XALZ/LZ4)
+[OK] Refit.Newtonsoft.Json.dll: 9216 bytes (XALZ/LZ4)
+[OK] Scanflow.BarcodeCapture.Maui.Android.dll: 88064 bytes (XALZ/LZ4)
+[OK] Scanflow.DataCapture.Core.Maui.dll: 154624 bytes (XALZ/LZ4)
+[OK] SkiaSharp.dll: 62976 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Resources.dll: 7680 bytes (XALZ/LZ4)
+[OK] SkiaSharp.SceneGraph.dll: 6144 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Skottie.dll: 9216 bytes (XALZ/LZ4)
+[OK] SkiaSharp.Views.Android.dll: 29184 bytes (XALZ/LZ4)
+[OK] Splat.dll: 115712 bytes (XALZ/LZ4)
+[OK] SQLite-net.dll: 76288 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.batteries_v2.dll: 5632 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.core.dll: 28160 bytes (XALZ/LZ4)
+[OK] SQLitePCLRaw.provider.e_sqlite3.dll: 35328 bytes (XALZ/LZ4)
+[OK] System.IO.Packaging.dll: 81920 bytes (XALZ/LZ4)
+[OK] System.Reactive.dll: 178176 bytes (XALZ/LZ4)
+[OK] Websocket.Client.dll: 41984 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.dll: 427520 bytes (XALZ/LZ4)
+[OK] Xamarin.Android.Glide.Transformations.dll: 15360 bytes (XALZ/LZ4)
+[OK] PhotoView.dll: 66560 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Activity.dll: 69120 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.AppCompat.dll: 593408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Biometric.dll: 38912 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Browser.dll: 51200 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Core.dll: 633856 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.Video.dll: 31232 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Camera.View.dll: 80896 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CardView.dll: 19456 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.dll: 421376 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ConstraintLayout.Core.dll: 629248 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CoordinatorLayout.dll: 81408 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Core.dll: 681984 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.CursorAdapter.dll: 27648 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.DrawerLayout.dll: 46080 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Fragment.dll: 240128 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.GridLayout.dll: 30208 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Common.Jvm.dll: 32768 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.LiveData.Core.dll: 17920 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Process.dll: 7680 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.Runtime.Android.dll: 8192 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Lifecycle.ViewModel.Android.dll: 36864 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.Loader.dll: 40448 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.RecyclerView.dll: 428544 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SavedState.SavedState.Android.dll: 12288 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.SwipeRefreshLayout.dll: 43008 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager.dll: 65536 bytes (XALZ/LZ4)
+[OK] Xamarin.AndroidX.ViewPager2.dll: 23040 bytes (XALZ/LZ4)
+[OK] Xamarin.Bindings.Input-Mask-Android.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.API.dll: 9728 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.AI.Edge.LiteRT.Support.API.dll: 23552 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Material.dll: 842752 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Android.Play.Review.dll: 16384 bytes (XALZ/LZ4)
+[OK] Xamarin.Google.Guava.ListenableFuture.dll: 11264 bytes (XALZ/LZ4)
+[OK] Xamarin.GooglePlayServices.Tasks.dll: 53760 bytes (XALZ/LZ4)
+[OK] Xamarin.Kotlin.StdLib.dll: 91136 bytes (XALZ/LZ4)
+[OK] Xamarin.KotlinX.Coroutines.Core.Jvm.dll: 18944 bytes (XALZ/LZ4)
+[OK] Xamarin.RangeSlider.Droid.dll: 24576 bytes (XALZ/LZ4)
+[OK] XamarinShortcutBadger.dll: 8192 bytes (XALZ/LZ4)
+[OK] Yandex.MapKit.Lite.dll: 735232 bytes (XALZ/LZ4)
+[OK] Auchan.Common.Net.dll: 5073920 bytes (XALZ/LZ4)
+[OK] ZeroBranch.SwipeLayout.dll: 24576 bytes (XALZ/LZ4)
+[OK] Auchan.Android.Net.dll: 1571328 bytes (XALZ/LZ4)
+[SUMMARY] extracted=151, declared=151, errors=0
+Assembly Store candidates: 2
+Assembly Store extracted: 2
+[INFO] DLL count after Assembly Store extraction: 302
+
+============================================================
+NATIVE ELF INFORMATION
+============================================================
+
+============================================================
+MONO AOT NATIVE-IMAGE ANALYSIS
+============================================================
+Mono AOT native-image libraries: 302
+Mono AOT string report: /home/definitly/AuchanReverseEngineering/native/aot_analysis
+[INFO] Raw string dumps are local-only and will be excluded from Git.
+
+============================================================
+DLL METADATA
+============================================================
+
+============================================================
+ILSPY C# DECOMPILATION
+============================================================
+[SKIP] ILSpy: System.Collections.Immutable уже декомпилирован (C# файлов: 67)
+[SKIP] ILSpy: System.Transactions.Local_0057 уже декомпилирован (C# файлов: 74)
+[SKIP] ILSpy: Scanflow.BarcodeCapture.Maui.Android_0091 уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: System.IO.MemoryMappedFiles уже декомпилирован (C# файлов: 12)
+[SKIP] ILSpy: CsvHelper_0073 уже декомпилирован (C# файлов: 224)
+[SKIP] ILSpy: SkiaSharp.Resources_0094 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Xamarin.AndroidX.Fragment уже декомпилирован (C# файлов: 56)
+[SKIP] ILSpy: DryIoc уже декомпилирован (C# файлов: 349)
+[SKIP] ILSpy: Xamarin.Google.Android.Play.Review_0140 уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: Microsoft.CSharp_0000 уже декомпилирован (C# файлов: 178)
+[SKIP] ILSpy: System.Console_0010 уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: System.Net.Http_0028 уже декомпилирован (C# файлов: 187)
+[SKIP] ILSpy: System.Net.Http.Json уже декомпилирован (C# файлов: 7)
+[SKIP] ILSpy: Xamarin.RangeSlider.Droid уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout.Core_0118 уже декомпилирован (C# файлов: 161)
+[SKIP] ILSpy: NLog.Targets.ConcurrentFile_0085 уже декомпилирован (C# файлов: 43)
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager2 уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: CsvHelper уже декомпилирован (C# файлов: 224)
+[SKIP] ILSpy: Microsoft.CSharp уже декомпилирован (C# файлов: 178)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.View_0115 уже декомпилирован (C# файлов: 21)
+[SKIP] ILSpy: System.Console уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: Polly уже декомпилирован (C# файлов: 135)
+[SKIP] ILSpy: Xamarin.AndroidX.RecyclerView_0131 уже декомпилирован (C# файлов: 77)
+[SKIP] ILSpy: System.Threading.Channels уже декомпилирован (C# файлов: 17)
+[SKIP] ILSpy: System.Net.WebSockets.Client уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: System.IO.IsolatedStorage_0021 уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: System.Private.Xml.Linq уже декомпилирован (C# файлов: 33)
+[SKIP] ILSpy: System.Runtime.Serialization.Primitives_0048 уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: System.Net.Requests уже декомпилирован (C# файлов: 54)
+[SKIP] ILSpy: System.Text.RegularExpressions_0054 уже декомпилирован (C# файлов: 89)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Common.Jvm_0125 уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: System.Linq.Expressions_0024 уже декомпилирован (C# файлов: 317)
+[SKIP] ILSpy: System.Reflection.Metadata уже декомпилирован (C# файлов: 111)
+[SKIP] ILSpy: System.Collections.Specialized уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: System.Drawing.Primitives_0015 уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: Xamarin.AndroidX.CardView_0116 уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: System.Memory_0026 уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: Java.Interop уже декомпилирован (C# файлов: 101)
+[SKIP] ILSpy: System.Reactive уже декомпилирован (C# файлов: 160)
+[SKIP] ILSpy: NLog уже декомпилирован (C# файлов: 414)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.LiveData.Core_0126 уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: Xamarin.Bindings.Input-Mask-Android уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Xamarin.AndroidX.GridLayout уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: Xamarin.AndroidX.Activity уже декомпилирован (C# файлов: 30)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Runtime.Android уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager2_0135 уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: System.IO.Packaging уже декомпилирован (C# файлов: 26)
+[SKIP] ILSpy: Xamarin.RangeSlider.Droid_0145 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Xamarin.AndroidX.Core уже декомпилирован (C# файлов: 136)
+[SKIP] ILSpy: Xamarin.Google.Android.Material уже декомпилирован (C# файлов: 108)
+[SKIP] ILSpy: Scanflow.DataCapture.Core.Maui_0092 уже декомпилирован (C# файлов: 20)
+[SKIP] ILSpy: Polly.Core_0088 уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: Websocket.Client уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: System.Collections.NonGeneric_0003 уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: AsyncAwaitBestPractices уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: System.ComponentModel.Annotations_0006 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: System.Text.Json_0053 уже декомпилирован (C# файлов: 128)
+[SKIP] ILSpy: SkiaSharp.Views.Android_0097 уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: System.Memory уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: Akavache.Core_0068 уже декомпилирован (C# файлов: 52)
+[SKIP] ILSpy: System.Reactive_0104 уже декомпилирован (C# файлов: 160)
+[SKIP] ILSpy: Xamarin.AndroidX.Activity_0109 уже декомпилирован (C# файлов: 30)
+[SKIP] ILSpy: Yandex.MapKit.Lite_0147 уже декомпилирован (C# файлов: 282)
+[SKIP] ILSpy: Refit уже декомпилирован (C# файлов: 72)
+[SKIP] ILSpy: System.Net.Quic уже декомпилирован (C# файлов: 90)
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.Support.API уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: Xamarin.AndroidX.Fragment_0123 уже декомпилирован (C# файлов: 56)
+[SKIP] ILSpy: Plugin.StoreReview уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Newtonsoft.Json.Bson уже декомпилирован (C# файлов: 29)
+[SKIP] ILSpy: Mono.Android.Export_0063 уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.API уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Appmetrica.Android_0070 уже декомпилирован (C# файлов: 66)
+[SKIP] ILSpy: Xamarin.AndroidX.CoordinatorLayout_0119 уже декомпилирован (C# файлов: 39)
+[SKIP] ILSpy: _Microsoft.Android.Resource.Designer уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: AsyncAwaitBestPractices_0071 уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: System.IO.FileSystem.Watcher уже декомпилирован (C# файлов: 18)
+[SKIP] ILSpy: System.Net.Sockets уже декомпилирован (C# файлов: 42)
+[SKIP] ILSpy: System.Runtime уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.IO.Compression_0019 уже декомпилирован (C# файлов: 39)
+[SKIP] ILSpy: System.Security.Claims уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: System.Diagnostics.DiagnosticSource_0012 уже декомпилирован (C# файлов: 98)
+[SKIP] ILSpy: Akavache.Core уже декомпилирован (C# файлов: 52)
+[SKIP] ILSpy: System.IO.IsolatedStorage уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Auchan.Android.Net уже декомпилирован (C# файлов: 610)
+[SKIP] ILSpy: System.Net.Sockets_0035 уже декомпилирован (C# файлов: 42)
+[SKIP] ILSpy: Xamarin.AndroidX.Biometric_0111 уже декомпилирован (C# файлов: 14)
+[SKIP] ILSpy: System.Linq уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: Java.Interop_0062 уже декомпилирован (C# файлов: 101)
+[SKIP] ILSpy: Mono.Android.Runtime_0064 уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: Auchan.Common.Net уже декомпилирован (C# файлов: 2017)
+[SKIP] ILSpy: Akavache уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: Plugin.StoreReview_0086 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Newtonsoft.Json.Bson_0083 уже декомпилирован (C# файлов: 29)
+[SKIP] ILSpy: Auchan.Common.Net_0148 уже декомпилирован (C# файлов: 2017)
+[SKIP] ILSpy: Websocket.Client_0105 уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: System.Runtime.Numerics_0046 уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: Microsoft.Maui.Graphics уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: Xamarin.Kotlin.StdLib_0143 уже декомпилирован (C# файлов: 55)
+[SKIP] ILSpy: Xamarin.Google.Android.Material_0139 уже декомпилирован (C# файлов: 108)
+[SKIP] ILSpy: SQLitePCLRaw.provider.e_sqlite3 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.AndroidX.Biometric уже декомпилирован (C# файлов: 14)
+[SKIP] ILSpy: System.Net.NetworkInformation_0030 уже декомпилирован (C# файлов: 32)
+[SKIP] ILSpy: System.Runtime_0049 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Process_0127 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Splat_0098 уже декомпилирован (C# файлов: 67)
+[SKIP] ILSpy: System.Formats.Asn1 уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: System.Web.HttpUtility уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: Polly_0087 уже декомпилирован (C# файлов: 135)
+[SKIP] ILSpy: Refit.Newtonsoft.Json_0090 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.AndroidX.RecyclerView уже декомпилирован (C# файлов: 77)
+[SKIP] ILSpy: ZeroBranch.SwipeLayout уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: SkiaSharp.SceneGraph_0095 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Video_0114 уже декомпилирован (C# файлов: 18)
+[SKIP] ILSpy: System.Runtime.InteropServices уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.ViewModel.Android уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: System.ComponentModel.Primitives уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: Xamarin.KotlinX.Coroutines.Core.Jvm_0144 уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: Xamarin.AndroidX.SwipeRefreshLayout_0133 уже декомпилирован (C# файлов: 24)
+[SKIP] ILSpy: System.Resources.Writer_0044 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.API_0137 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Akavache_0067 уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: Auchan.Android.Net_0150 уже декомпилирован (C# файлов: 610)
+[SKIP] ILSpy: System.Security.Claims_0050 уже декомпилирован (C# файлов: 6)
+[SKIP] ILSpy: System.Diagnostics.TraceSource уже декомпилирован (C# файлов: 21)
+[SKIP] ILSpy: SkiaSharp.Resources уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Xamarin.Android.Glide.Transformations_0107 уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Common.Jvm уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: System.Diagnostics.Process уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: Akavache.Sqlite3 уже декомпилирован (C# файлов: 32)
+[SKIP] ILSpy: System.Text.Encodings.Web уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: System.IO.Compression.Brotli_0018 уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: System.Web.HttpUtility_0058 уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: System.Linq_0025 уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: System.IO.Compression уже декомпилирован (C# файлов: 39)
+[SKIP] ILSpy: Mono.Android.Runtime уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: System.Net.WebSockets_0038 уже декомпилирован (C# файлов: 27)
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout.Core уже декомпилирован (C# файлов: 161)
+[SKIP] ILSpy: SQLitePCLRaw.core_0101 уже декомпилирован (C# файлов: 44)
+[SKIP] ILSpy: Xamarin.AndroidX.DrawerLayout уже декомпилирован (C# файлов: 22)
+[SKIP] ILSpy: System.Collections.NonGeneric уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: DryIoc_0074 уже декомпилирован (C# файлов: 349)
+[SKIP] ILSpy: Microsoft.IO.RecyclableMemoryStream уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: System.Runtime.Serialization.Primitives уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: System.ComponentModel уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: Refit_0089 уже декомпилирован (C# файлов: 72)
+[SKIP] ILSpy: System.IO.FileSystem.Watcher_0020 уже декомпилирован (C# файлов: 18)
+[SKIP] ILSpy: SkiaSharp.Views.Android уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: System.Collections.Concurrent уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: System.Collections.Specialized_0004 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: System.Net.Http.Json_0027 уже декомпилирован (C# файлов: 7)
+[SKIP] ILSpy: SQLitePCLRaw.batteries_v2 уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: Akavache.Sqlite3_0069 уже декомпилирован (C# файлов: 32)
+[SKIP] ILSpy: PhotoView уже декомпилирован (C# файлов: 31)
+[SKIP] ILSpy: Refit.Newtonsoft.Json уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Xamarin.Android.Glide_0106 уже декомпилирован (C# файлов: 156)
+[SKIP] ILSpy: System.Runtime.Numerics уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: NLog_0084 уже декомпилирован (C# файлов: 414)
+[SKIP] ILSpy: System.Drawing уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Private.Xml_0042 уже декомпилирован (C# файлов: 552)
+[SKIP] ILSpy: System.Collections.Concurrent_0001 уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: Splat уже декомпилирован (C# файлов: 67)
+[SKIP] ILSpy: System.Private.Uri_0040 уже декомпилирован (C# файлов: 38)
+[SKIP] ILSpy: SkiaSharp.Skottie_0096 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: Xamarin.GooglePlayServices.Tasks уже декомпилирован (C# файлов: 28)
+[SKIP] ILSpy: System уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Data.Common_0011 уже декомпилирован (C# файлов: 207)
+[SKIP] ILSpy: System.IO.Compression.Brotli уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: System.Diagnostics.DiagnosticSource уже декомпилирован (C# файлов: 98)
+[SKIP] ILSpy: System.Net.WebSockets уже декомпилирован (C# файлов: 27)
+[SKIP] ILSpy: Xamarin.Android.Glide уже декомпилирован (C# файлов: 156)
+[SKIP] ILSpy: System.ComponentModel.Primitives_0007 уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Core_0113 уже декомпилирован (C# файлов: 199)
+[SKIP] ILSpy: SkiaSharp_0093 уже декомпилирован (C# файлов: 74)
+[SKIP] ILSpy: SQLitePCLRaw.provider.e_sqlite3_0102 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Microsoft.Maui.Graphics_0080 уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: NanoXLSX_0081 уже декомпилирован (C# файлов: 28)
+[SKIP] ILSpy: System.Net.Quic_0032 уже декомпилирован (C# файлов: 90)
+[SKIP] ILSpy: Xamarin.AndroidX.GridLayout_0124 уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: Xamarin.AndroidX.CardView уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: System.Net.NetworkInformation уже декомпилирован (C# файлов: 32)
+[SKIP] ILSpy: System.IO.Packaging_0103 уже декомпилирован (C# файлов: 26)
+[SKIP] ILSpy: System.Drawing.Primitives уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: Scanflow.DataCapture.Core.Maui уже декомпилирован (C# файлов: 20)
+[SKIP] ILSpy: System.Private.Uri уже декомпилирован (C# файлов: 38)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Process уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Appmetrica.Android уже декомпилирован (C# файлов: 66)
+[SKIP] ILSpy: Xamarin.AndroidX.Loader уже декомпилирован (C# файлов: 17)
+[SKIP] ILSpy: System.Collections_0005 уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: System.Net.NameResolution_0029 уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: Ongakuer.CircleIndicator уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: System.Xml.Linq уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: Yandex.MapKit.Lite уже декомпилирован (C# файлов: 282)
+[SKIP] ILSpy: System_0060 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Net.Primitives уже декомпилирован (C# файлов: 59)
+[SKIP] ILSpy: Xamarin.AndroidX.CoordinatorLayout уже декомпилирован (C# файлов: 39)
+[SKIP] ILSpy: Xamarin.Google.Guava.ListenableFuture_0141 уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Newtonsoft.Json_0082 уже декомпилирован (C# файлов: 266)
+[SKIP] ILSpy: Newtonsoft.Json уже декомпилирован (C# файлов: 266)
+[SKIP] ILSpy: System.Net.Security уже декомпилирован (C# файлов: 71)
+[SKIP] ILSpy: System.Private.CoreLib_0061 уже декомпилирован (C# файлов: 1648)
+[SKIP] ILSpy: System.Threading_0056 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Text.Encodings.Web_0052 уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: Xamarin.KotlinX.Coroutines.Core.Jvm уже декомпилирован (C# файлов: 13)
+[SKIP] ILSpy: System.Threading.Channels_0055 уже декомпилирован (C# файлов: 17)
+[SKIP] ILSpy: System.Xml.Linq_0059 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Reflection.Metadata_0043 уже декомпилирован (C# файлов: 111)
+[SKIP] ILSpy: Xamarin.AndroidX.SwipeRefreshLayout уже декомпилирован (C# файлов: 24)
+[SKIP] ILSpy: Xamarin.Bindings.Input-Mask-Android_0136 уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Xamarin.AndroidX.SavedState.SavedState.Android_0132 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: Polly.Core уже декомпилирован (C# файлов: 19)
+[SKIP] ILSpy: System.Net.Http уже декомпилирован (C# файлов: 187)
+[SKIP] ILSpy: System.Diagnostics.TraceSource_0014 уже декомпилирован (C# файлов: 21)
+[SKIP] ILSpy: System.Security.Cryptography уже декомпилирован (C# файлов: 234)
+[SKIP] ILSpy: System.Net.WebSockets.Client_0037 уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: System.ComponentModel.Annotations уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: XamarinShortcutBadger уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: System.IO.Pipelines_0023 уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: System.Net.WebHeaderCollection_0036 уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: System.Private.Xml уже декомпилирован (C# файлов: 552)
+[SKIP] ILSpy: System.ComponentModel_0009 уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: Xamarin.Kotlin.StdLib уже декомпилирован (C# файлов: 55)
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout_0117 уже декомпилирован (C# файлов: 106)
+[SKIP] ILSpy: System.Transactions.Local уже декомпилирован (C# файлов: 74)
+[SKIP] ILSpy: System.Diagnostics.Process_0013 уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.LiveData.Core уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: Mono.Android.Export уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: System.Private.CoreLib уже декомпилирован (C# файлов: 1661)
+[SKIP] ILSpy: Xamarin.AndroidX.SavedState.SavedState.Android уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Core уже декомпилирован (C# файлов: 199)
+[SKIP] ILSpy: SQLite-net уже декомпилирован (C# файлов: 33)
+[SKIP] ILSpy: System.Drawing_0016 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: SQLite-net_0099 уже декомпилирован (C# файлов: 33)
+[SKIP] ILSpy: System.Net.NameResolution уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.Video уже декомпилирован (C# файлов: 18)
+[SKIP] ILSpy: NLog.Targets.ConcurrentFile уже декомпилирован (C# файлов: 43)
+[SKIP] ILSpy: System.IO.MemoryMappedFiles_0022 уже декомпилирован (C# файлов: 12)
+[SKIP] ILSpy: Xamarin.AndroidX.Camera.View уже декомпилирован (C# файлов: 21)
+[SKIP] ILSpy: SkiaSharp.Skottie уже декомпилирован (C# файлов: 5)
+[SKIP] ILSpy: SkiaSharp уже декомпилирован (C# файлов: 74)
+[SKIP] ILSpy: Google.FlexboxLayout уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager_0134 уже декомпилирован (C# файлов: 30)
+[SKIP] ILSpy: Xamarin.AndroidX.DrawerLayout_0122 уже декомпилирован (C# файлов: 22)
+[SKIP] ILSpy: System.ComponentModel.TypeConverter уже декомпилирован (C# файлов: 120)
+[SKIP] ILSpy: System.Runtime.Serialization.Formatters_0047 уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: Xamarin.AndroidX.Loader_0130 уже декомпилирован (C# файлов: 17)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.Runtime.Android_0128 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: System.Private.Xml.Linq_0041 уже декомпилирован (C# файлов: 33)
+[SKIP] ILSpy: Xamarin.AndroidX.Browser уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: Scanflow.BarcodeCapture.Maui.Android уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: Mono.Android_0065 уже декомпилирован (C# файлов: 1052)
+[SKIP] ILSpy: System.Linq.Expressions уже декомпилирован (C# файлов: 317)
+[SKIP] ILSpy: Xamarin.AndroidX.CursorAdapter уже декомпилирован (C# файлов: 14)
+[SKIP] ILSpy: SQLitePCLRaw.batteries_v2_0100 уже декомпилирован (C# файлов: 4)
+[SKIP] ILSpy: System.ObjectModel_0039 уже декомпилирован (C# файлов: 26)
+[SKIP] ILSpy: System.Data.Common уже декомпилирован (C# файлов: 207)
+[SKIP] ILSpy: Xamarin.AndroidX.CursorAdapter_0121 уже декомпилирован (C# файлов: 14)
+[SKIP] ILSpy: Xamarin.Android.Glide.Transformations уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: System.Resources.Writer уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: ZeroBranch.SwipeLayout_0149 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Mono.Android уже декомпилирован (C# файлов: 1052)
+[SKIP] ILSpy: CSharpFunctionalExtensions уже декомпилирован (C# файлов: 46)
+[SKIP] ILSpy: System.Text.RegularExpressions уже декомпилирован (C# файлов: 89)
+[SKIP] ILSpy: Xamarin.AndroidX.ViewPager уже декомпилирован (C# файлов: 30)
+[SKIP] ILSpy: Xamarin.AndroidX.AppCompat уже декомпилирован (C# файлов: 92)
+[SKIP] ILSpy: Xamarin.AndroidX.AppCompat_0110 уже декомпилирован (C# файлов: 92)
+[SKIP] ILSpy: _Microsoft.Android.Resource.Designer_0066 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: System.Net.Requests_0033 уже декомпилирован (C# файлов: 54)
+[SKIP] ILSpy: System.ObjectModel уже декомпилирован (C# файлов: 26)
+[SKIP] ILSpy: Microsoft.Maui.Essentials_0079 уже декомпилирован (C# файлов: 127)
+[SKIP] ILSpy: System.Collections уже декомпилирован (C# файлов: 16)
+[SKIP] ILSpy: CSharpFunctionalExtensions_0072 уже декомпилирован (C# файлов: 46)
+[SKIP] ILSpy: PhotoView_0108 уже декомпилирован (C# файлов: 31)
+[SKIP] ILSpy: System.Text.Json уже декомпилирован (C# файлов: 128)
+[SKIP] ILSpy: Xamarin.AndroidX.Core_0120 уже декомпилирован (C# файлов: 136)
+[SKIP] ILSpy: System.Runtime.Serialization.Formatters уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: System.Threading уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: SQLitePCLRaw.core уже декомпилирован (C# файлов: 44)
+[SKIP] ILSpy: Microsoft.IO.RecyclableMemoryStream_0078 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: XamarinShortcutBadger_0146 уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: Microsoft.Extensions.Logging.Abstractions уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: System.Collections.Immutable_0002 уже декомпилирован (C# файлов: 67)
+[SKIP] ILSpy: Xamarin.AndroidX.ConstraintLayout уже декомпилирован (C# файлов: 106)
+[SKIP] ILSpy: System.Net.Security_0034 уже декомпилирован (C# файлов: 71)
+[SKIP] ILSpy: System.ComponentModel.TypeConverter_0008 уже декомпилирован (C# файлов: 120)
+[SKIP] ILSpy: Xamarin.GooglePlayServices.Tasks_0142 уже декомпилирован (C# файлов: 28)
+[SKIP] ILSpy: System.Runtime.InteropServices_0045 уже декомпилирован (C# файлов: 1)
+[SKIP] ILSpy: System.Security.Cryptography_0051 уже декомпилирован (C# файлов: 234)
+[SKIP] ILSpy: Xamarin.AndroidX.Browser_0112 уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: System.Formats.Asn1_0017 уже декомпилирован (C# файлов: 25)
+[SKIP] ILSpy: NanoXLSX уже декомпилирован (C# файлов: 28)
+[SKIP] ILSpy: Microsoft.Extensions.Logging.Abstractions_0077 уже декомпилирован (C# файлов: 10)
+[SKIP] ILSpy: Microsoft.Maui.Essentials уже декомпилирован (C# файлов: 127)
+[SKIP] ILSpy: Ongakuer.CircleIndicator_0076 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: Xamarin.Google.Android.Play.Review уже декомпилирован (C# файлов: 9)
+[SKIP] ILSpy: Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129 уже декомпилирован (C# файлов: 15)
+[SKIP] ILSpy: Xamarin.Google.Guava.ListenableFuture уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: System.Net.WebHeaderCollection уже декомпилирован (C# файлов: 8)
+[SKIP] ILSpy: Google.FlexboxLayout_0075 уже декомпилирован (C# файлов: 3)
+[SKIP] ILSpy: SkiaSharp.SceneGraph уже декомпилирован (C# файлов: 2)
+[SKIP] ILSpy: System.Net.Primitives_0031 уже декомпилирован (C# файлов: 59)
+[SKIP] ILSpy: Xamarin.Google.AI.Edge.LiteRT.Support.API_0138 уже декомпилирован (C# файлов: 11)
+[SKIP] ILSpy: System.IO.Pipelines уже декомпилирован (C# файлов: 5)
+
+============================================================
+SEARCH API ENDPOINTS
+============================================================
+
+============================================================
+SEARCH AUTHENTICATION
+============================================================
+
+============================================================
+SEARCH SMS AUTHENTICATION
+============================================================
+
+============================================================
+SEARCH PURCHASE HISTORY
+============================================================
+
+============================================================
+SEARCH DTO
+============================================================
+
+============================================================
+SEARCH LOYMAX CONFIGURATION
+============================================================
+
+============================================================
+DEEP PURCHASE HISTORY RESEARCH
+============================================================
+[OK] PinInteractor.SendPin call chain: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research/01_pin_interactor_sendpin.txt
+[OK] LoymaxLoyaltyProgramUrlProvider and registration: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research/02_loymax_url_provider.txt
+[OK] Receipt detail and itemized product call chain: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research/03_receipt_items_and_details.txt
+[INFO] Detailed purchase research reports: /home/definitly/AuchanReverseEngineering/api/deep_purchase_research
+
+============================================================
+COUNT SOURCE FILES
+============================================================
+C# files: 26093
+DLL files: 302
+
+============================================================
+GENERATE DOCUMENTATION
+============================================================
+
+============================================================
+CREATE GITIGNORE
+============================================================
+
+============================================================
+GIT INITIALIZATION
+============================================================
+
+Git status:
+A  api/deep_purchase_research/01_pin_interactor_references.txt
+A  api/deep_purchase_research/01_pin_interactor_sendpin.txt
+A  api/deep_purchase_research/02_loymax_registration_references.txt
+A  api/deep_purchase_research/02_loymax_url_provider.txt
+A  api/deep_purchase_research/03_receipt_item_references.txt
+A  api/deep_purchase_research/03_receipt_items_and_details.txt
+A  api/deep_purchase_research/README.md
+M  api/sms_auth/endpoint_literals_search.txt
+A  api/sms_auth/endpoint_literals_search_errors.txt
+A  apk_analysis/apktool/.decompile_complete
+M  apk_analysis/dex_files.txt
+A  apk_analysis/jadx/.decompile_complete
+M  apk_analysis/metadata.txt
+M  docs/reverse_engineering_log.md
+A  dotnet/decompiled/Akavache.Core/.decompile_complete
+A  dotnet/decompiled/Akavache.Core_0068/.decompile_complete
+A  dotnet/decompiled/Akavache.Sqlite3/.decompile_complete
+A  dotnet/decompiled/Akavache.Sqlite3_0069/.decompile_complete
+A  dotnet/decompiled/Akavache/.decompile_complete
+A  dotnet/decompiled/Akavache_0067/.decompile_complete
+A  dotnet/decompiled/Appmetrica.Android/.decompile_complete
+A  dotnet/decompiled/Appmetrica.Android_0070/.decompile_complete
+A  dotnet/decompiled/AsyncAwaitBestPractices/.decompile_complete
+A  dotnet/decompiled/AsyncAwaitBestPractices_0071/.decompile_complete
+A  dotnet/decompiled/Auchan.Android.Net/.decompile_complete
+A  dotnet/decompiled/Auchan.Android.Net_0150/.decompile_complete
+A  dotnet/decompiled/Auchan.Common.Net/.decompile_complete
+A  dotnet/decompiled/Auchan.Common.Net_0148/.decompile_complete
+A  dotnet/decompiled/CSharpFunctionalExtensions/.decompile_complete
+A  dotnet/decompiled/CSharpFunctionalExtensions_0072/.decompile_complete
+A  dotnet/decompiled/CsvHelper/.decompile_complete
+A  dotnet/decompiled/CsvHelper_0073/.decompile_complete
+A  dotnet/decompiled/DryIoc/.decompile_complete
+A  dotnet/decompiled/DryIoc_0074/.decompile_complete
+A  dotnet/decompiled/Google.FlexboxLayout/.decompile_complete
+A  dotnet/decompiled/Google.FlexboxLayout_0075/.decompile_complete
+A  dotnet/decompiled/Java.Interop/.decompile_complete
+A  dotnet/decompiled/Java.Interop_0062/.decompile_complete
+A  dotnet/decompiled/Microsoft.CSharp/.decompile_complete
+A  dotnet/decompiled/Microsoft.CSharp_0000/.decompile_complete
+A  dotnet/decompiled/Microsoft.Extensions.Logging.Abstractions/.decompile_complete
+A  dotnet/decompiled/Microsoft.Extensions.Logging.Abstractions_0077/.decompile_complete
+A  dotnet/decompiled/Microsoft.IO.RecyclableMemoryStream/.decompile_complete
+A  dotnet/decompiled/Microsoft.IO.RecyclableMemoryStream_0078/.decompile_complete
+A  dotnet/decompiled/Microsoft.Maui.Essentials/.decompile_complete
+A  dotnet/decompiled/Microsoft.Maui.Essentials_0079/.decompile_complete
+A  dotnet/decompiled/Microsoft.Maui.Graphics/.decompile_complete
+A  dotnet/decompiled/Microsoft.Maui.Graphics_0080/.decompile_complete
+A  dotnet/decompiled/Mono.Android.Export/.decompile_complete
+A  dotnet/decompiled/Mono.Android.Export_0063/.decompile_complete
+A  dotnet/decompiled/Mono.Android.Runtime/.decompile_complete
+A  dotnet/decompiled/Mono.Android.Runtime_0064/.decompile_complete
+A  dotnet/decompiled/Mono.Android/.decompile_complete
+A  dotnet/decompiled/Mono.Android_0065/.decompile_complete
+A  dotnet/decompiled/NLog.Targets.ConcurrentFile/.decompile_complete
+A  dotnet/decompiled/NLog.Targets.ConcurrentFile_0085/.decompile_complete
+A  dotnet/decompiled/NLog/.decompile_complete
+A  dotnet/decompiled/NLog_0084/.decompile_complete
+A  dotnet/decompiled/NanoXLSX/.decompile_complete
+A  dotnet/decompiled/NanoXLSX_0081/.decompile_complete
+A  dotnet/decompiled/Newtonsoft.Json.Bson/.decompile_complete
+A  dotnet/decompiled/Newtonsoft.Json.Bson_0083/.decompile_complete
+A  dotnet/decompiled/Newtonsoft.Json/.decompile_complete
+A  dotnet/decompiled/Newtonsoft.Json_0082/.decompile_complete
+A  dotnet/decompiled/Ongakuer.CircleIndicator/.decompile_complete
+A  dotnet/decompiled/Ongakuer.CircleIndicator_0076/.decompile_complete
+A  dotnet/decompiled/PhotoView/.decompile_complete
+A  dotnet/decompiled/PhotoView_0108/.decompile_complete
+A  dotnet/decompiled/Plugin.StoreReview/.decompile_complete
+A  dotnet/decompiled/Plugin.StoreReview_0086/.decompile_complete
+A  dotnet/decompiled/Polly.Core/.decompile_complete
+A  dotnet/decompiled/Polly.Core_0088/.decompile_complete
+A  dotnet/decompiled/Polly/.decompile_complete
+A  dotnet/decompiled/Polly_0087/.decompile_complete
+A  dotnet/decompiled/Refit.Newtonsoft.Json/.decompile_complete
+A  dotnet/decompiled/Refit.Newtonsoft.Json_0090/.decompile_complete
+A  dotnet/decompiled/Refit/.decompile_complete
+A  dotnet/decompiled/Refit_0089/.decompile_complete
+A  dotnet/decompiled/SQLite-net/.decompile_complete
+A  dotnet/decompiled/SQLite-net_0099/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.batteries_v2/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.batteries_v2_0100/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.core/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.core_0101/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.provider.e_sqlite3/.decompile_complete
+A  dotnet/decompiled/SQLitePCLRaw.provider.e_sqlite3_0102/.decompile_complete
+A  dotnet/decompiled/Scanflow.BarcodeCapture.Maui.Android/.decompile_complete
+A  dotnet/decompiled/Scanflow.BarcodeCapture.Maui.Android_0091/.decompile_complete
+A  dotnet/decompiled/Scanflow.DataCapture.Core.Maui/.decompile_complete
+A  dotnet/decompiled/Scanflow.DataCapture.Core.Maui_0092/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Resources/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Resources_0094/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.SceneGraph/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.SceneGraph_0095/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Skottie/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Skottie_0096/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Views.Android/.decompile_complete
+A  dotnet/decompiled/SkiaSharp.Views.Android_0097/.decompile_complete
+A  dotnet/decompiled/SkiaSharp/.decompile_complete
+A  dotnet/decompiled/SkiaSharp_0093/.decompile_complete
+A  dotnet/decompiled/Splat/.decompile_complete
+A  dotnet/decompiled/Splat_0098/.decompile_complete
+A  dotnet/decompiled/System.Collections.Concurrent/.decompile_complete
+A  dotnet/decompiled/System.Collections.Concurrent_0001/.decompile_complete
+A  dotnet/decompiled/System.Collections.Immutable/.decompile_complete
+A  dotnet/decompiled/System.Collections.Immutable_0002/.decompile_complete
+A  dotnet/decompiled/System.Collections.NonGeneric/.decompile_complete
+A  dotnet/decompiled/System.Collections.NonGeneric_0003/.decompile_complete
+A  dotnet/decompiled/System.Collections.Specialized/.decompile_complete
+A  dotnet/decompiled/System.Collections.Specialized_0004/.decompile_complete
+A  dotnet/decompiled/System.Collections/.decompile_complete
+A  dotnet/decompiled/System.Collections_0005/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.Annotations/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.Annotations_0006/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.Primitives/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.Primitives_0007/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.TypeConverter/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel.TypeConverter_0008/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel/.decompile_complete
+A  dotnet/decompiled/System.ComponentModel_0009/.decompile_complete
+A  dotnet/decompiled/System.Console/.decompile_complete
+A  dotnet/decompiled/System.Console_0010/.decompile_complete
+A  dotnet/decompiled/System.Data.Common/.decompile_complete
+A  dotnet/decompiled/System.Data.Common_0011/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.DiagnosticSource/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.DiagnosticSource_0012/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.Process/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.Process_0013/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.TraceSource/.decompile_complete
+A  dotnet/decompiled/System.Diagnostics.TraceSource_0014/.decompile_complete
+A  dotnet/decompiled/System.Drawing.Primitives/.decompile_complete
+A  dotnet/decompiled/System.Drawing.Primitives_0015/.decompile_complete
+A  dotnet/decompiled/System.Drawing/.decompile_complete
+A  dotnet/decompiled/System.Drawing_0016/.decompile_complete
+A  dotnet/decompiled/System.Formats.Asn1/.decompile_complete
+A  dotnet/decompiled/System.Formats.Asn1_0017/.decompile_complete
+A  dotnet/decompiled/System.IO.Compression.Brotli/.decompile_complete
+A  dotnet/decompiled/System.IO.Compression.Brotli_0018/.decompile_complete
+A  dotnet/decompiled/System.IO.Compression/.decompile_complete
+A  dotnet/decompiled/System.IO.Compression_0019/.decompile_complete
+A  dotnet/decompiled/System.IO.FileSystem.Watcher/.decompile_complete
+A  dotnet/decompiled/System.IO.FileSystem.Watcher_0020/.decompile_complete
+A  dotnet/decompiled/System.IO.IsolatedStorage/.decompile_complete
+A  dotnet/decompiled/System.IO.IsolatedStorage_0021/.decompile_complete
+A  dotnet/decompiled/System.IO.MemoryMappedFiles/.decompile_complete
+A  dotnet/decompiled/System.IO.MemoryMappedFiles_0022/.decompile_complete
+A  dotnet/decompiled/System.IO.Packaging/.decompile_complete
+A  dotnet/decompiled/System.IO.Packaging_0103/.decompile_complete
+A  dotnet/decompiled/System.IO.Pipelines/.decompile_complete
+A  dotnet/decompiled/System.IO.Pipelines_0023/.decompile_complete
+A  dotnet/decompiled/System.Linq.Expressions/.decompile_complete
+A  dotnet/decompiled/System.Linq.Expressions_0024/.decompile_complete
+A  dotnet/decompiled/System.Linq/.decompile_complete
+A  dotnet/decompiled/System.Linq_0025/.decompile_complete
+A  dotnet/decompiled/System.Memory/.decompile_complete
+A  dotnet/decompiled/System.Memory_0026/.decompile_complete
+A  dotnet/decompiled/System.Net.Http.Json/.decompile_complete
+A  dotnet/decompiled/System.Net.Http.Json_0027/.decompile_complete
+A  dotnet/decompiled/System.Net.Http/.decompile_complete
+A  dotnet/decompiled/System.Net.Http_0028/.decompile_complete
+A  dotnet/decompiled/System.Net.NameResolution/.decompile_complete
+A  dotnet/decompiled/System.Net.NameResolution_0029/.decompile_complete
+A  dotnet/decompiled/System.Net.NetworkInformation/.decompile_complete
+A  dotnet/decompiled/System.Net.NetworkInformation_0030/.decompile_complete
+A  dotnet/decompiled/System.Net.Primitives/.decompile_complete
+A  dotnet/decompiled/System.Net.Primitives_0031/.decompile_complete
+A  dotnet/decompiled/System.Net.Quic/.decompile_complete
+A  dotnet/decompiled/System.Net.Quic_0032/.decompile_complete
+A  dotnet/decompiled/System.Net.Requests/.decompile_complete
+A  dotnet/decompiled/System.Net.Requests_0033/.decompile_complete
+A  dotnet/decompiled/System.Net.Security/.decompile_complete
+A  dotnet/decompiled/System.Net.Security_0034/.decompile_complete
+A  dotnet/decompiled/System.Net.Sockets/.decompile_complete
+A  dotnet/decompiled/System.Net.Sockets_0035/.decompile_complete
+A  dotnet/decompiled/System.Net.WebHeaderCollection/.decompile_complete
+A  dotnet/decompiled/System.Net.WebHeaderCollection_0036/.decompile_complete
+A  dotnet/decompiled/System.Net.WebSockets.Client/.decompile_complete
+A  dotnet/decompiled/System.Net.WebSockets.Client_0037/.decompile_complete
+A  dotnet/decompiled/System.Net.WebSockets/.decompile_complete
+A  dotnet/decompiled/System.Net.WebSockets_0038/.decompile_complete
+A  dotnet/decompiled/System.ObjectModel/.decompile_complete
+A  dotnet/decompiled/System.ObjectModel_0039/.decompile_complete
+A  dotnet/decompiled/System.Private.CoreLib/.decompile_complete
+A  dotnet/decompiled/System.Private.CoreLib_0061/.decompile_complete
+A  dotnet/decompiled/System.Private.Uri/.decompile_complete
+A  dotnet/decompiled/System.Private.Uri_0040/.decompile_complete
+A  dotnet/decompiled/System.Private.Xml.Linq/.decompile_complete
+A  dotnet/decompiled/System.Private.Xml.Linq_0041/.decompile_complete
+A  dotnet/decompiled/System.Private.Xml/.decompile_complete
+A  dotnet/decompiled/System.Private.Xml_0042/.decompile_complete
+A  dotnet/decompiled/System.Reactive/.decompile_complete
+A  dotnet/decompiled/System.Reactive_0104/.decompile_complete
+A  dotnet/decompiled/System.Reflection.Metadata/.decompile_complete
+A  dotnet/decompiled/System.Reflection.Metadata_0043/.decompile_complete
+A  dotnet/decompiled/System.Resources.Writer/.decompile_complete
+A  dotnet/decompiled/System.Resources.Writer_0044/.decompile_complete
+A  dotnet/decompiled/System.Runtime.InteropServices/.decompile_complete
+A  dotnet/decompiled/System.Runtime.InteropServices_0045/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Numerics/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Numerics_0046/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Serialization.Formatters/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Serialization.Formatters_0047/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Serialization.Primitives/.decompile_complete
+A  dotnet/decompiled/System.Runtime.Serialization.Primitives_0048/.decompile_complete
+A  dotnet/decompiled/System.Runtime/.decompile_complete
+A  dotnet/decompiled/System.Runtime_0049/.decompile_complete
+A  dotnet/decompiled/System.Security.Claims/.decompile_complete
+A  dotnet/decompiled/System.Security.Claims_0050/.decompile_complete
+A  dotnet/decompiled/System.Security.Cryptography/.decompile_complete
+A  dotnet/decompiled/System.Security.Cryptography_0051/.decompile_complete
+A  dotnet/decompiled/System.Text.Encodings.Web/.decompile_complete
+A  dotnet/decompiled/System.Text.Encodings.Web_0052/.decompile_complete
+A  dotnet/decompiled/System.Text.Json/.decompile_complete
+A  dotnet/decompiled/System.Text.Json_0053/.decompile_complete
+A  dotnet/decompiled/System.Text.RegularExpressions/.decompile_complete
+A  dotnet/decompiled/System.Text.RegularExpressions_0054/.decompile_complete
+A  dotnet/decompiled/System.Threading.Channels/.decompile_complete
+A  dotnet/decompiled/System.Threading.Channels_0055/.decompile_complete
+A  dotnet/decompiled/System.Threading/.decompile_complete
+A  dotnet/decompiled/System.Threading_0056/.decompile_complete
+A  dotnet/decompiled/System.Transactions.Local/.decompile_complete
+A  dotnet/decompiled/System.Transactions.Local_0057/.decompile_complete
+A  dotnet/decompiled/System.Web.HttpUtility/.decompile_complete
+A  dotnet/decompiled/System.Web.HttpUtility_0058/.decompile_complete
+A  dotnet/decompiled/System.Xml.Linq/.decompile_complete
+A  dotnet/decompiled/System.Xml.Linq_0059/.decompile_complete
+A  dotnet/decompiled/System/.decompile_complete
+A  dotnet/decompiled/System_0060/.decompile_complete
+A  dotnet/decompiled/Websocket.Client/.decompile_complete
+A  dotnet/decompiled/Websocket.Client_0105/.decompile_complete
+A  dotnet/decompiled/Xamarin.Android.Glide.Transformations/.decompile_complete
+A  dotnet/decompiled/Xamarin.Android.Glide.Transformations_0107/.decompile_complete
+A  dotnet/decompiled/Xamarin.Android.Glide/.decompile_complete
+A  dotnet/decompiled/Xamarin.Android.Glide_0106/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Activity/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Activity_0109/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.AppCompat/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.AppCompat_0110/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Biometric/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Biometric_0111/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Browser/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Browser_0112/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.Core/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.Core_0113/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.Video/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.Video_0114/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.View/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Camera.View_0115/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CardView/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CardView_0116/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ConstraintLayout.Core/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ConstraintLayout.Core_0118/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ConstraintLayout/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ConstraintLayout_0117/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CoordinatorLayout/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CoordinatorLayout_0119/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Core/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Core_0120/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CursorAdapter/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.CursorAdapter_0121/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.DrawerLayout/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.DrawerLayout_0122/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Fragment/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Fragment_0123/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.GridLayout/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.GridLayout_0124/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Common.Jvm/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Common.Jvm_0125/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.LiveData.Core/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.LiveData.Core_0126/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Process/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Process_0127/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Runtime.Android/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.Runtime.Android_0128/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.ViewModel.Android/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Lifecycle.ViewModel.Android_0129/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Loader/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.Loader_0130/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.RecyclerView/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.RecyclerView_0131/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.SavedState.SavedState.Android/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.SavedState.SavedState.Android_0132/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.SwipeRefreshLayout/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.SwipeRefreshLayout_0133/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ViewPager/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ViewPager2/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ViewPager2_0135/.decompile_complete
+A  dotnet/decompiled/Xamarin.AndroidX.ViewPager_0134/.decompile_complete
+A  dotnet/decompiled/Xamarin.Bindings.Input-Mask-Android/.decompile_complete
+A  dotnet/decompiled/Xamarin.Bindings.Input-Mask-Android_0136/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.AI.Edge.LiteRT.API/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.AI.Edge.LiteRT.API_0137/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.AI.Edge.LiteRT.Support.API/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.AI.Edge.LiteRT.Support.API_0138/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Android.Material/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Android.Material_0139/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Android.Play.Review/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Android.Play.Review_0140/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Guava.ListenableFuture/.decompile_complete
+A  dotnet/decompiled/Xamarin.Google.Guava.ListenableFuture_0141/.decompile_complete
+A  dotnet/decompiled/Xamarin.GooglePlayServices.Tasks/.decompile_complete
+A  dotnet/decompiled/Xamarin.GooglePlayServices.Tasks_0142/.decompile_complete
+A  dotnet/decompiled/Xamarin.Kotlin.StdLib/.decompile_complete
+A  dotnet/decompiled/Xamarin.Kotlin.StdLib_0143/.decompile_complete
+A  dotnet/decompiled/Xamarin.KotlinX.Coroutines.Core.Jvm/.decompile_complete
+A  dotnet/decompiled/Xamarin.KotlinX.Coroutines.Core.Jvm_0144/.decompile_complete
+A  dotnet/decompiled/Xamarin.RangeSlider.Droid/.decompile_complete
+A  dotnet/decompiled/Xamarin.RangeSlider.Droid_0145/.decompile_complete
+A  dotnet/decompiled/XamarinShortcutBadger/.decompile_complete
+A  dotnet/decompiled/XamarinShortcutBadger_0146/.decompile_complete
+A  dotnet/decompiled/Yandex.MapKit.Lite/.decompile_complete
+A  dotnet/decompiled/Yandex.MapKit.Lite_0147/.decompile_complete
+A  dotnet/decompiled/ZeroBranch.SwipeLayout/.decompile_complete
+A  dotnet/decompiled/ZeroBranch.SwipeLayout_0149/.decompile_complete
+A  dotnet/decompiled/_Microsoft.Android.Resource.Designer/.decompile_complete
+A  dotnet/decompiled/_Microsoft.Android.Resource.Designer_0066/.decompile_complete
+M  dotnet/metadata/dll_report.txt
+ M logs/decompile.log
+M  native/elf_report.txt
+
+============================================================
+FINISHED
+============================================================
+Project: /home/definitly/AuchanReverseEngineering
+
+APK files:
+    3165
+DLL files:
+302
+C# files:
+26093
+Assembly Store candidates:
+2
+Mono AOT native-image libraries:
+302
+
+Ошибки инструментов:
+[ERROR] /home/definitly/AuchanReverseEngineering/apk_analysis/jadx_exit_code.txt
+137
+Категорий ошибок: 1
+
+API search:
+/home/definitly/AuchanReverseEngineering/api
+
+Documentation:
+/home/definitly/AuchanReverseEngineering/docs
+
+Log:
+/home/definitly/AuchanReverseEngineering/logs/decompile.log
+
+Next steps:
+1. Inspect git status
+2. Check source redistribution permissions
+3. Commit the research files
+4. Configure GitHub remote
+5. Push to your PUBLIC GitHub repository (after reviewing for secrets and personal data)
+
+Do not upload the original APK, private traffic captures,
+tokens, cookies or personal purchase data.

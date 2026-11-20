@@ -1,5 +1,5 @@
 APK: /home/definitly/auchan.apk
-Date: пятница, 20 ноября 2026 г. 20:26:42 (MSK)
+Date: пятница, 20 ноября 2026 г. 23:36:30 (MSK)
 
 SHA256:
 SHA256 (/home/definitly/auchan.apk) = 3bbc3588cb26d03c100bd51e3baa52b7dcc3a5b723d8b176fe9215e2b3a702b3
