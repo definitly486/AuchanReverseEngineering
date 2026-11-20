@@ -19,14 +19,12 @@ final class zzgx extends zzgy {
         return Float.intBitsToFloat(this.zza.getInt(obj, j));
     }
 
-    /* JADX WARN: Failed to inline method: com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgz.zzi(java.lang.Object, long, boolean):void */
     /* JADX WARN: Failed to inline method: com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgz.zzj(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgz.zzi(java.lang.Object, long, boolean):void */
-    /* JADX WARN: Unknown register number '(r5v0 'z' boolean)' in method call: com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgz.zzj(java.lang.Object, long, boolean):void */
+    /* JADX WARN: Failed to replace arg (r3v0 'z' boolean A[IMMUTABLE_TYPE, METHOD_ARGUMENT]) for method inline: com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgz.zzj(java.lang.Object, long, boolean):void */
     @Override // com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzgy
     public final void zzc(Object obj, long j, boolean z) {
         if (zzgz.zzb) {
-            zzgz.zzi(obj, j, z);
+            zzgz.zzD(obj, j, z ? (byte) 1 : (byte) 0);
         } else {
             zzgz.zzj(obj, j, z);
         }

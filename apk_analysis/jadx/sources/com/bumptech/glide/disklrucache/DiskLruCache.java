@@ -263,7 +263,7 @@ public final class DiskLruCache implements Closeable {
         }
     }
 
-    public synchronized Value get(String str) {
+    public synchronized Value get(String str) throws IOException {
         Throwable th;
         try {
             try {
@@ -414,7 +414,7 @@ public final class DiskLruCache implements Closeable {
         return i >= 2000 && i >= this.lruEntries.size();
     }
 
-    public synchronized boolean remove(String str) {
+    public synchronized boolean remove(String str) throws IOException {
         try {
             checkNotClosed();
             Entry entry = this.lruEntries.get(str);
@@ -486,7 +486,7 @@ public final class DiskLruCache implements Closeable {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void trimToSize() {
+    public void trimToSize() throws IOException {
         while (this.size > this.maxSize) {
             remove(this.lruEntries.entrySet().iterator().next().getKey());
         }

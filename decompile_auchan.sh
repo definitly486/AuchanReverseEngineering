@@ -941,10 +941,121 @@ CURRENT_STEP="SEARCH AUTHENTICATION"
 info "SEARCH AUTHENTICATION"
 
 grep -RniE \
-    'SavedToken80|Token80|SendSms|ConfirmSms|VerifyCode|GetToken|Authentication' \
+    'SavedToken80|Token80|SendSms|ConfirmSms|VerifyCode|GetToken|Authentication|CheckPhone|PhoneNumber|SmsCode|VerificationCode|Otp|SecureStorage' \
     "$CS_DIR" \
     --include='*.cs' \
     > "$ROOT/api/authentication_search.txt" || true
+
+# ------------------------------------------------------------
+# SMS authentication research: endpoint, request, response and call-flow search
+# ------------------------------------------------------------
+
+CURRENT_STEP="SEARCH SMS AUTHENTICATION"
+info "SEARCH SMS AUTHENTICATION"
+
+SMS_DIR="$ROOT/api/sms_auth"
+mkdir -p "$SMS_DIR"
+
+# Broad vocabulary search. Keep each report separate so that the next
+# inspection can follow the call chain rather than relying on one huge grep.
+grep -RniE \
+    'sms|smscode|sms_code|sms-code|one.?time.?password|otp|verification.?code|verify.?code|confirmation.?code|phone.?number|phone.?verification|mobile.?phone|check.?phone|send.?code|resend.?code|confirm.?phone|validate.?phone' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/sms_vocabulary_search.txt" || true
+
+grep -RniE \
+    'clientauth|client.?auth|checkphone|check.?phone|send.?sms|sendsms|send.?code|request.?code|confirm.?sms|confirmsms|verify.?sms|verify.?code|validate.?code|auth.?token|token.*phone|phone.*token' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/auth_endpoint_search.txt" || true
+
+grep -RniE \
+    'Http(Get|Post|Put|Patch|Delete)|GetAsync|PostAsync|SendAsync|RequestUri|BaseAddress|QueryString|FormUrlEncodedContent|StringContent|JsonContent|PostAsJsonAsync|GetFromJsonAsync|Authorization|X-Token|Token80|Content-Type' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/http_request_search.txt" || true
+
+grep -RniE \
+    'JsonPropertyName|JsonProperty|DataMember|FromQuery|FromBody|Query|[Jj]sonSerializer|[Nn]ewtonsoft|System.Text.Json|RestMethod|Get\("|Post\("|[Hh]eader' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/serialization_and_routes_search.txt" || true
+
+grep -RniE \
+    'class .*Auth|interface .*Auth|AuthenticationService|AuthService|LoginService|Phone.*Service|Sms.*Service|Verification.*Service|TokenService|ITokenService|SavedToken|SecureStorage|Preferences|Keychain|Keystore' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/auth_classes_and_storage_search.txt" || true
+
+# Search the Android/MAUI layer too: SMS flows can be started by a ViewModel,
+# command, page, deep link or platform-specific callback.
+grep -RniE \
+    'sms|verification|verify.?code|confirm.?code|phone.?number|clientauth|checkphone|SendSms|ConfirmSms|GetToken|Authentication' \
+    "$JADX_DIR" "$APKTOOL_DIR" \
+    --include='*.java' --include='*.kt' --include='*.xml' --include='*.smali' \
+    > "$SMS_DIR/android_layer_search.txt" 2>/dev/null || true
+
+# Strings from AOT/native libraries may contain routes or JSON field names
+# that are absent from the decompiled managed source.
+if [[ -d "$AOT_DIR/strings" ]]; then
+    grep -RniE \
+        'sms|otp|verification|verify|confirm|phone|clientauth|checkphone|token|code|/lk/' \
+        "$AOT_DIR/strings" \
+        > "$SMS_DIR/aot_sms_strings_search.txt" 2>/dev/null || true
+fi
+
+# Record relevant endpoint-like string literals from all decompiled C#.
+grep -RniE \
+    '(/|https?://)[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%{}-]*(sms|phone|auth|token|code|verify|confirm)[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%{}-]*' \
+    "$CS_DIR" --include='*.cs' \
+    > "$SMS_DIR/endpoint_literals_search.txt" || true
+
+cat > "$SMS_DIR/README.md" <<'EOF'
+# SMS authentication investigation
+
+This directory contains search indexes generated from the decompiled app.
+A grep hit is only a lead: it is not proof that the code belongs to the
+interactive SMS login flow.
+
+## Investigation order
+
+1. Start with `auth_endpoint_search.txt` and `endpoint_literals_search.txt`.
+   Locate the API interface declarations and their HTTP attributes.
+2. Find the ViewModel/command/page that starts login. Follow the command into
+   the authentication service; this establishes the actual call order.
+3. Follow the phone-check request. Record HTTP method, relative route, query
+   parameters, headers and response DTO.
+4. Follow the SMS-send request. Determine whether the phone is sent as JSON,
+   form data or query parameters, and whether a challenge/hash/device ID is
+   required. Do not infer these fields from names alone.
+5. Follow the code-confirmation request. Record the exact request DTO, route,
+   response DTO and error mapping.
+6. Follow token creation/refresh. Determine whether `/lk/clientauth/token`
+   is called before or after SMS confirmation and how the resulting token is
+   associated with the authenticated phone/account.
+7. Follow token persistence. Identify whether the app uses SecureStorage,
+   Preferences, cookies or an in-memory token service. Never copy real values.
+8. Compare managed C# findings with `android_layer_search.txt` and
+   `aot_sms_strings_search.txt` when the managed call chain is incomplete.
+
+## Evidence table to complete manually
+
+| Stage | Evidence to record |
+|---|---|
+| Phone pre-check | method, full URL after resolving the correct base URL, query/body, response |
+| SMS dispatch | method, route, body, required headers, response/challenge |
+| SMS confirmation | method, route, body, response/error cases |
+| Token acquisition | route, order in flow, token response fields |
+| Token storage | storage API and key names only; never real values |
+| Authenticated API call | how the token is attached to subsequent requests |
+
+## Important
+
+- The existing notes mention `GET /lk/clientauth/token` and
+  `GET /lk/clientprofile/checkphone?needHash=False`; their role in the
+  complete SMS flow is not yet proven by these strings alone.
+- Do not assume that `checkphone` sends an SMS. It may only check the phone
+  or return a hash/challenge.
+- Do not guess missing routes, request fields, headers or token semantics.
+- Do not commit phone numbers, SMS codes, tokens, cookies, HAR/PCAP captures,
+  or real account responses.
+EOF
 
 # ------------------------------------------------------------
 # Search purchase history
@@ -1019,6 +1130,7 @@ any request shape or host as confirmed.
 - `token_flow_search.txt` — `ITokenService`, Token80 and request header references
 - `receipt_details_search.txt` — receipt-detail methods and product-line models
 - `authentication_search.txt` — authentication-related source references
+- `sms_auth/` — expanded SMS-login investigation indexes and workflow checklist
 
 ## What must be established
 
@@ -1125,7 +1237,18 @@ The application uses Token80 in the X-Token-CMD header
 for the loyalty history API.
 
 SMS request and verification sequence:
-Not yet fully established.
+Not yet fully established. The decompilation script generates additional
+indexes under `api/sms_auth/` for phone checks, SMS dispatch, code confirmation,
+HTTP request construction, DTO serialization, Android entry points and AOT
+string literals. Follow the calling ViewModel/service chain before treating
+any endpoint or field as confirmed.
+
+Known route strings are leads, not a complete authentication protocol:
+- GET /lk/clientauth/token
+- GET /lk/clientprofile/checkphone?needHash=False
+
+Do not assume that `checkphone` sends an SMS. Establish the separate SMS-send
+and code-confirmation operations from their call sites and request DTOs.
 
 Do not store real phone numbers, SMS codes, tokens or cookies here.
 EOF

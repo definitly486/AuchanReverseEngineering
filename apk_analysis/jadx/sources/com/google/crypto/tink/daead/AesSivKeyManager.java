@@ -87,7 +87,7 @@ public final class AesSivKeyManager {
         return Collections.unmodifiableMap(map);
     }
 
-    public static void register(boolean z) {
+    public static void register(boolean z) throws GeneralSecurityException {
         if (!TinkFipsUtil.AlgorithmFipsCompatibility.ALGORITHM_NOT_FIPS.isCompatible()) {
             throw new GeneralSecurityException("Registering AES SIV is not supported in FIPS mode");
         }

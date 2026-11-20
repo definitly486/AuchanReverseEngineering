@@ -1,0 +1,5 @@
+/home/definitly/AuchanReverseEngineering/native/aot_analysis/strings/libaot-Auchan.Android.Net.dll.so.strings.txt:281:Scanflow.BarcodeCapture.Maui.Android
+/home/definitly/AuchanReverseEngineering/native/aot_analysis/strings/libaot-Auchan.Common.Net.dll.so.strings.txt:156:S%S/S9SCSMSWSaSkSuS
+/home/definitly/AuchanReverseEngineering/native/aot_analysis/strings/libaot-System.Private.CoreLib.dll.so.strings.txt:55:S/S@SMSlS
+/home/definitly/AuchanReverseEngineering/native/aot_analysis/strings/libaot-Scanflow.BarcodeCapture.Maui.Android.dll.so.strings.txt:3:Scanflow.BarcodeCapture.Maui.Android
+/home/definitly/AuchanReverseEngineering/native/aot_analysis/strings/libaot-Scanflow.BarcodeCapture.Maui.Android.dll.so.strings.txt:17:Scanflow.BarcodeCapture.Maui.Android

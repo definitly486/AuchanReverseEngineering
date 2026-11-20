@@ -14,6 +14,7 @@ any request shape or host as confirmed.
 - `token_flow_search.txt` — `ITokenService`, Token80 and request header references
 - `receipt_details_search.txt` — receipt-detail methods and product-line models
 - `authentication_search.txt` — authentication-related source references
+- `sms_auth/` — expanded SMS-login investigation indexes and workflow checklist
 
 ## What must be established
 
