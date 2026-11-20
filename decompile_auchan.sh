@@ -266,7 +266,7 @@ else
     rm -rf "$APKTOOL_DIR"
     if "$APKTOOL" d -f "$APK" -o "$APKTOOL_DIR"; then
         if [[ -s "$APKTOOL_DIR/AndroidManifest.xml" ]]; then
-            printf '%s\\n' "$APK_SHA256" > "$APKTOOL_MARKER"
+            printf '%s\n' "$APK_SHA256" > "$APKTOOL_MARKER"
             rm -f "$ROOT/apk_analysis/apktool_exit_code.txt"
             echo "[OK] Apktool completed; marker saved"
         else
@@ -298,7 +298,7 @@ if [[ "$JADX_AVAILABLE" -eq 1 ]]; then
     JADX_MARKER="$JADX_DIR/.decompile_complete"
     JADX_SOURCE_COUNT=0
     if [[ -d "$JADX_DIR" ]]; then
-        JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \\( -name '*.java' -o -name '*.kt' \\) | wc -l | tr -d ' ')"
+        JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \( -name '*.java' -o -name '*.kt' \) | wc -l | tr -d ' ')"
     fi
 
     if [[ -f "$JADX_MARKER" &&
@@ -310,9 +310,9 @@ if [[ "$JADX_AVAILABLE" -eq 1 ]]; then
         rm -rf "$JADX_DIR"
         JADX_LOG="$ROOT/logs/jadx.log"
         if "$JADX" -d "$JADX_DIR" --show-bad-code "$APK" > >(tee "$JADX_LOG") 2>&1; then
-            JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \\( -name '*.java' -o -name '*.kt' \\) | wc -l | tr -d ' ')"
+            JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \( -name '*.java' -o -name '*.kt' \) | wc -l | tr -d ' ')"
             if [[ "$JADX_SOURCE_COUNT" -gt 0 ]]; then
-                printf '%s\\n' "$APK_SHA256" > "$JADX_MARKER"
+                printf '%s\n' "$APK_SHA256" > "$JADX_MARKER"
                 rm -f "$ROOT/apk_analysis/jadx_exit_code.txt" "$ROOT/apk_analysis/jadx_errors.txt"
                 echo "[OK] JADX completed; исходников: $JADX_SOURCE_COUNT"
             else
@@ -958,7 +958,7 @@ while IFS= read -r dll; do
             fi
             echo "[RUN] ILSpy: DLL $name изменилась — повторная декомпиляция."
         else
-            printf '%s\\n' "$DLL_SHA256" > "$DLL_MARKER"
+            printf '%s\n' "$DLL_SHA256" > "$DLL_MARKER"
             echo "[SKIP] ILSpy: $name уже имеет C# исходники (старый результат без маркера); принят как готовый."
             continue
         fi
@@ -971,16 +971,16 @@ while IFS= read -r dll; do
     if "$ILSPYCMD" -p -o "$DEST" "$dll"; then
         NEW_CS="$(find "$DEST" -type f -name '*.cs' | wc -l | tr -d ' ')"
         if [[ "$NEW_CS" -gt 0 ]]; then
-            printf '%s\\n' "$DLL_SHA256" > "$DLL_MARKER"
+            printf '%s\n' "$DLL_SHA256" > "$DLL_MARKER"
             echo "[OK] ILSpy: $name; C# файлов: $NEW_CS"
         else
             echo "[ERROR] ILSpy: $name завершился без C# исходников."
-            printf '%s\\t%s\\n' "$name" "no-source-files" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
+            printf '%s\t%s\n' "$name" "no-source-files" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
         fi
     else
         rc=$?
         echo "[ERROR] ILSpy failed for $name (exit code $rc)"
-        printf '%s\\t%s\\n' "$name" "$rc" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
+        printf '%s\t%s\n' "$name" "$rc" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
         warn "ILSpy failed: $name; скрипт продолжает работу"
     fi
 
