@@ -1401,10 +1401,10 @@ write_context_report \
     'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
     "$DEEP_DIR/01_pin_interactor_sendpin.txt"
 
-grep -RniE \
-    'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/01_pin_interactor_references.txt" || true
+write_reference_report \
+    "PinInteractor.SendPin references" \
+    'PinInteractor|SendPin[[:space:]]*\(|BeginVerifyPhone|VerifyPhone|CheckPhone|RequestPin|SendPinAsync' \ \
+    "$DEEP_DIR/01_pin_interactor_references.txt"
 
 # 2. Loymax URL: follow the exact provider name, constructors, DI registration
 # and Production/environment selection. Do not treat other base URL providers
@@ -1414,10 +1414,10 @@ write_context_report \
     'LoymaxLoyaltyProgramUrlProvider|Loymax.*UrlProvider|UrlProvider.*Loymax|ILoymaxLoyaltyApi|LoymaxLoyaltyApi|AddRefitClient|AddHttpClient|BaseAddress|Production' \
     "$DEEP_DIR/02_loymax_url_provider.txt"
 
-grep -RniE \
-    'LoymaxLoyaltyProgramUrlProvider|Loymax.*UrlProvider|UrlProvider.*Loymax|ILoymaxLoyaltyApi|LoymaxLoyaltyApi|LoyaltyProgramDependencyRegistry' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/02_loymax_registration_references.txt" || true
+write_reference_report \
+    "Loymax URL provider references" \
+    'LoymaxLoyaltyProgramUrlProvider|Loymax.*UrlProvider|UrlProvider.*Loymax|ILoymaxLoyaltyApi|LoymaxLoyaltyApi|LoyaltyProgramDependencyRegistry' \ \
+    "$DEEP_DIR/02_loymax_registration_references.txt"
 
 # 3. Itemized receipt: follow history item -> receipt/transaction identifier
 # -> details endpoint -> response DTO -> mapper -> individual product rows.
@@ -1426,10 +1426,10 @@ write_context_report \
     'GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|ReceiptItem|PurchaseItem|LoyaltyHistory|ChequeNumber|ReceiptNumber|ProductName|ProductDto|ProductItem|ItemName|Nomenclature|Sku|Barcode' \
     "$DEEP_DIR/03_receipt_items_and_details.txt"
 
-grep -RniE \
-    'GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|ReceiptItem|PurchaseItem|ChequeNumber|ReceiptNumber|ProductName|ProductDto|ProductItem|ItemName|Nomenclature|Sku|Barcode' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/03_receipt_item_references.txt" || true
+write_reference_report \
+    "Receipt item and detail references" \
+    'GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|ReceiptItem|PurchaseItem|ChequeNumber|ReceiptNumber|ProductName|ProductDto|ProductItem|ItemName|Nomenclature|Sku|Barcode' \ \
+    "$DEEP_DIR/03_receipt_item_references.txt"
 
 # 4. Personal cabinet API and authentication server.
 write_context_report \
@@ -1437,10 +1437,10 @@ write_context_report \
     'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*Api|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL|HttpClient|Refit|/lk/' \
     "$DEEP_DIR/04_personal_cabinet_api_and_auth_server.txt"
 
-grep -RniE \
-    'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/04_personal_cabinet_api_references.txt" || true
+write_reference_report \
+    "Personal cabinet API references" \
+    'IPersonalCabinetApi|PersonalCabinetApi|PersonalCabinet.*UrlProvider|clientauth|clientprofile|BaseAddress|BaseUrl|BaseURL' \ \
+    "$DEEP_DIR/04_personal_cabinet_api_references.txt"
 
 # 5. deviceid, needHash and Token80 generation/acquisition/storage.
 write_context_report \
@@ -1448,10 +1448,10 @@ write_context_report \
     'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone|Hash|SecureStorage|Preferences' \
     "$DEEP_DIR/05_deviceid_needhash_token80.txt"
 
-grep -RniE \
-    'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/05_deviceid_needhash_token80_references.txt" || true
+write_reference_report \
+    "Device ID, needHash and Token80 references" \
+    'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \ \
+    "$DEEP_DIR/05_deviceid_needhash_token80_references.txt"
 
 # 6. /lk/loyalty/history response DTO and itemized receipt detail chain.
 write_context_report \
@@ -1459,10 +1459,10 @@ write_context_report \
     'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|PurchaseHistory|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|chequeNumber|ReceiptNumber|ProductName|Quantity|UnitPrice|TotalPrice|Discount|foreach|SelectMany|Task\.WhenAll' \
     "$DEEP_DIR/06_loyalty_history_response_and_receipt_details.txt"
 
-grep -RniE \
-    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/06_loyalty_history_response_references.txt" || true
+write_reference_report \
+    "Loyalty history response references" \
+    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber' \ \
+    "$DEEP_DIR/06_loyalty_history_response_references.txt"
 
 # 7. Token20: exact client-password value and wire format.
 write_context_report \
@@ -1470,10 +1470,10 @@ write_context_report \
     'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \
     "$DEEP_DIR/07_token20_client_password.txt"
 
-grep -RniE \
-    'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/07_token20_client_password_references.txt" || true
+write_reference_report \
+    "Token20 client password references" \
+    'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \ \
+    "$DEEP_DIR/07_token20_client_password_references.txt"
 
 # 8. Compare the generated Device ID with the original UDID source.
 write_context_report \
@@ -1481,10 +1481,10 @@ write_context_report \
     'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \
     "$DEEP_DIR/08_device_id_udid_mapping.txt"
 
-grep -RniE \
-    'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/08_device_id_udid_mapping_references.txt" || true
+write_reference_report \
+    "Device ID and UDID mapping references" \
+    'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \ \
+    "$DEEP_DIR/08_device_id_udid_mapping_references.txt"
 
 # 9. Isolate needHash=true and capture request/response DTOs and error handling.
 write_context_report \
@@ -1492,10 +1492,10 @@ write_context_report \
     'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \
     "$DEEP_DIR/09_needhash_true_response.txt"
 
-grep -RniE \
-    'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/09_needhash_true_response_references.txt" || true
+write_reference_report \
+    "needHash true response references" \
+    'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \ \
+    "$DEEP_DIR/09_needhash_true_response_references.txt"
 
 # 10. Follow chequeNumber from each history row into the detail API call.
 # Record loops/batching and whether detail requests are automatic or on-demand.
@@ -1504,10 +1504,10 @@ write_context_report \
     'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \
     "$DEEP_DIR/10_cheque_number_detail_loading.txt"
 
-grep -RniE \
-    'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \
-    "$CS_DIR" --include='*.cs' \
-    > "$DEEP_DIR/10_cheque_number_detail_loading_references.txt" || true
+write_reference_report \
+    "chequeNumber detail loading references" \
+    'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \ \
+    "$DEEP_DIR/10_cheque_number_detail_loading_references.txt"
 
 cat > "$DEEP_DIR/README.md" <<'EOF'
 # Deep purchase-history investigation
