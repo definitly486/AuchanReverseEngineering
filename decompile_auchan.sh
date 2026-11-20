@@ -257,10 +257,16 @@ CURRENT_STEP="APKTOOL DECOMPILATION"
 info "APKTOOL DECOMPILATION"
 
 APKTOOL_MARKER="$APKTOOL_DIR/.decompile_complete"
-if [[ -f "$APKTOOL_MARKER" &&
-      "$(cat "$APKTOOL_MARKER" 2>/dev/null)" == "$APK_SHA256" &&
-      -s "$APKTOOL_DIR/AndroidManifest.xml" ]]; then
-    echo "[SKIP] Apktool уже декомпилировал этот APK; результат используется повторно."
+if [[ -s "$APKTOOL_DIR/AndroidManifest.xml" &&
+      -s "$APKTOOL_DIR/apktool.yml" &&
+      ( -d "$APKTOOL_DIR/res" || -d "$APKTOOL_DIR/smali" || -d "$APKTOOL_DIR/smali_classes2" ) &&
+      ( ! -f "$APKTOOL_MARKER" || "$(cat "$APKTOOL_MARKER" 2>/dev/null)" == "$APK_SHA256" ) ]]; then
+    if [[ ! -f "$APKTOOL_MARKER" ]]; then
+        printf '%s\n' "$APK_SHA256" > "$APKTOOL_MARKER"
+        echo "[SKIP] Найдена готовая декомпиляция Apktool от предыдущего запуска; добавлен маркер."
+    else
+        echo "[SKIP] Apktool уже декомпилировал этот APK; результат используется повторно."
+    fi
 else
     echo "[RUN] Apktool: результат отсутствует, неполный или относится к другому APK."
     rm -rf "$APKTOOL_DIR"
@@ -301,10 +307,14 @@ if [[ "$JADX_AVAILABLE" -eq 1 ]]; then
         JADX_SOURCE_COUNT="$(find "$JADX_DIR" -type f \( -name '*.java' -o -name '*.kt' \) | wc -l | tr -d ' ')"
     fi
 
-    if [[ -f "$JADX_MARKER" &&
-          "$(cat "$JADX_MARKER" 2>/dev/null)" == "$APK_SHA256" &&
-          "$JADX_SOURCE_COUNT" -gt 0 ]]; then
-        echo "[SKIP] JADX уже декомпилировал этот APK; найдено исходников: $JADX_SOURCE_COUNT"
+    if [[ "$JADX_SOURCE_COUNT" -gt 0 &&
+          ( ! -f "$JADX_MARKER" || "$(cat "$JADX_MARKER" 2>/dev/null)" == "$APK_SHA256" ) ]]; then
+        if [[ ! -f "$JADX_MARKER" ]]; then
+            printf '%s\n' "$APK_SHA256" > "$JADX_MARKER"
+            echo "[SKIP] Найдена готовая декомпиляция JADX от предыдущего запуска; найдено исходников: $JADX_SOURCE_COUNT"
+        else
+            echo "[SKIP] JADX уже декомпилировал этот APK; найдено исходников: $JADX_SOURCE_COUNT"
+        fi
     else
         echo "[RUN] JADX: результат отсутствует, неполный или относится к другому APK."
         rm -rf "$JADX_DIR"
