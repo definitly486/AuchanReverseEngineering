@@ -1295,7 +1295,7 @@ fi
 CURRENT_STEP="DEEP PURCHASE HISTORY RESEARCH"
 info "DEEP PURCHASE HISTORY RESEARCH"
 
-if reports_complete "$ROOT/api/deep_purchase_research/01_pin_interactor_sendpin.txt" "$ROOT/api/deep_purchase_research/02_loymax_url_provider.txt" "$ROOT/api/deep_purchase_research/03_receipt_items_and_details.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_and_auth_server.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_and_receipt_details.txt" "$ROOT/api/deep_purchase_research/01_pin_interactor_references.txt" "$ROOT/api/deep_purchase_research/02_loymax_registration_references.txt" "$ROOT/api/deep_purchase_research/03_receipt_item_references.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_references.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80_references.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_references.txt"; then
+if reports_complete "$ROOT/api/deep_purchase_research/01_pin_interactor_sendpin.txt" "$ROOT/api/deep_purchase_research/02_loymax_url_provider.txt" "$ROOT/api/deep_purchase_research/03_receipt_items_and_details.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_and_auth_server.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_and_receipt_details.txt" "$ROOT/api/deep_purchase_research/01_pin_interactor_references.txt" "$ROOT/api/deep_purchase_research/02_loymax_registration_references.txt" "$ROOT/api/deep_purchase_research/03_receipt_item_references.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_references.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80_references.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_references.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password_references.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping_references.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response_references.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading_references.txt"; then
     echo "[SKIP] DEEP PURCHASE HISTORY RESEARCH: все отчёты уже существуют и непустые."
 else
 
@@ -1388,24 +1388,69 @@ grep -RniE \
 # 5. deviceid, needHash and Token80 generation/acquisition/storage.
 write_context_report \
     "deviceid, needHash and Token80" \
-    'device.?id|deviceid|needHash|NeedHash|Token80|SavedToken80|ITokenService|clientauth/token|checkphone|Hash|SecureStorage|Preferences' \
+    'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone|Hash|SecureStorage|Preferences' \
     "$DEEP_DIR/05_deviceid_needhash_token80.txt"
 
 grep -RniE \
-    'device.?id|deviceid|needHash|NeedHash|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \
+    'device.?id|deviceid|UDID|Udid|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|needHash|NeedHash|Token20|token20|Token80|SavedToken80|ITokenService|clientauth/token|checkphone' \
     "$CS_DIR" --include='*.cs' \
     > "$DEEP_DIR/05_deviceid_needhash_token80_references.txt" || true
 
 # 6. /lk/loyalty/history response DTO and itemized receipt detail chain.
 write_context_report \
     "/lk/loyalty/history response and receipt details" \
-    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|PurchaseHistory|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber|ProductName|Quantity|UnitPrice|TotalPrice|Discount' \
+    'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|PurchaseHistory|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|chequeNumber|ReceiptNumber|ProductName|Quantity|UnitPrice|TotalPrice|Discount|foreach|SelectMany|Task\.WhenAll' \
     "$DEEP_DIR/06_loyalty_history_response_and_receipt_details.txt"
 
 grep -RniE \
     'loyalty/history|LoymaxHistoryResponseDto|HistoryResponse|HistoryItem|GetHistoryAsync|GetTransactionDetailsAsync|TransactionDetailsDto|ReceiptDetails|ReceiptItem|ProductDto|ProductItem|ChequeNumber|ReceiptNumber' \
     "$CS_DIR" --include='*.cs' \
     > "$DEEP_DIR/06_loyalty_history_response_references.txt" || true
+
+# 7. Token20: exact client-password value and wire format.
+write_context_report \
+    "Token20 client password and serialization format" \
+    'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \
+    "$DEEP_DIR/07_token20_client_password.txt"
+
+grep -RniE \
+    'Token20|token20|Token20Password|ClientPassword|client.?password|PasswordHash|passwordHash|needHash|NeedHash|clientauth/token|Authorization|X-Token' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/07_token20_client_password_references.txt" || true
+
+# 8. Compare the generated Device ID with the original UDID source.
+write_context_report \
+    "Device ID generation and original UDID mapping" \
+    'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \
+    "$DEEP_DIR/08_device_id_udid_mapping.txt"
+
+grep -RniE \
+    'UDID|Udid|udid|DeviceId|DeviceID|device.?id|UniqueDevice|DeviceInfo|AndroidId|ANDROID_ID|Settings\.Secure|Secure\.AndroidId|IdentifierForVendor|GetIdentifier|InstallationId|device.?identifier' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/08_device_id_udid_mapping_references.txt" || true
+
+# 9. Isolate needHash=true and capture request/response DTOs and error handling.
+write_context_report \
+    "needHash=true request and server response" \
+    'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \
+    "$DEEP_DIR/09_needhash_true_response.txt"
+
+grep -RniE \
+    'needHash[[:space:]]*=[[:space:]]*true|needHash|NeedHash|checkphone|CheckPhone|HashResponse|PhoneCheck|Challenge|ClientAuth|clientauth' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/09_needhash_true_response_references.txt" || true
+
+# 10. Follow chequeNumber from each history row into the detail API call.
+# Record loops/batching and whether detail requests are automatic or on-demand.
+write_context_report \
+    "chequeNumber detail loading and automatic per-receipt requests" \
+    'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \
+    "$DEEP_DIR/10_cheque_number_detail_loading.txt"
+
+grep -RniE \
+    'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \
+    "$CS_DIR" --include='*.cs' \
+    > "$DEEP_DIR/10_cheque_number_detail_loading_references.txt" || true
 
 cat > "$DEEP_DIR/README.md" <<'EOF'
 # Deep purchase-history investigation
@@ -1423,6 +1468,15 @@ Generated automatically by decompile_auchan.sh.
 5. 03_receipt_items_and_details.txt — receipt-detail methods, response
    models, product fields and mapping code.
 6. 03_receipt_item_references.txt — focused C# references.
+7. 07_token20_client_password.txt — Token20 source, format and serialization.
+8. 07_token20_client_password_references.txt — focused C# references.
+9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.
+10. 08_device_id_udid_mapping_references.txt — focused C# references.
+11. 09_needhash_true_response.txt — needHash=true request and response.
+12. 09_needhash_true_response_references.txt — focused C# references.
+13. 10_cheque_number_detail_loading.txt — chequeNumber details call chain,
+    automatic/on-demand loading, loops and batching.
+14. 10_cheque_number_detail_loading_references.txt — focused C# references.
 
 ## Questions the source must answer
 
@@ -1432,6 +1486,8 @@ Generated automatically by decompile_auchan.sh.
 - Is the SMS request made before or after Token80 acquisition?
 - Which token is passed to each call, and what are the exact headers,
   query parameters and request body?
+- What is Token20 exactly: source value, byte/string format, transformations
+  (hashing/encoding), and serialized location in the request?
 - What does the UI/ViewModel await before accepting the four-digit code?
 
 ### Loymax URL
@@ -1444,11 +1500,24 @@ Generated automatically by decompile_auchan.sh.
 
 ### Receipt items
 - Which identifier in a history row is passed to the details method?
+- Is the field named chequeNumber, and is it transformed before the request?
+- Are details requested automatically for every history row (loop/batch/
+  parallel), or only when a receipt is opened?
 - What is the exact details endpoint and request body?
 - Which response DTO contains product rows?
 - Which mapper converts those rows to UI/domain purchase items?
 - Are item name, quantity, unit price, total price, discounts and barcode
   actually returned, or are some fields absent?
+
+### Device identity and needHash
+
+- Which exact platform/API call supplies the original UDID?
+- Is Device ID generated, persisted, or read from Android ID?
+- Compare source value, format, casing and transformations; do not assume
+  UUID-like identifiers are interchangeable.
+- What request is made with needHash=true, and what does the server return
+  (status, content type, DTO fields, hash/challenge/error)?
+- Compare true/false branches without recording real account secrets.
 
 ## Evidence rules
 
