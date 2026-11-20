@@ -1077,10 +1077,17 @@ if [[ -d "$AOT_DIR/strings" ]]; then
 fi
 
 # Record relevant endpoint-like string literals from all decompiled C#.
+# Keep the character class portable across GNU grep and FreeBSD grep.
+# Square brackets are deliberately excluded: they were escaped inside a
+# bracket expression and caused BSD grep's "repetition-operator operand invalid".
 grep -RniE \
-    '(/|https?://)[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%{}-]*(sms|phone|auth|token|code|verify|confirm)[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%{}-]*' \
+    '(/|https?://)[A-Za-z0-9._~:/?#@!$&()*+,;=%{}-]*(sms|phone|auth|token|code|verify|confirm)[A-Za-z0-9._~:/?#@!$&()*+,;=%{}-]*' \
     "$CS_DIR" --include='*.cs' \
-    > "$SMS_DIR/endpoint_literals_search.txt" || true
+    > "$SMS_DIR/endpoint_literals_search.txt" 2> "$SMS_DIR/endpoint_literals_search_errors.txt" || {
+        rc=$?
+        echo "[WARNING] Поиск URL-строк завершился с кодом $rc; подробности: $SMS_DIR/endpoint_literals_search_errors.txt"
+    }
+
 
 cat > "$SMS_DIR/README.md" <<'EOF'
 # SMS authentication investigation
