@@ -1268,8 +1268,8 @@ write_context_report() {
         echo "# Generated: $(date)"
         echo "# Search expression: $pattern"
         echo
-        if ((\${#source_dirs[@]})); then
-            grep -RniE -B 10 -A 24 "$pattern" "\${source_dirs[@]}" \
+        if ((${#source_dirs[@]})); then
+            grep -RniE -B 10 -A 24 "$pattern" "${source_dirs[@]}" \
                 --include='*.cs' --include='*.java' --include='*.kt' \
                 --include='*.smali' --include='*.xml' --include='*.txt' \
                 2>/dev/null || true
