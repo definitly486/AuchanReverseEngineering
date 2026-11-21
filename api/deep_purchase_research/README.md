@@ -22,6 +22,10 @@ Generated automatically by decompile_auchan.sh.
 13. 10_cheque_number_detail_loading.txt — chequeNumber details call chain,
     automatic/on-demand loading, loops and batching.
 14. 10_cheque_number_detail_loading_references.txt — focused C# references.
+15. 11_token20_checkphone_beginverify_token80_verifyphone_sequence.txt — source context for the complete phone-authentication chain.
+16. 11_authentication_sequence_references.txt — exact references and call sites for each authentication stage.
+17. 12_loymax_api_auth_bridge.txt — correlates verified authentication/token flow with the registered Loymax API client, Production base URL, history route and token header.
+18. 12_loymax_api_auth_bridge_references.txt — focused C# references for that API bridge.
 
 ## Questions the source must answer
 
@@ -34,6 +38,15 @@ Generated automatically by decompile_auchan.sh.
 - What is Token20 exactly: source value, byte/string format, transformations
   (hashing/encoding), and serialized location in the request?
 - What does the UI/ViewModel await before accepting the four-digit code?
+
+### Complete phone authentication sequence
+- Locate the source and exact wire representation of Token20. Is it a constant, derived value, or response field? Do not print live credentials.
+- Find the caller of CheckPhone and record its method, route, query/body, headers, response DTO and error handling.
+- Follow BeginVerifyPhone from its call site. Determine whether it dispatches the SMS, creates a challenge, or performs another operation.
+- Establish exactly when Token80 is requested, which response field supplies it, and whether it is cached or refreshed.
+- Follow VerifyPhone and record the code/challenge fields, HTTP method, route, headers, response DTO and success/failure branches.
+- Build a source-backed call graph with caller/callee evidence. If the observed order differs from the proposed sequence, report the observed order.
+- Never include actual phone numbers, SMS codes, Token20/Token80 values, cookies or account-specific responses.
 
 ### Loymax URL
 - Which dependency-registration method constructs ILoymaxLoyaltyApi?

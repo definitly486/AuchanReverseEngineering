@@ -33,8 +33,7 @@ def extract_elf_payload(blob: bytes):
             raise ValueError("Truncated ELF64 header")
         shoff = struct.unpack_from("<Q", blob, 40)[0]
         shentsize = struct.unpack_from("<H", blob, 58)[0]
-        shnum = struct.unpack_from("<H", blob, 60)[0]
-        shstrndx = struct.unpack_from("<H", blob, 62)[0]
+        shnum = struct.unpack_from("<H", blob, 60)[0]        shstrndx = struct.unpack_from("<H", blob, 62)[0]
         fmt = "<IIQQQQIIQQ"
         min_size = 64
     elif elf_class == 1:  # ELF32

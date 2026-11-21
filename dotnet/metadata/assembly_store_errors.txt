@@ -1,0 +1,2 @@
+/home/definitly/AuchanReverseEngineering/native/arm64-v8a/libassembly-store.so	1	/home/definitly/AuchanReverseEngineering/dotnet/metadata/assembly_store_arm64-v8a.json
+/home/definitly/AuchanReverseEngineering/native/armeabi-v7a/libassembly-store.so	1	/home/definitly/AuchanReverseEngineering/dotnet/metadata/assembly_store_armeabi-v7a.json
