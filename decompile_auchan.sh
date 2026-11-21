@@ -497,8 +497,7 @@ def extract_elf_payload(blob: bytes):
             raise ValueError("Truncated ELF64 header")
         shoff = struct.unpack_from("<Q", blob, 40)[0]
         shentsize = struct.unpack_from("<H", blob, 58)[0]
-        shnum = struct.unpack_from("<H", blob, 60)[0]
-        shstrndx = struct.unpack_from("<H", blob, 62)[0]
+        shnum = struct.unpack_from("<H", blob, 60)[0]        shstrndx = struct.unpack_from("<H", blob, 62)[0]
         fmt = "<IIQQQQIIQQ"
         min_size = 64
     elif elf_class == 1:  # ELF32
@@ -997,8 +996,7 @@ while IFS= read -r dll; do
             echo "[ERROR] ILSpy: $name завершился без C# исходников."
             printf '%s\t%s\n' "$name" "no-source-files" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
         fi
-    else
-        rc=$?
+    else        rc=$?
         echo "[ERROR] ILSpy failed for $name (exit code $rc)"
         printf '%s\t%s\n' "$name" "$rc" >> "$ROOT/dotnet/metadata/ilspy_errors.tsv"
         warn "ILSpy failed: $name; скрипт продолжает работу"
@@ -1295,7 +1293,11 @@ fi
 CURRENT_STEP="DEEP PURCHASE HISTORY RESEARCH"
 info "DEEP PURCHASE HISTORY RESEARCH"
 
-if reports_complete "$ROOT/api/deep_purchase_research/01_pin_interactor_sendpin.txt" "$ROOT/api/deep_purchase_research/02_loymax_url_provider.txt" "$ROOT/api/deep_purchase_research/03_receipt_items_and_details.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_and_auth_server.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_and_receipt_details.txt" "$ROOT/api/deep_purchase_research/01_pin_interactor_references.txt" "$ROOT/api/deep_purchase_research/02_loymax_registration_references.txt" "$ROOT/api/deep_purchase_research/03_receipt_item_references.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_references.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80_references.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_references.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password_references.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping_references.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response_references.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading_references.txt"; then
+if reports_complete "$ROOT/api/deep_purchase_research/01_pin_interactor_sendpin.txt" "$ROOT/api/deep_purchase_research/02_loymax_url_provider.txt" "$ROOT/api/deep_purchase_research/03_receipt_items_and_details.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_and_auth_server.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_and_receipt_details.txt" "$ROOT/api/deep_purchase_research/01_pin_interactor_references.txt" "$ROOT/api/deep_purchase_research/02_loymax_registration_references.txt" "$ROOT/api/deep_purchase_research/03_receipt_item_references.txt" "$ROOT/api/deep_purchase_research/04_personal_cabinet_api_references.txt" "$ROOT/api/deep_purchase_research/05_deviceid_needhash_token80_references.txt" "$ROOT/api/deep_purchase_research/06_loyalty_history_response_references.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password.txt" "$ROOT/api/deep_purchase_research/07_token20_client_password_references.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping.txt" "$ROOT/api/deep_purchase_research/08_device_id_udid_mapping_references.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response.txt" "$ROOT/api/deep_purchase_research/09_needhash_true_response_references.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading.txt" "$ROOT/api/deep_purchase_research/10_cheque_number_detail_loading_references.txt" \
+    "$ROOT/api/deep_purchase_research/11_token20_checkphone_beginverify_token80_verifyphone_sequence.txt" \
+    "$ROOT/api/deep_purchase_research/11_authentication_sequence_references.txt" \
+    "$ROOT/api/deep_purchase_research/12_loymax_api_auth_bridge.txt" \
+    "$ROOT/api/deep_purchase_research/12_loymax_api_auth_bridge_references.txt"; then
     echo "[SKIP] DEEP PURCHASE HISTORY RESEARCH: все отчёты уже существуют и непустые."
 else
 
@@ -1479,6 +1481,34 @@ write_reference_report \
     'chequeNumber|ChequeNumber|GetTransactionDetailsAsync|GetReceiptDetailsAsync|GetPurchaseDetailsAsync|TransactionDetails|ReceiptDetails|LoyaltyHistory|GetHistoryAsync|Task\.WhenAll|Parallel|foreach|SelectMany|OnAppearing|ItemTapped|SelectionChanged|Load.*Detail|Fetch.*Detail' \
     "$DEEP_DIR/10_cheque_number_detail_loading_references.txt"
 
+# 11. Reconstruct the complete SMS authentication chain. Search each
+# named operation together with its callers, callees, DTOs and token usage.
+# The report is evidence-oriented: it must reveal the actual call order rather
+# than assume that the names in the requested sequence are called linearly.
+write_context_report \
+    "Token20 -> CheckPhone -> BeginVerifyPhone -> Token80 -> VerifyPhone sequence" \
+    'Token20|token20|CheckPhone|CheckPhoneAsync|BeginVerifyPhone|BeginVerifyPhoneAsync|Token80|token80|VerifyPhone|VerifyPhoneAsync|PinInteractor|SendPin|ITokenService|SavedToken80|needHash|NeedHash|deviceid|DeviceId|UDID|X-Token|Authorization|clientauth/token|clientprofile/checkphone' \
+    "$DEEP_DIR/11_token20_checkphone_beginverify_token80_verifyphone_sequence.txt"
+
+write_reference_report \
+    "Authentication sequence references and call sites" \
+    'Token20|token20|CheckPhone|CheckPhoneAsync|BeginVerifyPhone|BeginVerifyPhoneAsync|Token80|token80|VerifyPhone|VerifyPhoneAsync|PinInteractor|SendPin|ITokenService|SavedToken80|needHash|NeedHash|clientauth/token|clientprofile/checkphone' \
+    "$DEEP_DIR/11_authentication_sequence_references.txt"
+
+# 12. Bridge authentication to the actual Loymax client. Correlate the token
+# produced/refreshed by the phone-verification flow with the exact registered
+# ILoymaxLoyaltyApi client, its Production base URL, route attributes and
+# X-Token-CMD header. Keep personal-cabinet and Loymax clients distinct.
+write_context_report \
+    "Authentication to Loymax API bridge" \
+    'ILoymaxLoyaltyApi|LoymaxLoyaltyApi|LoymaxLoyaltyProgramUrlProvider|LoyaltyProgramDependencyRegistry|AddRefitClient|AddHttpClient|BaseAddress|Production|ITokenService|Token80|SavedToken80|X-Token-CMD|LoyaltyHistory|GetHistoryAsync|CheckPhone|BeginVerifyPhone|VerifyPhone|clientauth/token|clientprofile/checkphone' \
+    "$DEEP_DIR/12_loymax_api_auth_bridge.txt"
+
+write_reference_report \
+    "Loymax API authentication bridge references" \
+    'ILoymaxLoyaltyApi|LoymaxLoyaltyApi|LoymaxLoyaltyProgramUrlProvider|LoyaltyProgramDependencyRegistry|ITokenService|Token80|SavedToken80|X-Token-CMD|LoyaltyHistory|GetHistoryAsync|BeginVerifyPhone|VerifyPhone' \
+    "$DEEP_DIR/12_loymax_api_auth_bridge_references.txt"
+
 cat > "$DEEP_DIR/README.md" <<'EOF'
 # Deep purchase-history investigation
 
@@ -1497,13 +1527,16 @@ Generated automatically by decompile_auchan.sh.
 6. 03_receipt_item_references.txt — focused C# references.
 7. 07_token20_client_password.txt — Token20 source, format and serialization.
 8. 07_token20_client_password_references.txt — focused C# references.
-9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.
-10. 08_device_id_udid_mapping_references.txt — focused C# references.
+9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.10. 08_device_id_udid_mapping_references.txt — focused C# references.
 11. 09_needhash_true_response.txt — needHash=true request and response.
 12. 09_needhash_true_response_references.txt — focused C# references.
 13. 10_cheque_number_detail_loading.txt — chequeNumber details call chain,
     automatic/on-demand loading, loops and batching.
 14. 10_cheque_number_detail_loading_references.txt — focused C# references.
+15. 11_token20_checkphone_beginverify_token80_verifyphone_sequence.txt — source context for the complete phone-authentication chain.
+16. 11_authentication_sequence_references.txt — exact references and call sites for each authentication stage.
+17. 12_loymax_api_auth_bridge.txt — correlates verified authentication/token flow with the registered Loymax API client, Production base URL, history route and token header.
+18. 12_loymax_api_auth_bridge_references.txt — focused C# references for that API bridge.
 
 ## Questions the source must answer
 
@@ -1516,6 +1549,15 @@ Generated automatically by decompile_auchan.sh.
 - What is Token20 exactly: source value, byte/string format, transformations
   (hashing/encoding), and serialized location in the request?
 - What does the UI/ViewModel await before accepting the four-digit code?
+
+### Complete phone authentication sequence
+- Locate the source and exact wire representation of Token20. Is it a constant, derived value, or response field? Do not print live credentials.
+- Find the caller of CheckPhone and record its method, route, query/body, headers, response DTO and error handling.
+- Follow BeginVerifyPhone from its call site. Determine whether it dispatches the SMS, creates a challenge, or performs another operation.
+- Establish exactly when Token80 is requested, which response field supplies it, and whether it is cached or refreshed.
+- Follow VerifyPhone and record the code/challenge fields, HTTP method, route, headers, response DTO and success/failure branches.
+- Build a source-backed call graph with caller/callee evidence. If the observed order differs from the proposed sequence, report the observed order.
+- Never include actual phone numbers, SMS codes, Token20/Token80 values, cookies or account-specific responses.
 
 ### Loymax URL
 - Which dependency-registration method constructs ILoymaxLoyaltyApi?
