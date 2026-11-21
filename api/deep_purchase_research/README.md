@@ -13,6 +13,15 @@ Generated automatically by decompile_auchan.sh.
 5. 03_receipt_items_and_details.txt — receipt-detail methods, response
    models, product fields and mapping code.
 6. 03_receipt_item_references.txt — focused C# references.
+7. 07_token20_client_password.txt — Token20 source, format and serialization.
+8. 07_token20_client_password_references.txt — focused C# references.
+9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.
+10. 08_device_id_udid_mapping_references.txt — focused C# references.
+11. 09_needhash_true_response.txt — needHash=true request and response.
+12. 09_needhash_true_response_references.txt — focused C# references.
+13. 10_cheque_number_detail_loading.txt — chequeNumber details call chain,
+    automatic/on-demand loading, loops and batching.
+14. 10_cheque_number_detail_loading_references.txt — focused C# references.
 
 ## Questions the source must answer
 
@@ -22,6 +31,8 @@ Generated automatically by decompile_auchan.sh.
 - Is the SMS request made before or after Token80 acquisition?
 - Which token is passed to each call, and what are the exact headers,
   query parameters and request body?
+- What is Token20 exactly: source value, byte/string format, transformations
+  (hashing/encoding), and serialized location in the request?
 - What does the UI/ViewModel await before accepting the four-digit code?
 
 ### Loymax URL
@@ -34,11 +45,24 @@ Generated automatically by decompile_auchan.sh.
 
 ### Receipt items
 - Which identifier in a history row is passed to the details method?
+- Is the field named chequeNumber, and is it transformed before the request?
+- Are details requested automatically for every history row (loop/batch/
+  parallel), or only when a receipt is opened?
 - What is the exact details endpoint and request body?
 - Which response DTO contains product rows?
 - Which mapper converts those rows to UI/domain purchase items?
 - Are item name, quantity, unit price, total price, discounts and barcode
   actually returned, or are some fields absent?
+
+### Device identity and needHash
+
+- Which exact platform/API call supplies the original UDID?
+- Is Device ID generated, persisted, or read from Android ID?
+- Compare source value, format, casing and transformations; do not assume
+  UUID-like identifiers are interchangeable.
+- What request is made with needHash=true, and what does the server return
+  (status, content type, DTO fields, hash/challenge/error)?
+- Compare true/false branches without recording real account secrets.
 
 ## Evidence rules
 
