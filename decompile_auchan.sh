@@ -1527,7 +1527,8 @@ Generated automatically by decompile_auchan.sh.
 6. 03_receipt_item_references.txt — focused C# references.
 7. 07_token20_client_password.txt — Token20 source, format and serialization.
 8. 07_token20_client_password_references.txt — focused C# references.
-9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.10. 08_device_id_udid_mapping_references.txt — focused C# references.
+9. 08_device_id_udid_mapping.txt — generated Device ID vs original UDID.
+10. 08_device_id_udid_mapping_references.txt — focused C# references.
 11. 09_needhash_true_response.txt — needHash=true request and response.
 12. 09_needhash_true_response_references.txt — focused C# references.
 13. 10_cheque_number_detail_loading.txt — chequeNumber details call chain,
